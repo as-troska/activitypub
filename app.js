@@ -5,11 +5,12 @@ const dotenv = require('dotenv');
 const https = require('https');
 const fs = require('fs');
 const httpSignature = require('http-signature');
+const crypto = require('crypto');
 
 dotenv.config();
 
-publicKey = process.env.PUBLICKEY;
-
+const publicKey = fs.readFileSync('public.pem', 'utf8');
+const privateKey = fs.readFileSync('private.pem', 'utf8');
 const client = new MongoClient(process.env.MONGOURI, {});
   
 client.connect(err => {
@@ -24,6 +25,7 @@ client.connect(err => {
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.get('/.well-known/webfinger', (req, res) => {
@@ -247,16 +249,12 @@ app.post("/u/trondss/follow", async (req, res) => {
 		const acceptActivity = {
 			'@context': 'https://www.w3.org/ns/activitystreams',
 			type: 'Accept',
-			actor: 'https://example.com/u/trondss',
+			actor: 'https://www.sneaas.no/u/trondss',
 			object: followActivity.id
 		};
 
 		const actorInbox = followActivity.actor + '/inbox';
-		const response = await fetch(actorInbox, {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify(acceptActivity)
-		});
+		const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
 
 		if (!response.ok) {
 			throw new Error(`Failed to send Accept activity: ${response.statusText}`);
@@ -277,6 +275,20 @@ app.post("/u/trondss/unfollow", async (req, res) => {
         if (undoActivity.type === 'Undo' && undoActivity.object.type === 'Follow') {
             await collection.deleteOne({ id: undoActivity.object.id });
             console.log(`Removed follow activity with id: ${undoActivity.object.id}`);
+
+            const acceptActivity = {
+                '@context': 'https://www.w3.org/ns/activitystreams',
+                type: 'Accept',
+                actor: 'https://www.sneaas.no/u/trondss',
+                object: undoActivity.id
+            };
+
+            const actorInbox = undoActivity.actor + '/inbox';
+            const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
+
+            if (!response.ok) {
+                throw new Error(`Failed to send Accept activity: ${response.statusText}`);
+            }
         } else {
             console.log(`Received unknown activity type: ${undoActivity.type}`);
         }
@@ -288,12 +300,7 @@ app.post("/u/trondss/unfollow", async (req, res) => {
     }
 });
 
-const options = {
-    key: fs.readFileSync('server.key'),
-    cert: fs.readFileSync('server.cert')
-  };
-
-https.createServer(options, app).listen(3000, () => {
+https.createServer(app).listen(3000, () => {
     console.log('Server started');
 });
 
@@ -315,3 +322,42 @@ async function getActorProfile(actorId) {
       return null;
     }
   }
+
+  
+
+
+async function sendSignedRequest(inboxUrl, publicKeyId, body) {
+    const url = new URL(inboxUrl);
+    const host = url.host;
+    const path = url.pathname;
+
+    const date = new Date().toUTCString();
+
+    const bodyDigest = crypto.createHash('sha256').update(JSON.stringify(body)).digest('base64');
+    const digest = `SHA-256=${bodyDigest}`;
+
+    const signingString = `(request-target): post ${path}\nhost: ${host}\ndate: ${date}\ndigest: ${digest}`;
+    const sign = crypto.createSign('sha256');
+    sign.update(signingString);
+    const signature = sign.sign(privateKey, 'base64');
+
+    const signatureHeader = `keyId="${publicKeyId}",headers="(request-target) host date digest",signature="${signature}"`;
+
+    const response = await fetch(inboxUrl, {
+        method: 'POST',
+        headers: {
+            'Host': host,
+            'Date': date,
+            'Digest': digest,
+            'Signature': signatureHeader,
+            'Content-Type': 'application/ld+json'
+        },
+        body: JSON.stringify(body)
+    });
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    return await response.json();
+}
