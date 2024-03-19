@@ -6,6 +6,10 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 const httpSignature = require('http-signature');
 const crypto = require('crypto');
+const morgan = require('morgan');
+
+
+
 
 dotenv.config();
 
@@ -27,6 +31,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use(morgan('combined'));
+
 
 app.get('/.well-known/webfinger', (req, res) => {
 	const resource = req.query.resource;
