@@ -90,6 +90,7 @@ app.use((req, res, next) => {
       if (!contentType) {
         contentType = rec.get('content-type')
       }
+      console.log(contentType)
 
       if (!contentType || contentType.startsWith('application/ld+json') || contentType.startsWith('application/activity+json')) {
         res.status(415).send('Unsupported Media Type');
