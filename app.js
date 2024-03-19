@@ -155,24 +155,26 @@ app.use((req, res, next) => {
     next();
   });
 
-app.use((req, res, next) => {
+  app.use((req, res, next) => {
     try {
       const parsed = httpSignature.parseRequest(req);
+      console.log(parsed);
+      console.log(publicKey);
+  
       if (!httpSignature.verifySignature(parsed, publicKey)) {
         res.status(401).send('Unauthorized');
-		  console.log("Failed fourth middleware: Unauthorized")
-      console.log(req.headers)
-      console.log(req.body)
-
+        console.log("Failed fourth middleware: Unauthorized")
+        console.log(req.headers)
+        console.log(req.body)
         return;
       }
-	  console.log("Passed fourth middleware")
+      console.log("Passed fourth middleware")
       next();
     } catch (err) {
-	  console.log("Failed fourth middleware: Unauthorized")		
+      console.log("Failed fourth middleware: Unauthorized")    
       res.status(500).send('Internal server error');
     }
-});
+  });
 
 const database = "activitypub";
 
