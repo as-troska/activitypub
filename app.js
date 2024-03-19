@@ -85,7 +85,12 @@ app.get("/u/trondss", (req, res) => {
 
 app.use((req, res, next) => {
     if (req.method === 'POST') {
-      const contentType = req.get('Content-Type');
+      let contentType = req.get('Content-Type');
+
+      if (!contentType) {
+        contentType = rec.get('content-type')
+      }
+
       if (!contentType || contentType.startsWith('application/ld+json') || contentType.startsWith('application/activity+json')) {
         res.status(415).send('Unsupported Media Type');
 		    console.log("Failed first middleware: Unsupported content type")
