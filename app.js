@@ -108,6 +108,7 @@ app.use((req, res, next) => {
   app.use((req, res, next) => {
     if (req.method === 'POST') {
       const activity = req.body;
+      console.log(activity)
   
       if (!activity || !activity.type) {
         res.status(400).send('Bad Request: Missing activity type');
