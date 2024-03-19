@@ -92,7 +92,7 @@ app.use((req, res, next) => {
       }
       console.log(contentType)
 
-      if (!contentType || contentType !== 'application/ld+json' || contentType !== "application/activity+json") {
+      if (!contentType || (contentType !== 'application/ld+json' && contentType !== "application/activity+json")) {
         res.status(415).send('Unsupported Media Type');
 		    console.log("Failed first middleware: Unsupported content type")
         console.log(req.headers)
