@@ -30,17 +30,8 @@ client.connect(err => {
 const app = express();
 
 app.use(cors());
-app.use((req, res, next) => {
-  req.rawBody = '';
-  req.on('data', function(chunk) {
-    req.rawBody += chunk;
-  });
-  req.on('end', function() {
-    console.log(req.rawBody);
-    next();
-  });
-});
-app.use(express.json());
+
+app.use(express.json({type: ['application/json', 'application/activity+json', 'application/ld+json'] }));
 
 app.use(morgan('combined'));
 
@@ -118,8 +109,7 @@ app.use((req, res, next) => {
   app.use((req, res, next) => {
     if (req.method === 'POST') {
       const activity = req.body;
-      console.log(activity)
-      console.log(req.rawBody)
+      console.log(activity)      
   
       if (!activity || !activity.type) {
         res.status(400).send('Bad Request: Missing activity type');
