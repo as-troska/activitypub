@@ -2,7 +2,7 @@ const express = require('express');
 const {MongoClient, ServerApiVersion, ObjectId} = require('mongodb')
 const cors = require('cors');
 const dotenv = require('dotenv');
-const https = require('https');
+//const https = require('https');
 const fs = require('fs');
 const httpSignature = require('http-signature');
 const crypto = require('crypto');
@@ -29,41 +29,51 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/.well-known/webfinger', (req, res) => {
-    res.json({
-        "subject": "acct:trondss@$sneaas.no",
-        "links": [
-            {
-                "rel": "self",
-                "type": "application/activity+json",
-                "href": "https://www.sneaas.no/u/trondss"
-            }
-        ]
-    });
+	const resource = req.query.resource;
+	const username = resource.split(':')[1].split('@')[0];
+
+	if (username === 'trondss') {
+		res.set('Content-Type', 'application/jrd+json');
+		res.json({
+			subject: `acct:${username}@sneaas.no`,
+			links: [
+				{
+					rel: 'self',
+					type: 'application/activity+json',
+					href: `https://www.sneaas.no/u/${username}`
+				}
+			]
+		});
+	} else {
+		res.status(404).send('Not Found');
+	}
 });
 
 app.get("/u/trondss", (req, res) => {
-    res.json({
-        "@context": "https://www.w3.org/ns/activitystreams",
-        "type": "Person",
-        "id": "https://www.sneaas.no/u/trondss",
-        "following": "https://www.sneaas.no/u/trondss/following",
-        "followers": "https://www.sneaas.no/u/trondss/followers",
-        "inbox": "https://www.sneaas.no/u/trondss/inbox",
-        "outbox": "https://www.sneaas.no/u/trondss/outbox",
-        "preferredUsername": "trondss",
-        "name": "Trond Sneås Skauge",
-        "summary": "I am a software developer",
-        "icon": {
-            "type": "Image",
-            "mediaType": "image/jpeg",
-            "url": "https://www.sneaas.no/u/trondss/icon"
-        },
-        "publicKey": {
-            "id": "https://www.sneaas.no/u/trondss#main-key",
-            "owner": "https://www.sneaas.no/u/trondss",
-            "publicKeyPem": publicKey
-        }
-    });
+	res.statusCode = 200;
+	res.setHeader("Content-Type", `application/activity+json`);
+	res.json({
+	  "@context": ["https://www.w3.org/ns/activitystreams", { "@language": "en- GB" }],
+	  "type": "Person",
+	  "id": "https://www.sneaas.no/u/trondss",
+	  "outbox": "https://www.sneaas.no/u/trondss/outbox",
+	  "following": "https://www.sneaas.no/u/trondss/following",
+	  "followers": "https://www.sneaas.no/u/trondss/followers",
+	  "inbox": "https://www.sneaas.no/u/trondss/inbox",
+	  "preferredUsername": "trondss",
+	  "name": "T",
+	  "summary": "I am a person who is on the internet.",
+	  "icon": [
+		"https://www.katolsk.no/nyheter/2015/06/bildegalleri-nytt-studenthjem-i-bergen/bilde2.jpg/@@images/0c68b938-820c-46ec-93eb-6879c6bdb25c.jpeg"
+	  ],
+	  "publicKey": {
+		"@context": "https://w3id.org/security/v1",
+		"@type": "Key",
+		"id": "https://www.sneaas.no/u/trondss#main-key",
+		"owner": "https://www.sneaas.no/u/trondss",
+		"publicKeyPem": publicKey
+	  }
+	});
 });
 
 app.use((req, res, next) => {
@@ -71,15 +81,18 @@ app.use((req, res, next) => {
       const contentType = req.get('Content-Type');
       if (!contentType || !contentType.startsWith('application/ld+json')) {
         res.status(415).send('Unsupported Media Type');
+		console.log("Failed first middleware: Unsupported Media Type")
         return;
       }
   
       const profile = contentType.split('profile=')[1];
       if (profile !== '"https://www.w3.org/ns/activitystreams"') {
         res.status(415).send('Unsupported Media Type');
+		console.log("Failed first middleware: Unsupported Media Type")
         return;
       }
     }
+	console.log("Passed first middleware")
   
     next();
   });
@@ -90,16 +103,18 @@ app.use((req, res, next) => {
   
       if (!activity || !activity.type) {
         res.status(400).send('Bad Request: Missing activity type');
+		console.log("Failed second middleware: Bad Request: Missing activity type")
         return;
       }
   
       const validTypes = ['Create', 'Update', 'Delete', 'Follow', 'Accept', 'Reject', 'Add', 'Remove', 'Like', 'Announce', 'Undo', 'Block', 'Flag'];
       if (!validTypes.includes(activity.type)) {
         res.status(400).send('Bad Request: Invalid activity type');
+		console.log("Failed second middleware: Bad Request: Invalid activity type")
         return;
       }
     }
-  
+	console.log("Passed second middleware")
     next();
   });
 
@@ -109,21 +124,24 @@ app.use((req, res, next) => {
   
       if (!activity || !activity.actor) {
         res.status(400).send('Bad Request: Missing actor');
+		console.log("Failed third middleware: Bad Request: Missing actor")
         return;
       }
   
       const actorProfile = await getActorProfile(activity.actor);
       if (!actorProfile) {
         res.status(404).send('Not Found: Actor not found');
+		console.log("Failed third middleware: Not Found: Actor not found")
         return;
       }
   
       if (activity.actor !== actorProfile.id) {
         res.status(403).send('Forbidden: Actor mismatch');
+		console.log("Failed third middleware: Forbidden: Actor mismatch")
         return;
       }
     }
-  
+	console.log("Passed third middleware")  
     next();
   });
 
@@ -132,10 +150,13 @@ app.use((req, res, next) => {
       const parsed = httpSignature.parseRequest(req);
       if (!httpSignature.verifySignature(parsed, publicKey)) {
         res.status(401).send('Unauthorized');
+		console.log("Failed fourth middleware: Unauthorized")
         return;
       }
+	  console.log("Passed fourth middleware")
       next();
     } catch (err) {
+	  console.log("Failed fourth middleware: Unauthorized")		
       res.status(500).send('Internal server error');
     }
 });
@@ -300,8 +321,12 @@ app.post("/u/trondss/unfollow", async (req, res) => {
     }
 });
 
-https.createServer(app).listen(3000, () => {
-    console.log('Server started');
+// https.createServer(app).listen(3000, () => {
+//     console.log('Server started');
+// });
+
+app.listen(1814, () => {
+	console.log('Server started on port 1814 http://localhost:1814/');
 });
 
 async function getActorProfile(actorId) {
