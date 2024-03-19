@@ -88,16 +88,9 @@ app.use((req, res, next) => {
       const contentType = req.get('Content-Type');
       if (!contentType || !contentType.startsWith('application/ld+json'|| contentType.startsWith('application/activity+json'))) {
         res.status(415).send('Unsupported Media Type');
-		    console.log("Failed first middleware: Unsupported Media Type")
+		    console.log("Failed first middleware: Unsupported content type")
         console.log(req.headers)
         console.log(req.body)
-        return;
-      }
-  
-      const profile = contentType.split('profile=')[1];
-      if (profile !== '"https://www.w3.org/ns/activitystreams"') {
-        res.status(415).send('Unsupported Media Type');
-		    console.log("Failed first middleware: Unsupported Media Type")
         return;
       }
     }
