@@ -150,7 +150,10 @@ app.use((req, res, next) => {
       const parsed = httpSignature.parseRequest(req);
       if (!httpSignature.verifySignature(parsed, publicKey)) {
         res.status(401).send('Unauthorized');
-		console.log("Failed fourth middleware: Unauthorized")
+		  console.log("Failed fourth middleware: Unauthorized")
+      console.log(req.headers)
+      console.log(req.body)
+      
         return;
       }
 	  console.log("Passed fourth middleware")
