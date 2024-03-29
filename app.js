@@ -7,6 +7,7 @@ const fs = require('fs');
 const httpSignature = require('http-signature');
 const crypto = require('crypto');
 const morgan = require('morgan');
+const parser = require("activitypub-http-signatures");
 
 
 
@@ -157,7 +158,10 @@ app.use((req, res, next) => {
 
   app.use((req, res, next) => {
     try {
-      const parsed = httpSignature.parseRequest(req);
+      const { originalUrl, method, headers } = req;
+      const parsed = parser.parse({ originalUrlurl, method, headers });
+
+      //const parsed = httpSignature.parseRequest(req);
       console.log(parsed);
       console.log(publicKey);
   
