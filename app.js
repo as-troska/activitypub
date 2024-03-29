@@ -7,7 +7,12 @@ const fs = require('fs');
 const httpSignature = require('http-signature');
 const crypto = require('crypto');
 const morgan = require('morgan');
-const {parser} = import('activitypub-http-signatures');
+
+
+let parser;
+import('activitypub-http-signatures').then(module => {
+  parser = module.parser;
+});
 
 
 
