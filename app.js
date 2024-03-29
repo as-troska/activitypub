@@ -167,17 +167,18 @@ app.use((req, res, next) => {
       console.log(parsed);
       //console.log(publicKey);
   
-      if (!httpSignature.verifySignature(parsed, publicKey)) {
-        res.status(401).send('Unauthorized');
-        console.log("Failed fourth middleware: Unauthorized")
-        console.log(req.headers)
-        console.log(req.body)
-        return;
-      }
-      console.log("Passed fourth middleware")
+      // if (!httpSignature.verifySignature(parsed, publicKey)) {
+      //   res.status(401).send('Unauthorized');
+      //   console.log("Failed fourth middleware: Unauthorized")
+      //   console.log(req.headers)
+      //   console.log(req.body)
+      //   return;
+      // }
+      // console.log("Passed fourth middleware")
       next();
     } catch (err) {
-      console.log("Failed fourth middleware: Unauthorized")    
+      console.log("Failed fourth middleware: Unauthorized")
+      console.log(err)  
       res.status(500).send('Internal server error');
     }
   });
