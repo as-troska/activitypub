@@ -110,7 +110,7 @@ app.use((req, res, next) => {
   app.use((req, res, next) => {
     if (req.method === 'POST') {
       const activity = req.body;
-      console.log(activity)      
+      //console.log(activity)      
   
       if (!activity || !activity.type) {
         res.status(400).send('Bad Request: Missing activity type');
@@ -159,11 +159,13 @@ app.use((req, res, next) => {
   app.use((req, res, next) => {
     try {
       const { originalUrl, method, headers } = req;
-      const parsed = parser.parse({ originalUrlurl, method, headers });
-
+      const parsed = parser.parse({ originalUrl, method, headers });
       //const parsed = httpSignature.parseRequest(req);
+      console.log("OrginalURL: " + originalUrl);
+      console.log("Method: " + method);
+      console.log("Headers: " + headers);
       console.log(parsed);
-      console.log(publicKey);
+      //console.log(publicKey);
   
       if (!httpSignature.verifySignature(parsed, publicKey)) {
         res.status(401).send('Unauthorized');
