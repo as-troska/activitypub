@@ -9,10 +9,6 @@ const crypto = require('crypto');
 const morgan = require('morgan');
 
 
-let parser;
-import('activitypub-http-signatures').then(module => {
-  parser = module.parser;
-});
 
 
 
@@ -164,7 +160,7 @@ app.use((req, res, next) => {
   app.use((req, res, next) => {
     try {
       const { originalUrl, method, headers } = req;
-      const parsed = parser.parse({ originalUrl, method, headers });
+      
       //const parsed = httpSignature.parseRequest(req);
       console.log("OrginalURL: " + originalUrl);
       console.log("Method: " + method);
@@ -180,7 +176,7 @@ app.use((req, res, next) => {
       //   return;
       // }
       // console.log("Passed fourth middleware")
-      next();
+      
     } catch (err) {
       console.log("Failed fourth middleware: Unauthorized")
       console.log(err)  
