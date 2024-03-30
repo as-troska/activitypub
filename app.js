@@ -273,16 +273,35 @@ app.get("/u/trondss/icon", (req, res) => {
 });
 
 app.post("/u/trondss/inbox", async (req, res) => {
+  try {
+    const activity = req.body;
 
-    console.log(req.body);
-    // try {
-    //     const collection = client.db(database).collection("inbox");
-    //     await collection.insertOne(req.body);
-    //     res.status(200).send();
-    // } catch (err) {
-    //     console.error(err);
-    //     res.status(500).send('Internal server error');
-    // }
+    if (activity.type === 'Follow') {
+      const collection = client.db(database).collection("followers");
+      await collection.insertOne(activity);
+
+      const acceptActivity = {
+        '@context': 'https://www.w3.org/ns/activitystreams',
+        type: 'Accept',
+        actor: 'https://www.sneaas.no/u/trondss',
+        object: activity.id
+      };
+
+      const actorInbox = activity.actor + '/inbox';
+      const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
+
+      if (!response.ok) {
+        throw new Error(`Failed to send Accept activity: ${response.statusText}`);
+      }
+    }
+
+    // Handle other types of activities...
+
+    res.status(200).send();
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal server error');
+  }
 });
 
 app.post("/u/trondss/outbox", async (req, res) => {
