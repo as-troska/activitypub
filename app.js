@@ -161,10 +161,8 @@ app.use((req, res, next) => {
 
   app.use(async (req, res, next) => {
     try {
-      const { headers } = req;
-      const signature = headers['signature'];
-      const parsedSignature = httpSignature.parseSignature(signature);
-      const { keyId, headers: signedHeaders, signature: signatureValue } = parsedSignature;
+      const parsed = httpSignature.parseRequest(req);
+      const { keyId, params: { headers: signedHeaders, signature: signatureValue } } = parsed;
 
       // Fetch the public key
       const publicKey = await new Promise((resolve, reject) => {
@@ -176,7 +174,7 @@ app.use((req, res, next) => {
       });
 
       // Concatenate the headers
-      const signingString = signedHeaders.map((header) => `${header.toLowerCase()}: ${headers[header]}`).join('\n');
+      const signingString = signedHeaders.map((header) => `${header.toLowerCase()}: ${req.headers[header]}`).join('\n');
 
       // Verify the signature
       const verifier = crypto.createVerify('RSA-SHA256');
