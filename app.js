@@ -179,20 +179,15 @@ app.use((req, res, next) => {
           "Accept": 'application/activity+json'
         }});
       actorKey = await actorKey.json();
+      actorKey = actorKey.publicKey.publicKeyPem;
 
       console.log(actorKey)
 
+      const verifier = crypto.createVerify('RSA-SHA256');
+      verifier.update(signingString);
+      const isVerified = verifier.verify(actorKey, signature, 'base64');
 
-      
-
-      // Concatenate the headers
-
-    
-
-      // // Verify the signature
-      // const verifier = crypto.createVerify('RSA-SHA256');
-      // verifier.update(signingString);
-      // const isVerified = verifier.verify(publicKey, signatureValue, 'base64');
+      console.log(isVerified)
 
       // if (!isVerified) {
       //   res.status(401).send('Unauthorized');
