@@ -173,9 +173,13 @@ app.use((req, res, next) => {
         }).on('error', reject);
       });
 
+      console.log(publicKey)
+
       // Concatenate the headers
       const signingString = signedHeaders.map((header) => `${header.toLowerCase()}: ${req.headers[header]}`).join('\n');
 
+      console.log(signingString)
+      
       // Verify the signature
       const verifier = crypto.createVerify('RSA-SHA256');
       verifier.update(signingString);
