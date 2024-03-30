@@ -157,27 +157,42 @@ app.use((req, res, next) => {
     next();
   });
 
-  app.use((req, res, next) => {
+  import https from 'https';
+  import crypto from 'crypto';
+
+  app.use(async (req, res, next) => {
     try {
-      const { originalUrl, method, headers } = req;
-      
-      //const parsed = httpSignature.parseRequest(req);
-      console.log("OrginalURL: " + originalUrl);
-      console.log("Method: " + method);
-      console.log("Headers: ");
-      console.dir(headers)
-      
-      //console.log(publicKey);
-  
-      // if (!httpSignature.verifySignature(parsed, publicKey)) {
-      //   res.status(401).send('Unauthorized');
-      //   console.log("Failed fourth middleware: Unauthorized")
-      //   console.log(req.headers)
-      //   console.log(req.body)
-      //   return;
-      // }
-      // console.log("Passed fourth middleware")
-      
+      const { headers } = req;
+      const signature = headers['signature'];
+      const parsedSignature = httpSignature.parseSignature(signature);
+      const { keyId, headers: signedHeaders, signature: signatureValue } = parsedSignature;
+
+      // Fetch the public key
+      const publicKey = await new Promise((resolve, reject) => {
+        https.get(keyId, (res) => {
+          let data = '';
+          res.on('data', (chunk) => data += chunk);
+          res.on('end', () => resolve(data));
+        }).on('error', reject);
+      });
+
+      // Concatenate the headers
+      const signingString = signedHeaders.map((header) => `${header.toLowerCase()}: ${headers[header]}`).join('\n');
+
+      // Verify the signature
+      const verifier = crypto.createVerify('RSA-SHA256');
+      verifier.update(signingString);
+      const isVerified = verifier.verify(publicKey, signatureValue, 'base64');
+
+      if (!isVerified) {
+        res.status(401).send('Unauthorized');
+        console.log("Failed fourth middleware: Unauthorized")
+        console.log(req.headers)
+        console.log(req.body)
+        return;
+      }
+      console.log("Passed fourth middleware")
+      next();
     } catch (err) {
       console.log("Failed fourth middleware: Unauthorized")
       console.log(err)  
