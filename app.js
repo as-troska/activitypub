@@ -173,8 +173,12 @@ app.use((req, res, next) => {
       console.log(signingString)
       console.log(keyUrl)
 
-      let actorKey = await fetch(keyUrl);
-      actorKey = await actorKey.text();
+      let actorKey = await fetch(keyUrl, {
+        headers: {
+          "Content-type": 'application/activity+json',
+          "Accept": 'application/activity+json'
+        }});
+      actorKey = await actorKey.json();
 
       console.log(actorKey)
 
