@@ -168,11 +168,6 @@ app.use((req, res, next) => {
       const algorithm = parsed.params.algorithm;
       const keyUrl = parsed.params.keyId;
 
-      console.log(algorithm)
-      console.log(signature)
-      console.log(signingString)
-      console.log(keyUrl)
-
       let actorKey = await fetch(keyUrl, {
         headers: {
           "Content-type": 'application/activity+json',
@@ -181,23 +176,19 @@ app.use((req, res, next) => {
       actorKey = await actorKey.json();
       actorKey = actorKey.publicKey.publicKeyPem;
 
-      console.log(actorKey)
-
       const verifier = crypto.createVerify('RSA-SHA256');
       verifier.update(signingString);
       const isVerified = verifier.verify(actorKey, signature, 'base64');
 
-      console.log(isVerified)
-
-      // if (!isVerified) {
-      //   res.status(401).send('Unauthorized');
-      //   console.log("Failed fourth middleware: Unauthorized")
-      //   console.log(req.headers)
-      //   console.log(req.body)
-      //   return;
-      // }
-      // console.log("Passed fourth middleware")
-      // next();
+      if (!isVerified) {
+        res.status(401).send('Unauthorized');
+        console.log("Failed fourth middleware: Unauthorized")
+        console.log(req.headers)
+        console.log(req.body)
+        return;
+      }
+      console.log("Passed fourth middleware")
+      next();
     } catch (err) {
       console.log("Failed fourth middleware: Unauthorized")
       console.log(err)  
@@ -282,14 +273,16 @@ app.get("/u/trondss/icon", (req, res) => {
 });
 
 app.post("/u/trondss/inbox", async (req, res) => {
-    try {
-        const collection = client.db(database).collection("inbox");
-        await collection.insertOne(req.body);
-        res.status(200).send();
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal server error');
-    }
+
+    console.log(req.body);
+    // try {
+    //     const collection = client.db(database).collection("inbox");
+    //     await collection.insertOne(req.body);
+    //     res.status(200).send();
+    // } catch (err) {
+    //     console.error(err);
+    //     res.status(500).send('Internal server error');
+    // }
 });
 
 app.post("/u/trondss/outbox", async (req, res) => {
