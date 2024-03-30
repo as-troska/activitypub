@@ -179,21 +179,21 @@ app.use((req, res, next) => {
       const signingString = signedHeaders.map((header) => `${header.toLowerCase()}: ${req.headers[header]}`).join('\n');
 
       console.log(signingString)
-      
-      // Verify the signature
-      const verifier = crypto.createVerify('RSA-SHA256');
-      verifier.update(signingString);
-      const isVerified = verifier.verify(publicKey, signatureValue, 'base64');
 
-      if (!isVerified) {
-        res.status(401).send('Unauthorized');
-        console.log("Failed fourth middleware: Unauthorized")
-        console.log(req.headers)
-        console.log(req.body)
-        return;
-      }
-      console.log("Passed fourth middleware")
-      next();
+      // // Verify the signature
+      // const verifier = crypto.createVerify('RSA-SHA256');
+      // verifier.update(signingString);
+      // const isVerified = verifier.verify(publicKey, signatureValue, 'base64');
+
+      // if (!isVerified) {
+      //   res.status(401).send('Unauthorized');
+      //   console.log("Failed fourth middleware: Unauthorized")
+      //   console.log(req.headers)
+      //   console.log(req.body)
+      //   return;
+      // }
+      // console.log("Passed fourth middleware")
+      // next();
     } catch (err) {
       console.log("Failed fourth middleware: Unauthorized")
       console.log(err)  
