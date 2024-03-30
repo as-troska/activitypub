@@ -162,7 +162,12 @@ app.use((req, res, next) => {
   app.use(async (req, res, next) => {
     try {
       const parsed = httpSignature.parseRequest(req);
+      
+      console.log(parsed)
+      
       const { keyId, params: { headers: signedHeaders, signature: signatureValue } } = parsed;
+
+      
 
       // Fetch the public key
       const publicKey = await new Promise((resolve, reject) => {
