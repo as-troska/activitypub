@@ -168,11 +168,14 @@ app.use((req, res, next) => {
       const algorithm = parsed.params.algorithm;
       const keyUrl = parsed.params.keyId;
 
-      const actorKey = await fetch(keyUrl);
-
       console.log(algorithm)
       console.log(signature)
       console.log(signingString)
+      console.log(keyUrl)
+
+      let actorKey = await fetch(keyUrl);
+      actorKey = await actorKey.text();
+
       console.log(actorKey)
 
 
