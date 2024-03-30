@@ -163,27 +163,24 @@ app.use((req, res, next) => {
     try {
       const parsed = httpSignature.parseRequest(req);
       
-      console.log(parsed)
-      
-      const { keyId, params: { headers: signedHeaders, signature: signatureValue } } = parsed;
+      const signingString = parsed.signingString;
+      const signature = parsed.params.signature;
+      const algorithm = parsed.params.algorithm;
+      const keyUrl = parsed.params.keyId;
+
+      const actorKey = await fetch(keyUrl);
+
+      console.log(algorithm)
+      console.log(signature)
+      console.log(signingString)
+      console.log(actorKey)
+
 
       
-
-      // Fetch the public key
-      const publicKey = await new Promise((resolve, reject) => {
-        https.get(keyId, (res) => {
-          let data = '';
-          res.on('data', (chunk) => data += chunk);
-          res.on('end', () => resolve(data));
-        }).on('error', reject);
-      });
-
-      console.log(publicKey)
 
       // Concatenate the headers
-      const signingString = signedHeaders.map((header) => `${header.toLowerCase()}: ${req.headers[header]}`).join('\n');
 
-      console.log(signingString)
+    
 
       // // Verify the signature
       // const verifier = crypto.createVerify('RSA-SHA256');
