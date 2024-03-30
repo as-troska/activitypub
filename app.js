@@ -164,8 +164,9 @@ app.use((req, res, next) => {
       //const parsed = httpSignature.parseRequest(req);
       console.log("OrginalURL: " + originalUrl);
       console.log("Method: " + method);
-      console.log("Headers: " + headers);
-      console.log(parsed);
+      console.log("Headers: ");
+      console.dir(headers)
+      
       //console.log(publicKey);
   
       // if (!httpSignature.verifySignature(parsed, publicKey)) {
