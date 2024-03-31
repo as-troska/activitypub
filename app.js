@@ -417,48 +417,71 @@ async function getActorProfile(actorId) {
 
 
 async function sendSignedRequest(inboxUrl, publicKeyId, body) {
-    const url = new URL(inboxUrl);
-    const host = url.host;
-    const path = url.pathname;
+  console.log(`Sending signed request to ${inboxUrl} with public key ID ${publicKeyId}`);
 
-    const date = new Date().toUTCString();
-
-    const bodyDigest = crypto.createHash('sha256').update(JSON.stringify(body)).digest('base64');
-    const digest = `SHA-256=${bodyDigest}`;
-
-    const signingString = `(request-target): post ${path}\nhost: ${host}\ndate: ${date}\ndigest: ${digest}`;
-    const sign = crypto.createSign('sha256');
-    sign.update(signingString);
-    const signature = sign.sign(privateKey, 'base64');
-
-    const signatureHeader = `keyId="${publicKeyId}",headers="(request-target) host date digest",signature="${signature}"`;
-
-    const response = await fetch(inboxUrl, {
-        method: 'POST',
-        headers: {
-            'Host': host,
-            'Date': date,
-            'Digest': digest,
-            'Signature': signatureHeader,
-            'Content-Type': 'application/ld+json'
-        },
-        body: JSON.stringify(body)
-    });
-
-    if (!response.ok) {
-      throw new Error(`Failed to send request: ${response.statusText}`);
+  // Fetch the public key
+  let publicKey = await fetch(publicKeyId, {
+    headers: {
+      "Accept": 'application/activity+json'
     }
-  
-    let responseBody = await response.text();
-  
-    if (responseBody) {
-      try {
-        responseBody = JSON.parse(responseBody);
-      } catch (err) {
-        console.error(`Failed to parse response body as JSON: ${responseBody}`);
-        throw err;
-      }
+  });
+  publicKey = await publicKey.text();
+  console.log(`Fetched public key: ${publicKey}`);
+
+  const url = new URL(inboxUrl);
+  const host = url.host;
+  const path = url.pathname;
+
+  const date = new Date().toUTCString();
+
+  const bodyDigest = crypto.createHash('sha256').update(JSON.stringify(body)).digest('base64');
+  const digest = `SHA-256=${bodyDigest}`;
+
+  const signingString = `(request-target): post ${path}\nhost: ${host}\ndate: ${date}\ndigest: ${digest}`;
+  const sign = crypto.createSign('sha256');
+  sign.update(signingString);
+  const signature = sign.sign(privateKey, 'base64');
+
+  const signatureHeader = `keyId="${publicKeyId}",headers="(request-target) host date digest",signature="${signature}"`;
+
+  console.log(`Sending request to ${inboxUrl} with headers ${JSON.stringify({
+    'Host': host,
+    'Date': date,
+    'Digest': digest,
+    'Signature': signatureHeader,
+    'Content-Type': 'application/ld+json',
+    'Accept': 'application/activity+json'
+  })} and body ${JSON.stringify(body)}`);
+
+
+  const response = await fetch(inboxUrl, {
+    method: 'POST',
+    headers: {
+      'Host': host,
+      'Date': date,
+      'Digest': digest,
+      'Signature': signatureHeader,
+      'Content-Type': 'application/ld+json',
+      'Accept': 'application/activity+json'
+    },
+    body: JSON.stringify(body)
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to send request: ${response.statusText}`);
+  }
+
+  let responseBody = await response.text();
+
+  if (responseBody) {
+    try {
+      responseBody = JSON.parse(responseBody);
+    } catch (err) {
+      console.error(`Failed to parse response body as JSON: ${responseBody}`);
+      throw err;
     }
-  
-    return responseBody;
+  }
+
+  console.log(`Received response: ${JSON.stringify(responseBody)}`);
+  return responseBody;
 }
