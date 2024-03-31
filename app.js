@@ -59,6 +59,41 @@ app.get('/.well-known/webfinger', (req, res) => {
 	}
 });
 
+app.get('/.well-known/nodeinfo', (req, res) => {
+  res.json({
+    links: [
+      {
+        rel: 'http://nodeinfo.diaspora.software/ns/schema/2.0',
+        href: 'https://www.sneaas.no/nodeinfo/2.0.json'
+      }
+    ]
+  });
+});
+
+app.get('/nodeinfo/2.0.json', (req, res) => {
+  res.json({
+    version: '2.0',
+    software: {
+      name: 'sneaas',
+      version: '1.0.0' 
+    },
+    protocols: [
+      'activitypub'
+    ],
+    services: {
+      inbound: [],
+      outbound: []
+    },
+    openRegistrations: false,
+    usage: {
+      users: {
+        total: 1 
+      }
+    },
+    metadata: {} 
+  });
+});
+
 app.get("/u/trondss", (req, res) => {
 	res.statusCode = 200;
 	res.setHeader("Content-Type", `application/activity+json`);
@@ -199,39 +234,35 @@ app.use((req, res, next) => {
 const database = "activitypub";
 
 app.get("/u/trondss/following", async (req, res) => {
-    try {
-        const collection = client.db(database).collection("following");
-        const docs = await collection.find({}).toArray();
-        res.json({
-            "@context": "https://www.w3.org/ns/activitystreams",
-            "type": "OrderedCollection",
-            "totalItems": docs.length,
-            "first": "https://www.sneaas.no/u/trondss/following?page=true",
-            "orderedItems": docs
-        });
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal server error');
-    }
+  try {
+    const collection = client.db(database).collection("following");
+    const totalItems = await collection.countDocuments();
+    res.json({
+      "@context": "https://www.w3.org/ns/activitystreams",
+      "type": "OrderedCollection",
+      "totalItems": totalItems,
+      "first": "https://www.sneaas.no/u/trondss/following?page=true"
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal server error');
+  }
 });
 
-app.get("/u/trondss/followers", (req, res) => {
-    app.get("/u/trondss/followers", async (req, res) => {
-        try {
-            const collection = client.db(database).collection("followers");
-            const docs = await collection.find({}).toArray();
-            res.json({
-                "@context": "https://www.w3.org/ns/activitystreams",
-                "type": "OrderedCollection",
-                "totalItems": docs.length,
-                "first": "https://www.sneaas.no/u/trondss/followers?page=true",
-                "orderedItems": docs
-            });
-        } catch (err) {
-            console.error(err);
-            res.status(500).send('Internal server error');
-        }
+app.get("/u/trondss/followers", async (req, res) => {
+  try {
+    const collection = client.db(database).collection("followers");
+    const totalItems = await collection.countDocuments();
+    res.json({
+      "@context": "https://www.w3.org/ns/activitystreams",
+      "type": "OrderedCollection",
+      "totalItems": totalItems,
+      "first": "https://www.sneaas.no/u/trondss/followers?page=true"
     });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal server error');
+  }
 });
 
 app.get("/u/trondss/inbox", async (req, res) => {
@@ -282,7 +313,7 @@ app.post("/u/trondss/inbox", async (req, res) => {
       const collection = client.db(database).collection("followers");
   
       // Check if the follower already exists
-      const followerExists = await collection.findOne({ id: activity.actor });
+      const followerExists = await collection.findOne({ actor: activity.actor });
       console.log(followerExists)
   
       if (!followerExists) {
@@ -321,66 +352,7 @@ app.post("/u/trondss/outbox", async (req, res) => {
     }
 });
 
-app.post("/u/trondss/follow", async (req, res) => {
-	try {
-		const followActivity = req.body;
-		const collection = client.db(database).collection("followers");
 
-		await collection.insertOne(followActivity);
-
-		const acceptActivity = {
-			'@context': 'https://www.w3.org/ns/activitystreams',
-			type: 'Accept',
-			actor: 'https://www.sneaas.no/u/trondss',
-			object: followActivity.id
-		};
-
-		const actorInbox = followActivity.actor + '/inbox';
-		const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
-
-		if (!response.ok) {
-			throw new Error(`Failed to send Accept activity: ${response.statusText}`);
-		}
-
-		res.status(200).send();
-	} catch (err) {
-		console.error(err);
-		res.status(500).send('Internal server error');
-	}
-});
-
-app.post("/u/trondss/unfollow", async (req, res) => {
-    try {
-        const undoActivity = req.body;
-        const collection = client.db(database).collection("followers");
-
-        if (undoActivity.type === 'Undo' && undoActivity.object.type === 'Follow') {
-            await collection.deleteOne({ id: undoActivity.object.id });
-            console.log(`Removed follow activity with id: ${undoActivity.object.id}`);
-
-            const acceptActivity = {
-                '@context': 'https://www.w3.org/ns/activitystreams',
-                type: 'Accept',
-                actor: 'https://www.sneaas.no/u/trondss',
-                object: undoActivity.id
-            };
-
-            const actorInbox = undoActivity.actor + '/inbox';
-            const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
-
-            if (!response.ok) {
-                throw new Error(`Failed to send Accept activity: ${response.statusText}`);
-            }
-        } else {
-            console.log(`Received unknown activity type: ${undoActivity.type}`);
-        }
-
-        res.status(200).send();
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal server error');
-    }
-});
 
 // https.createServer(app).listen(3000, () => {
 //     console.log('Server started');
