@@ -419,15 +419,6 @@ async function getActorProfile(actorId) {
 async function sendSignedRequest(inboxUrl, publicKeyId, body) {
   console.log(`Sending signed request to ${inboxUrl} with public key ID ${publicKeyId}`);
 
-  // Fetch the public key
-  let publicKey = await fetch(publicKeyId, {
-    headers: {
-      "Accept": 'application/activity+json'
-    }
-  });
-  publicKey = await publicKey.text();
-  console.log(`Fetched public key: ${publicKey}`);
-
   const url = new URL(inboxUrl);
   const host = url.host;
   const path = url.pathname;
@@ -452,7 +443,6 @@ async function sendSignedRequest(inboxUrl, publicKeyId, body) {
     'Content-Type': 'application/ld+json',
     'Accept': 'application/activity+json'
   })} and body ${JSON.stringify(body)}`);
-
 
   const response = await fetch(inboxUrl, {
     method: 'POST',
