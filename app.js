@@ -294,7 +294,8 @@ app.post("/u/trondss/inbox", async (req, res) => {
         const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
   
         if (!response.ok) {
-          throw new Error(`Failed to send Accept activity: ${response.statusText}`);
+          console.log(response)
+          throw new Error(`Failed to send Accept activity: ${response.statusCode}`);
         }
   
         await collection.insertOne(activity);
