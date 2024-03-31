@@ -275,23 +275,29 @@ app.get("/u/trondss/icon", (req, res) => {
 app.post("/u/trondss/inbox", async (req, res) => {
   try {
     const activity = req.body;
-
+  
     if (activity.type === 'Follow') {
       const collection = client.db(database).collection("followers");
-      await collection.insertOne(activity);
-
-      const acceptActivity = {
-        '@context': 'https://www.w3.org/ns/activitystreams',
-        type: 'Accept',
-        actor: 'https://www.sneaas.no/u/trondss',
-        object: activity.id
-      };
-
-      const actorInbox = activity.actor + '/inbox';
-      const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
-
-      if (!response.ok) {
-        throw new Error(`Failed to send Accept activity: ${response.statusText}`);
+  
+      // Check if the follower already exists
+      const followerExists = await collection.findOne({ id: activity.actor });
+  
+      if (!followerExists) {
+        const acceptActivity = {
+          '@context': 'https://www.w3.org/ns/activitystreams',
+          type: 'Accept',
+          actor: 'https://www.sneaas.no/u/trondss',
+          object: activity.id
+        };
+  
+        const actorInbox = activity.actor + '/inbox';
+        const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
+  
+        if (!response.ok) {
+          throw new Error(`Failed to send Accept activity: ${response.statusText}`);
+        }
+  
+        await collection.insertOne(activity);
       }
     }
 
@@ -437,8 +443,19 @@ async function sendSignedRequest(inboxUrl, publicKeyId, body) {
     });
 
     if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error(`Failed to send request: ${response.statusText}`);
     }
-
-    return await response.json();
+  
+    let responseBody = await response.text();
+  
+    if (responseBody) {
+      try {
+        responseBody = JSON.parse(responseBody);
+      } catch (err) {
+        console.error(`Failed to parse response body as JSON: ${responseBody}`);
+        throw err;
+      }
+    }
+  
+    return responseBody;
 }
