@@ -283,6 +283,7 @@ app.post("/u/trondss/inbox", async (req, res) => {
   
       // Check if the follower already exists
       const followerExists = await collection.findOne({ id: activity.actor });
+      console.log(followerExists)
   
       if (!followerExists) {
         const acceptActivity = {
@@ -294,11 +295,6 @@ app.post("/u/trondss/inbox", async (req, res) => {
   
         const actorInbox = activity.actor + '/inbox';
         const response = await sendSignedRequest(actorInbox, 'https://www.sneaas.no/u/trondss#main-key', acceptActivity);
-  
-        if (!response.ok) {
-          console.log(response)
-          throw new Error(`Failed to send Accept activity: ${response.statusCode}`);
-        }
   
         await collection.insertOne(activity);
       }
