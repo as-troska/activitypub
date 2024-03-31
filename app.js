@@ -275,6 +275,8 @@ app.get("/u/trondss/icon", (req, res) => {
 app.post("/u/trondss/inbox", async (req, res) => {
   try {
     const activity = req.body;
+
+    console.log(activity);
   
     if (activity.type === 'Follow') {
       const collection = client.db(database).collection("followers");
