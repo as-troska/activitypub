@@ -123,6 +123,59 @@ app.get("/u/trondss", (req, res) => {
     });
 });
 
+app.get("/u/trondss/outbox", async(req, res) => {
+	try {
+		const collection = client.db(database).collection("outbox");
+
+		const page = parseInt(req.query.page) || 1;
+		const pageSize = parseInt(req.query.pageSize) || 50;
+		const sortOrder = req.query.sortOrder === 'asc' ? 1 : -1;
+
+		const skip = (page - 1) * pageSize;
+
+		const docs = await collection.find({})
+			.sort({ published: sortOrder })
+			.skip(skip)
+			.limit(pageSize)
+			.toArray();
+
+		res.json({
+			"@context": "https://www.w3.org/ns/activitystreams",
+			"type": "OrderedCollectionPage",
+			"totalItems": docs.length,
+			"first": "https://www.sneaas.no/u/trondss/outbox?page=1",
+			"next": `https://www.sneaas.no/u/trondss/outbox?page=${page + 1}`,
+			"orderedItems": docs
+		});
+
+	} catch (err) {
+		console.error(err);
+		res.status(500).send('Internal server error');
+	}
+});
+
+app.get("/u/trondss/following", async(req, res) => {
+    try {
+        const collection = client.db(database).collection("following");
+        const totalItems = await collection.countDocuments();
+        res.json({"@context": "https://www.w3.org/ns/activitystreams", "type": "OrderedCollection", "totalItems": totalItems, "first": "https://www.sneaas.no/u/trondss/following?page=true"});
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal server error');
+    }
+});
+
+app.get("/u/trondss/followers", async(req, res) => {
+    try {
+        const collection = client.db(database).collection("followers");
+        const totalItems = await collection.countDocuments();
+        res.json({"@context": "https://www.w3.org/ns/activitystreams", "type": "OrderedCollection", "totalItems": totalItems, "first": "https://www.sneaas.no/u/trondss/followers?page=true"});
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal server error');
+    }
+});
+
 app.use((req, res, next) => {
     if (req.method === 'POST') {
         let contentType = req.get('Content-Type');
@@ -260,27 +313,7 @@ app.use(async(req, res, next) => {
 
 const database = "activitypub";
 
-app.get("/u/trondss/following", async(req, res) => {
-    try {
-        const collection = client.db(database).collection("following");
-        const totalItems = await collection.countDocuments();
-        res.json({"@context": "https://www.w3.org/ns/activitystreams", "type": "OrderedCollection", "totalItems": totalItems, "first": "https://www.sneaas.no/u/trondss/following?page=true"});
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal server error');
-    }
-});
 
-app.get("/u/trondss/followers", async(req, res) => {
-    try {
-        const collection = client.db(database).collection("followers");
-        const totalItems = await collection.countDocuments();
-        res.json({"@context": "https://www.w3.org/ns/activitystreams", "type": "OrderedCollection", "totalItems": totalItems, "first": "https://www.sneaas.no/u/trondss/followers?page=true"});
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal server error');
-    }
-});
 
 app.get("/u/trondss/inbox", async(req, res) => {
     try {
@@ -299,36 +332,7 @@ app.get("/u/trondss/inbox", async(req, res) => {
     }
 });
 
-app.get("/u/trondss/outbox", async(req, res) => {
-	try {
-		const collection = client.db(database).collection("outbox");
 
-		const page = parseInt(req.query.page) || 1;
-		const pageSize = parseInt(req.query.pageSize) || 50;
-		const sortOrder = req.query.sortOrder === 'asc' ? 1 : -1;
-
-		const skip = (page - 1) * pageSize;
-
-		const docs = await collection.find({})
-			.sort({ published: sortOrder })
-			.skip(skip)
-			.limit(pageSize)
-			.toArray();
-
-		res.json({
-			"@context": "https://www.w3.org/ns/activitystreams",
-			"type": "OrderedCollectionPage",
-			"totalItems": docs.length,
-			"first": "https://www.sneaas.no/u/trondss/outbox?page=1",
-			"next": `https://www.sneaas.no/u/trondss/outbox?page=${page + 1}`,
-			"orderedItems": docs
-		});
-
-	} catch (err) {
-		console.error(err);
-		res.status(500).send('Internal server error');
-	}
-});
 
 app.get("/u/trondss/icon", (req, res) => {
     res.sendFile(__dirname + "/icon.jpg");
