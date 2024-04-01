@@ -7,6 +7,7 @@ const fs = require('fs');
 const httpSignature = require('http-signature');
 const crypto = require('crypto');
 const morgan = require('morgan');
+const path = require('path');
 
 dotenv.config();
 
