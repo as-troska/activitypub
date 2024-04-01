@@ -190,26 +190,21 @@ app.use(async(req, res, next) => {
         const activity = req.body;
 
         if (!activity || !activity.actor) {
-            res
-                .status(400)
-                .send('Bad Request: Missing actor');
+            res.status(400).send('Bad Request: Missing actor');
             console.log("Failed third middleware: Bad Request: Missing actor")
             return;
         }
 
         const actorProfile = await getActorProfile(activity.actor);
         if (!actorProfile) {
-            res
-                .status(404)
-                .send('Not Found: Actor not found');
+            res.status(404).send('Not Found: Actor not found');
+			console.log(req.body)
             console.log("Failed third middleware: Not Found: Actor not found")
             return;
         }
 
         if (activity.actor !== actorProfile.id) {
-            res
-                .status(403)
-                .send('Forbidden: Actor mismatch');
+            res.status(403).send('Forbidden: Actor mismatch');
             console.log("Failed third middleware: Forbidden: Actor mismatch")
             return;
         }
