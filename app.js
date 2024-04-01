@@ -31,7 +31,8 @@ app.use(express.json({
     type: ['application/json', 'application/activity+json', 'application/ld+json']
 }));
 
-app.use(morgan('combined'));
+const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
+app.use(morgan('combined', { stream: accessLogStream }))
 
 app.get('/.well-known/webfinger', (req, res) => {
     const resource = req.query.resource;
@@ -186,31 +187,36 @@ app.use((req, res, next) => {
 });
 
 app.use(async(req, res, next) => {
-    if (req.method === 'POST') {
-        const activity = req.body;
+	if (req.method === 'POST') {
+		const activity = req.body;
 
-        if (!activity || !activity.actor) {
-            res.status(400).send('Bad Request: Missing actor');
-            console.log("Failed third middleware: Bad Request: Missing actor")
-            return;
-        }
+		if (!activity || !activity.actor) {
+			res.status(400).send('Bad Request: Missing actor');
+			console.log("Failed third middleware: Bad Request: Missing actor")
+			return;
+		}
 
-        const actorProfile = await getActorProfile(activity.actor);
-        if (!actorProfile) {
-            res.status(404).send('Not Found: Actor not found');
+		const actorProfile = await getActorProfile(activity.actor);
+		if (!actorProfile) {
+			if (activity.type === 'Delete') {
+				// If it's a Delete activity and the actor doesn't exist, return 200 and stop processing
+				res.status(200).send();
+				return;
+			}
+			res.status(404).send('Not Found: Actor not found');
 			console.log(req.body)
-            console.log("Failed third middleware: Not Found: Actor not found")
-            return;
-        }
+			console.log("Failed third middleware: Not Found: Actor not found")
+			return;
+		}
 
-        if (activity.actor !== actorProfile.id) {
-            res.status(403).send('Forbidden: Actor mismatch');
-            console.log("Failed third middleware: Forbidden: Actor mismatch")
-            return;
-        }
-    }
-    console.log("Passed third middleware")
-    next();
+		if (activity.actor !== actorProfile.id) {
+			res.status(403).send('Forbidden: Actor mismatch');
+			console.log("Failed third middleware: Forbidden: Actor mismatch")
+			return;
+		}
+	}
+
+	next();
 });
 
 app.use(async(req, res, next) => {
