@@ -8,6 +8,10 @@ const httpSignature = require('http-signature');
 const crypto = require('crypto');
 const morgan = require('morgan');
 const path = require('path');
+const wellKnown = require('./lib/wellKnown');
+const user = require('./lib/user');
+
+import { checkContentType, checkActivityType, checkActor } from './lib/middleware';
 
 dotenv.config();
 
@@ -35,93 +39,13 @@ app.use(express.json({
 const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
 app.use(morgan('combined', { stream: accessLogStream }))
 
-app.get('/.well-known/webfinger', (req, res) => {
-    const resource = req.query.resource;
-    const username = resource
-        .split(':')[1]
-        .split('@')[0];
 
-    if (username === 'trondss') {
-        res.set('Content-Type', 'application/jrd+json');
-        res.json({
-            subject: `acct:${username}@sneaas.no`,
-            links: [
-                {
-                    rel: 'self',
-                    type: 'application/activity+json',
-                    href: `https://www.sneaas.no/u/${username}`
-                }
-            ]
-        });
-    } else {
-        res
-            .status(404)
-            .send('Not Found');
-    }
-});
 
-app.get('/.well-known/nodeinfo', (req, res) => {
-    res.json({
-        links: [
-            {
-                rel: 'http://nodeinfo.diaspora.software/ns/schema/2.0',
-                href: 'https://www.sneaas.no/nodeinfo/2.0.json'
-            }
-        ]
-    });
-});
-
-app.get('/nodeinfo/2.0.json', (req, res) => {
-    res.json({
-        version: '2.0',
-        software: {
-            name: 'sneaas',
-            version: '1.0.0'
-        },
-        protocols: ['activitypub'],
-        services: {
-            inbound: [],
-            outbound: []
-        },
-        openRegistrations: false,
-        usage: {
-            users: {
-                total: 1
-            }
-        },
-        metadata: {}
-    });
-});
-
-app.get("/u/trondss", (req, res) => {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", `application/activity+json`);
-    res.json({
-        "@context": [
-            "https://www.w3.org/ns/activitystreams", {
-                "@language": "en- GB"
-            }
-        ],
-        "type": "Person",
-        "id": "https://www.sneaas.no/u/trondss",
-        "outbox": "https://www.sneaas.no/u/trondss/outbox",
-        "following": "https://www.sneaas.no/u/trondss/following",
-        "followers": "https://www.sneaas.no/u/trondss/followers",
-        "inbox": "https://www.sneaas.no/u/trondss/inbox",
-        "preferredUsername": "trondss",
-        "name": "T",
-        "summary": "I am a person who is on the internet.",
-        "icon": ["https://www.katolsk.no/nyheter/2015/06/bildegalleri-nytt-studenthjem-i-bergen/bi" +
-                "lde2.jpg/@@images/0c68b938-820c-46ec-93eb-6879c6bdb25c.jpeg"],
-        "publicKey": {
-            "@context": "https://w3id.org/security/v1",
-            "@type": "Key",
-            "id": "https://www.sneaas.no/u/trondss#main-key",
-            "owner": "https://www.sneaas.no/u/trondss",
-            "publicKeyPem": publicKey
-        }
-    });
-});
+//Routes
+app.get('/.well-known/webfinger', wellKnown.webfinger);
+app.get('/.well-known/nodeinfo', wellKnown.nodeinfo);
+app.get('/nodeinfo/2.0.json', wellKnown.nodeinfo2);
+app.get("/u/trondss", user.trondss);
 
 app.get("/u/trondss/outbox", async(req, res) => {
 	try {
@@ -176,102 +100,102 @@ app.get("/u/trondss/followers", async(req, res) => {
     }
 });
 
-app.use((req, res, next) => {
-    if (req.method === 'POST') {
-        let contentType = req.get('Content-Type');
+// app.use((req, res, next) => {
+//     if (req.method === 'POST') {
+//         let contentType = req.get('Content-Type');
 
-        if (!contentType) {
-            contentType = rec.get('content-type')
-        }
-        console.log(contentType)
+//         if (!contentType) {
+//             contentType = rec.get('content-type')
+//         }
+//         console.log(contentType)
 
-        if (!contentType || (contentType !== 'application/ld+json' && contentType !== "application/activity+json")) {
-            res
-                .status(415)
-                .send('Unsupported Media Type');
-            console.log("Failed first middleware: Unsupported content type")
-            console.log(req.headers)
-            console.log(req.body)
-            return;
-        }
-    }
-    console.log("Passed first middleware")
+//         if (!contentType || (contentType !== 'application/ld+json' && contentType !== "application/activity+json")) {
+//             res
+//                 .status(415)
+//                 .send('Unsupported Media Type');
+//             console.log("Failed first middleware: Unsupported content type")
+//             console.log(req.headers)
+//             console.log(req.body)
+//             return;
+//         }
+//     }
+//     console.log("Passed first middleware")
 
-    next();
-});
+//     next();
+// });
 
-app.use((req, res, next) => {
-    if (req.method === 'POST') {
-        const activity = req.body;
-        //console.log(activity)
+// app.use((req, res, next) => {
+//     if (req.method === 'POST') {
+//         const activity = req.body;
+//         //console.log(activity)
 
-        if (!activity || !activity.type) {
-            res
-                .status(400)
-                .send('Bad Request: Missing activity type');
-            console.log("Failed second middleware: Bad Request: Missing activity type")
-            return;
-        }
+//         if (!activity || !activity.type) {
+//             res
+//                 .status(400)
+//                 .send('Bad Request: Missing activity type');
+//             console.log("Failed second middleware: Bad Request: Missing activity type")
+//             return;
+//         }
 
-        const validTypes = [
-            'Create',
-            'Update',
-            'Delete',
-            'Follow',
-            'Accept',
-            'Reject',
-            'Add',
-            'Remove',
-            'Like',
-            'Announce',
-            'Undo',
-            'Block',
-            'Flag'
-        ];
-        if (!validTypes.includes(activity.type)) {
-            res
-                .status(400)
-                .send('Bad Request: Invalid activity type');
-            console.log("Failed second middleware: Bad Request: Invalid activity type")
-            return;
-        }
-    }
-    console.log("Passed second middleware")
-    next();
-});
+//         const validTypes = [
+//             'Create',
+//             'Update',
+//             'Delete',
+//             'Follow',
+//             'Accept',
+//             'Reject',
+//             'Add',
+//             'Remove',
+//             'Like',
+//             'Announce',
+//             'Undo',
+//             'Block',
+//             'Flag'
+//         ];
+//         if (!validTypes.includes(activity.type)) {
+//             res
+//                 .status(400)
+//                 .send('Bad Request: Invalid activity type');
+//             console.log("Failed second middleware: Bad Request: Invalid activity type")
+//             return;
+//         }
+//     }
+//     console.log("Passed second middleware")
+//     next();
+// });
 
-app.use(async(req, res, next) => {
-	if (req.method === 'POST') {
-		const activity = req.body;
+// app.use(async(req, res, next) => {
+// 	if (req.method === 'POST') {
+// 		const activity = req.body;
 
-		if (!activity || !activity.actor) {
-			res.status(400).send('Bad Request: Missing actor');
-			console.log("Failed third middleware: Bad Request: Missing actor")
-			return;
-		}
+// 		if (!activity || !activity.actor) {
+// 			res.status(400).send('Bad Request: Missing actor');
+// 			console.log("Failed third middleware: Bad Request: Missing actor")
+// 			return;
+// 		}
 
-		const actorProfile = await getActorProfile(activity.actor);
-		if (!actorProfile) {
-			if (activity.type === 'Delete') {
-				// If it's a Delete activity and the actor doesn't exist, return 200 and stop processing
-				res.status(200).send();
-				return;
-			}
-			res.status(404).send('Not Found: Actor not found');
-			console.log(req.body)
-			console.log("Failed third middleware: Not Found: Actor not found")
-			return;
-		}
+// 		const actorProfile = await getActorProfile(activity.actor);
+// 		if (!actorProfile) {
+// 			if (activity.type === 'Delete') {
+// 				// If it's a Delete activity and the actor doesn't exist, return 200 and stop processing
+// 				res.status(200).send();
+// 				return;
+// 			}
+// 			res.status(404).send('Not Found: Actor not found');
+// 			console.log(req.body)
+// 			console.log("Failed third middleware: Not Found: Actor not found")
+// 			return;
+// 		}
 
-		if (activity.actor !== actorProfile.id) {
-			res.status(403).send('Forbidden: Actor mismatch');
-			console.log("Failed third middleware: Forbidden: Actor mismatch")
-			return;
-		}
-	}
+// 		if (activity.actor !== actorProfile.id) {
+// 			res.status(403).send('Forbidden: Actor mismatch');
+// 			console.log("Failed third middleware: Forbidden: Actor mismatch")
+// 			return;
+// 		}
+// 	}
 
-	next();
-});
+// 	next();
+// });
 
 app.use(async(req, res, next) => {
     try {
