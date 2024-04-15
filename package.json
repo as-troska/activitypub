@@ -6,6 +6,7 @@
     "express": "^4.18.3",
     "http-signature": "^1.4.0",
     "mongodb": "^6.5.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "winston": "^3.13.0"
   }
 }

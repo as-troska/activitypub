@@ -611,3 +611,1563 @@
 ::ffff:127.0.0.1 - - [11/Apr/2024:13:51:08 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0"
 ::ffff:127.0.0.1 - - [11/Apr/2024:13:51:08 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "https://www.sneaas.no/u/trondss" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0"
 ::ffff:127.0.0.1 - - [11/Apr/2024:13:51:20 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:00:33 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:05 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 347.891 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:04 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=b4rHv1p6O/6q20DZKZkX7aMdVNakIVRiWc/48LXwki8=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"j+iBNNfFYkatmwh57SGrasqIQQUSzyf9caGqaCJANoHny5VV446D7lOsFE8W+JskZ+Y0wmfx/q+PRop6SWSwC38XvEU0h8Q0jGU+z01iFnHVVXPfKgnZIawrxldj9uN4sSCcafm4VuzUDG2bRZVGVow1x603verXxfQZg2JTBwX8u0vZJ4EI1gpKUjj/bcGobdBTlcqdtggCynDZD9QP5AaxwWjdARAGySTNndhGKxmq0IT188v7c9jjHZjLdNa79BRvMG0UkL+TZjSgNtBkQoYshRbXx+8942mYhGDP/jfTGP8jsH9vxPe5N/HrTq9I1615fQQ4buKsy9euLZ93mQ==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/d77bf315-13f7-4f20-9c40-407e473e751d\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:09 +0000] "HEAD / HTTP/1.1" 404 140 "-" "Friendica 'Yellow Archangel' 2024.03-dev-1545; https://hallole.eu"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:09 +0000] "GET / HTTP/1.1" 404 139 "-" "Friendica 'Yellow Archangel' 2024.03-dev-1545; https://hallole.eu"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:12 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 45.624 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:12 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=AGU52djRP5cYa/YmKb6aOLt6D7Dscp4jotMVOgq2kcc=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"fDHKgbm/vVyvC3IFnwnvrVrAOcU3MauK9rrtemxZ+AuSPnzQ6N2g4FtMWeBSmCaVJC0waoU+JuZucrGdnfZs/XYlbRPTB7TPn0mOqOD1K6BFEaBn/VqbDGB++0S8CqxPx9NocElr2T6kHw25TN5TQWAxh2nNupdY2P3Qy5/u3PV9vqNHS38FmFbowQui5kIuPFiI4VzUrcsxtCjpFCIr+kWC+FicMRw6ZW+DgMLoJrn1rNM4scVDJSHc2eK44cBImGB3yXAG+YHSOnYpwZCd0o+aE+9HCMhwNPF2Av4bpIpJkLbHf02ThMm+gtffuHvr9sA0IEutVh9urxedaPsa4w==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/42138241/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/d77bf315-13f7-4f20-9c40-407e473e751d\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:15 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 22.924 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:15 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=HoXhQYlGCmaceOmaJmRk8eW9Xf/y2TD5XpIAj8EoPkE=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"AnCe4JiDI8KfDDEVEF6I4Nft9gkzSUTul4ELvg0stvhhEIrIm+w5k2HAzD1Xbq8e7kiFMk89vdlih6PccQQB9XdKctngnZNz4/LOLW6LW1KFCkf+lQ0nT32j49WwLFeOlJ8kb9dd1geoBCQxBR4YpnyZ6Nh2jaRMiRm3+N5zDRX/T+sPl3wFiStvsURpetsRzhYY2Ud5lnCYVOQ/tNJiVs8EQc4l6YOE9+VOkNYBso4KSFs91xNclV/CbjGZ46X8OUmm0/NJKWDUODf61WfHJJIwFRq9A9Kp33m4TvgAICtI9sA/7HLxbzj3wHR5PGRbq/P8YeIUR42DgHzcTUNm6w==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/821d780f-504f-42e9-87d7-66e5b71ac398\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:23 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 35.236 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:23 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=b4rHv1p6O/6q20DZKZkX7aMdVNakIVRiWc/48LXwki8=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"l0upvhutfRx4LyHfW7qx+BRPKFZWVVE3ecKStNycNBHliiEQQbZug1r9X5OEaS6M0MtOA3/PK1kUgEC571k+2U3YULhvwnNOD9R0ZCsKEQnGO5I2indB9HwkMil+GX/zCVopsd8jb/n9TY1IHx4K4FIOhj1Rc04/3Mxujz9SHVgr4HiRGwuiVvy4CXndqk2ghyvMpLGvjKEf9ukGRTKnoDaBzvJo/4UUQK5XvuQGynuD27vTqgDW56jxEZcHTA58u5xDUxc05PS9XvCjwgzHll020+pRjsiZGx9mqJITrE+iYNFE4DpDQw0DaQ3k0POP00EhznQMhpskGiRJsOlFJw==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/d77bf315-13f7-4f20-9c40-407e473e751d\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:32 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 134.719 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:32 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=uwL1YoMmd/dbNf4WZWu+9bxhGXbDnKHO0KiIKlzt9hw=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"JgWLfd/W1TCv9Zp/TKoDa1xAehE6NllFuyd+YYMvTJb9wfFs28hXfUbvtzI3GxJiGMN5RfM9O6AJaf11HcQn42b/onfNxjc27o87/SqHrdWSvY19zHmDNLtu9+OoU3IGTfBTdET0w+Tv1qQ9+ph5UY4RS5SzSuVfvr8p6uOHyshaPAnjJj0Kk+ZhMAQN1MPnI6SU62usJjq0N9aBJOQg87odgkzC8t35TVUKtpV9SI4L48GDNTzW6NTyRM5JD5TC/et9IxkciuDQfeQITYCqso+lY0+Jo7Hds5DzlUNMaZDJH70m57mbzvZ37XsS8FxypD/wPCgR8nhRUjOVir13ug==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/42138243/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/821d780f-504f-42e9-87d7-66e5b71ac398\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:36 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 77.845 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:36 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=31//euOM2/SVVnsG0PvDaqgrGTfP5Og6e+G0ILwv8P8=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"mWDqhcZrZVbKSDKr4Qh2y0glEsnwn8FsLCFynpVo5bzrhn+7mljY9sxj0ZN54XsNivGuHE1T/OOTKBBwFNCJGyCK2xj2J52BwCt1vKvk6KD67Ww130qbgjc4WPq/bNgKQKjMhZoTzQ26A6JlUDnWIgyYnsarHENwkA20+FK0GlsGhINGkPg7StmQ9/axEXMz3qWEKMaQt/nIEwR00fgX1qXiEFiE7IYGR95RAc4T75UTD15RTHAj+odWADaifO6KWjN9LKvRlGNHa2ZmnpH9NVgu5Re4nnfKmLU3dFmqN9H2Aw7sX9AnB1Qx2qwZQe98LPbVtHbR3C7g4iu5xO3fcw==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0c9b946a-867a-4b99-9282-b57ab21259c8\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:39 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 25.848 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:39 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=AGU52djRP5cYa/YmKb6aOLt6D7Dscp4jotMVOgq2kcc=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"TXF+fwIUSRYpbChviWGQJC+DhMTHYkpuxLwnOismQUgaD5lw6R448S7cZtuqECOD9s0l54hl/OL+5IxMhWrkuxXgO+nyk+P7fM0ZH0CLLXZ6dkT5nOdW7WAVFX8mb3tm7LsShaw1eiFXrNPhbWHr1GGJJaox+fqvVvjupx2xhQcTBrSrrFVMyVFUuWN9w8Tf02a73TB7hkBe5kmM6ZyiWL4fqjLvHPw4/+tLpeDCXgDQHj7rvq/0ph8kC+yYUOkrzkQMilAf0BxKhipp4OtNptvjjsNcLzZR6iXCHRneEhtSM5e39D2m2sUk7RCmxbc/bO8j24MHzErLtHEcAAw5Gg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/42138241/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/d77bf315-13f7-4f20-9c40-407e473e751d\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:04:39 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 26.347 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:04:39 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=HoXhQYlGCmaceOmaJmRk8eW9Xf/y2TD5XpIAj8EoPkE=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"aXdyywcRu/WuW7Sf6H1dsVGdwFvndbRlj++20+UfpgSMx4malHlE22chXHLJZYBlWOUQEZG+hC1ID7UpcVhEiwqX1QNhbDKu7gxp26Ibqr53v/uNHvwgkpi08UiIlTYj7a45hd1CFrCfQ+8VfzDHwkNbZWFmrUP9ZF907016r5PjJn/Ecl2ZA95Bl4aPF0nUJUCE+zvR5SzrXXc5G7cM2RLlosBYCnQIIwn7m8H5vxw/6yM5/6/BrNW/RmfP7sYSiNGgdaduum7oJrEev2pXEzBSYIkbmvxNsLtw5q/9Iqc73jRX6t/dCctre3xJfLZEkfbRvRcttc/Oh+nC/lzZyg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/821d780f-504f-42e9-87d7-66e5b71ac398\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:07:14 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 191.307 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:07:13 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=KSaXkxqjvJcV3UeTIeT3wA7F1WDkSB+lUlsv/om3SgU=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"sOQSyYiC6BX1RxeFk7ybBKbOxX/5ymrKrocXSdYhAYNktI9FHxEEKEklCeLw8M9uAhAvV1UlQrHgC1OGBKObetzsqB64MBMhjEByfk8RFO7z+aR8l+zyzhw7PiQYZh5095lUNVQV8H3xtPvdQU3MwylIbF4DtmaLbvc8WPi9kGbfeZ4aAy2/rupbpy5zKVz/x1kEzHWqZ/snyuZT92BJfbxtOGLqoLdWGYMJeAK4AITVG+ahcz7gdVvRrLBceuTF6ej51bV/7D/XAVLYptBmWOz2fgtgnQzjUWVKoNP8cFxLy33DbSbTq/GrcMiOFTaFMwn87YU04THsL6XNUZ22MA==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/42138244/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/0c9b946a-867a-4b99-9282-b57ab21259c8\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:07:16 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 29.245 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:07:16 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=N8idPvO+sidi2OE1uauqdvG+7NmcuBj1RPLU56gp6fg=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"ZqtioNGJ2a4JGlP9OoLeszDsu1eLZrv2KQS+pNcU7bcQ9x5TAZ4+9uSQ8cQ2nCKeziU8kTDjPnr21mC9FjMdyOoi61qOFAQYEG+SqctlDRyXy49p5TnAx5OSbSWkPjCCfDdqCX2nj4F9XOPe3OSIwOH0GtFPjNiA5Zp13Qqxv6B35ki+tx7YljZE1CsJSImiWeQDr1k/q+XgRAWQTV/wjyIO8UvGz+KJ1VSv91JM8qT+J09z8S2Kdd1pHgumlcCjUEScCFWvmdzfzZMowl00Sdr0wZg0t7XOQx5yaYbfVsjjkuwEzcGSzqXLk9H1b8wc5/iN6hWx4bEGTI3/I5rWSg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0df1dd26-6f5b-48a2-a11d-68649d351aed\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:07:38 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 48.994 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:07:38 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=N8idPvO+sidi2OE1uauqdvG+7NmcuBj1RPLU56gp6fg=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"SlzCQtWzCC4mFMB8uhgwv3oXnzb0MCJd7wRQzL1B56auipJ7aQ4EAHqDvahjkQbnZhPNTwGqvXYhL+9gQ0nMi5ucXvik9nA+bQA6rIqqrFtfIGwCox1g9xHdVtPKtWE5yqsCdUFCWwCFiAHM663mluyX6jTar6imJP6ib0WlhelJLXVJp/1YPMtJ0tk29L88Fgu9sSGIP5ygjk6ikKyz2pk1riSGvVyoR6aY5dWauBjPqB/3AXd7wQvP5xbr3nFWIeWnCp2kHBu7uo1d8vX3EhkkMCi0tdX5kFN2qtrUGCVrzkUof/Fuj/rcQJbiE6aqzCIH6HfVmVuVAROQIYybeg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0df1dd26-6f5b-48a2-a11d-68649d351aed\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:07:45 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 39.824 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:07:45 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=b4rHv1p6O/6q20DZKZkX7aMdVNakIVRiWc/48LXwki8=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"LbhDtCnfkzsCMbDEKluzXVLq/BM6btTgPueUz4361Orxx32IHt1EVkLKLUlkDO+bveDC0X6YpcWPO0cYRd6r9rfmZu8pZYrigucFsF6kJne7zjKZpyiruzBiNmAI87GODjd+pkst2EMy+3+aWxyE/Xblv3uB/jmHw1sYOagNbdzO1R1xucSFnw2R3iLWK46MnOvYnQyNxc0gpcNUdMxSGQUJPa+CVKJek+5D3vFJI0UF6bp2z+L5Jwn16ngcjgz6hENC8yuI9y8mT94wO3Ag8WolPRsi/xmNjoKL6GlI/Z9CC0leoqzK4hUmLg9sfK952FkjyA1vzRYTvO7Antu5Ww==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/d77bf315-13f7-4f20-9c40-407e473e751d\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:08:12 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 42.909 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:08:11 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=N8idPvO+sidi2OE1uauqdvG+7NmcuBj1RPLU56gp6fg=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"HEiH8o2K0A+nKIWOVaVwKIfML4QkmItkbmes/O3dYNL2Qv1x5iUvwrAIVVC9mJoI6wqWnThNz6wCeZf47z467AVHViI4CeDkhO/vhoFG29lRMw8Tfx32CRythquKc1t+yp6Cd0sVlO0vEiWBipc5po1PkPzRFnnXWmNjZwIrSJ5OMBlLjIa9M+UlcIGC8sxx2AdAJVdPFQG3cJC8oqkYP8/URVgCtit8yTInizQDQfh986QGaYcyf8OHF0Jxixv6lUem/svJ13uS3rDBVV1IA+76THNWtL47YDkeuGkanVIfk1ogc5NRSSfZlWriIsRwWjGvOesSdaye17tLYU7o/A==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0df1dd26-6f5b-48a2-a11d-68649d351aed\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:08:28 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 37.931 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:08:28 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=31//euOM2/SVVnsG0PvDaqgrGTfP5Og6e+G0ILwv8P8=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"VS4xaCAdCPmE79x2muZzP2RrHHW4d1S+CnIN+qHIijbuyIa72RqDRsVAZYps4ilg9QwflCMfYyOezr+hNhW44kWw7c8ru8tY/vXSSRoANg53gim/XtTDuozuDHDIVKpYGPWPug5+vbZglIJCLWlBy29ygS954Jm51wAETzB4YJfhYJ7Fnt91Vp7NayD7oJ1mvAijNFKoMBUt8TJUr5TzNLZq0vbBh+/b7mx4ziNIIN4AzSEqJQBPJ+/F+vJWva7uJ8/5jW+jqP1sqtw6mqSx1xovokIK0lQjZe5lc4CXLTHZUvVs7fUgqphsSFjulbPqbIqAgQcgMC2faopwkObgyg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0c9b946a-867a-4b99-9282-b57ab21259c8\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:08:47 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 106.116 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:08:47 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=5RWaCcy/9dht9Tjav6cRRFzVKmINgGvuV5dBjX5nzgE=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"pfS6E7MXcG7pmcrnRyLCuqySyOjdBOebxe1OSeaMkIQs4wvNgQVxpm0PHhi0FzYbbUjp8fBJpD71VqSn5K/ZWIsX/F5SKkCQTHcdrLSwf6J4gbgFHetZ63QVpjql1v7hDsq2Ssc7YhOj7PoW1MtRTvdKf8HqtCHbDWBWSfUglyHneyfSMY6RBl9s1JYSOgCdj6ATs91ym5TuTcOr69HwmfPwKHi+3UpjwwCTl7tnP9y006eLtRUlilunxZKXb1eEcRN2jJ4N73bPpgacT9+AbHz0Ev+TTBIjq6E+udZlRAOeektOk1fQ9hiWWomkZOXJ780z4y8urhV/Ul2CIXCr8w==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/42138267/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/0df1dd26-6f5b-48a2-a11d-68649d351aed\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:08:48 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 27.225 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:08:48 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=rIa/sH063pNlRviZuxFcEhRk9kesk+Gb0TDtcewQXDs=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"CMl2Z1VnK72CH3J+Ns87cE6ywBDSsJJufFceWptZcBsAdWOtZL6OZ5ahUNrPKpdbKOcFF+6msgwc0+Ms12xOe6SiOm17aaVGQ+IC7Ovt/abJcYUrVZ/jwSHZXua4mVV58CPkXrzdJLE4myTjnsOSatTEJlU4unS+n3aghUoLts7XoVqMq47ek00PDkbJIB2eOaSEryDpx34wW/oswvAjrlLpomh0i/f+sEDZ7/by4WT1PUM03yKB6m6AYvkLU2HOsY/KHdlL9Z/bejBbt+LxOF2ADn/WaR2h4b8HAj66wvu9x5r9Tk1o+WUTs5q270zZ9+3b/ObEYrhKrl3vy/Fb/w==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/8964f119-7d50-4bc8-9568-233615f45da0\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:08:49 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 24.392 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:08:48 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=HoXhQYlGCmaceOmaJmRk8eW9Xf/y2TD5XpIAj8EoPkE=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"lCOqQnUKt0bBIfIUyn1JVsbMY5MKIJArM+Vf+RqcuSwb+LM3G6tmsUvFCotnHIeMF9rKhSeeSR4j6ScSPQ+yQ3qQR/3EjnZDHTeC+pV/pMBVdGgs7lcSTJWP30TmBAcEKFqugFqyDzJ9G27MiHZzmdU9n8cGZyiXamRF3QSRolXG5LkKbqG48xTHB6QdvEH44pd/KXAcqFsOFUdmmngMAJCAwBE720L0B/GA2ThdRPkqCF7kO6u2ilFiPyj4bPAvaEeGwVEZjVdjwnY54uaFJ82kaela9yRnCXwp0Uz2Q1RO4zEhGf2+nf8A0CUtJf4rL6xCbuaS4ib8vSB34tsZMA==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/821d780f-504f-42e9-87d7-66e5b71ac398\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:09:08 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 46.826 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:09:08 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=rIa/sH063pNlRviZuxFcEhRk9kesk+Gb0TDtcewQXDs=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"QyFjjAA+HzluEV2kCTceINsHL6c0VfWLDSqgJN8QRarvAUn1zOmZ74Y4+0gM4Wb8IAkWPg7DULYnI69ejmGd2SLMYexopRSIrreE7yg/SSZ3vhzPXtiTf6z/OaNzo247D7Ei4FHcLEYSFK5+Odln61IRKdY9L4ZaXp7D2ApnZ0cr6sZCUt1v57aKxOiJqzv18GeBu0HV/kBqCoyuyfo88JYxqjAvzIcZrYq17+BrqcYxB2B2rabMgq6wtxbjwh9a+lKDHWx2HjQPAiMxAKU323/jfHOcsOAi/6FEWMCve4KhOcY21kUm8W3+9RtAOktsHDxJrZ32j7xBHqidiApaWA==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/8964f119-7d50-4bc8-9568-233615f45da0\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:09:12 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 11.001 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"799\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:09:12 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=UMSY+cIUFMfKliz0Q2ArpTMteP4c1iRmnR2w/wRc0cU=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/moonknightbyron#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"khwbD/hWylcw3rrUz5IvV6O03xH1+c1U6khpY7+EPNvMxZq2vX0zhr4I9fR4puhErFpaSqvMMPN9xvgJ5k5fJe88H8bG8qIon+uW9dq29qPXXlGP/ZFZE/0jCAYeBy3jPrbyuBkxvX4ieX0tdX1KS57Qh3Ffivp29jDCsG3D5gn+Hy9GNONNwdaO63PswIad1278T1Huv+ckstD/JCR3cPtxzXjF2fFQkDvgHAW6hlw87pFv11ULzRrIgQZofpwFODBjGLRLjVql2N3GGatauthJ+1nm4paQ8XF6THA5dgqnzJfrOZPQ4HUEUo3wKdN9suRs9JU15FvhC5DLc8F0Kg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/moonknightbyron#delete\",\n  \"type\": \"Delete\",\n  \"actor\": \"https://mastodon.social/users/moonknightbyron\",\n  \"to\": [\n    \"https://www.w3.org/ns/activitystreams#Public\"\n  ],\n  \"object\": \"https://mastodon.social/users/moonknightbyron\",\n  \"signature\": {\n    \"type\": \"RsaSignature2017\",\n    \"creator\": \"https://mastodon.social/users/moonknightbyron#main-key\",\n    \"created\": \"2024-04-15T08:12:17Z\",\n    \"signatureValue\": \"YcqCPthMPePQd2H3vpEg0Sg6oK7FAjS/BPSArYYa36bDAa+FDNvbQ/2GFJSjB34nhvWbZgicubyaUt4BSVjATRn0I90NpN2xFxWSLDeVUOtT3ODrjoc3d1zsGogPweL0CphQFOtdKGI/GacbaZ3VOmMDPgoqSkqo5TgHbtfVrbcOnIHqyA9rZdfSXQsl5dSsNf/nrJ3QcKJq60lNighuOQvCUjCsJoW9drcuNDqE5HM1DL3pYBaPM1Th/KQ8CtDLneoHspSEHVyw1yR4nbU+5xu8JMxz4N+SAl1O6Q4E24cCTvXyyu8FVnMDaFa/vIgiGWJMoSJlESlPzno7nd+LfQ==\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:09:12 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 24.887 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:09:12 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=N8idPvO+sidi2OE1uauqdvG+7NmcuBj1RPLU56gp6fg=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"DEMNyN0U3XfvVxRx5brNHrY7HDTz3UPUd6JhZxnDQ+lEZLn8cdR0pmaKR5vKy6v62gs66hwC1lB9Ua7GFF+RTU2RiuDNNwmv/fmTEEbtErENDvKSRyjPaFPpxaILTbKndNZQyvl28QNsctznTTEFZWH/FoQLIeXny5wtlbhSpkHqelz5LfipuvIqprA96TBbXEwM+40gwc4aMXcFmmwZg9cuQc4twzOWiLZNZ3r6eCluIpfjoHXejvGTPSOq0k9w4Z4WCgJd3/d6cEWVLqaetdDXmtaIF/Am17p/vQwTkKigc5LTNKE2BQdV6bSuY6+Kc//ifS+ESLuiDoO5vs8GZg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0df1dd26-6f5b-48a2-a11d-68649d351aed\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:09:32 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 41.028 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:09:31 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=rIa/sH063pNlRviZuxFcEhRk9kesk+Gb0TDtcewQXDs=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"NLRIw/WaY+uIGdxlCiSv7AEet8Fs6/h34FrSn9HCJQypX8sBDnPpJu+5Ya/l4n/CxavErZ4RCjYjYCGWkc5VIq0/aPCme7JlF7O0EueZ2lGogsNx+IpRLvUKQQdRqXhvLs1YVtU3NP4z6nnDA38qlnWY724u0Ws3n52cWbfej0EaQol17wz/rGsnozJNcwC1Lzo1P6LqzIp49uIwMWMmdYD0h+bVlWKKRlihKvQPEJF+XUeDeMbbNWyOvjraCQzFqCxpVr0+brAL7zwtsfycThfyRYFvmB9lxI36c6y58+El7c252hSXCpGIPXBgFdgob4B3TsS6edth9kU+rMKmjw==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/8964f119-7d50-4bc8-9568-233615f45da0\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:09:40 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 107.881 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:09:40 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=ZSAdSHzYMY3QPVtkC7yA3bFerxPB7eVV9WqoiuWqCXs=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"QKwZMq/5aVuN+Aiw72fONY3YN+zX9hfqF0/0y8HPMjETdO4KOg96tBrgDwr+nfo2CNEVGJHoNxy4cjmxgtQ6unlGHqtVzghpY8229c2cegv4OnSxCxNMgwbRrjw0Rk+n/ZZ+mo4j4+/4zjB1zLKUbVPhYmmRnh/Q7dhRRS080LCVCvtfOV7LBm7ztxjgcJA19C3EfKa3vGq1cvy+3808W15WHqWNMkdmubHBKvqe/vEzL7t95LSDvy3o774TiNiQN7x07vrhCfgre6fmK7b8COiIrYRdNuZIGDwvg83ZL+sMeuvSzE3w5dWlL/Hy87CLJpSvyvZI7/v4QXbqJRmaug==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/42138292/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/8964f119-7d50-4bc8-9568-233615f45da0\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:09:43 +0000] "POST /u/trondss/inbox HTTP/1.1" 500 21 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 500 21 - 29.282 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:09:43 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=OSV/8DIdH/dnUFgzx8/GN7VEl94OYkupu8fpe8t/KRw=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"ANlxJ1oYf7eaAVrb3Ktr4kVsgYAZGJ56lIOZGdSQPtj5W3up24Np1U3DUNOWX7hTzaHfpEgIieYnKViKhDznnOfh686/FtfXKLLBEM7zQXZRUA1P9opJSrkLObUMzKZI4G5A6UwxOXHK2NIoVuWL06OYoF27xFumXUFm27Y5KHvlEa+KrhtJsaP2UlJh5Za4ABeo6yeTBcVuq7uaCFuQHNtMSSlUX+M2sRxVVorojjID1QEXXv9r1bu5NpnFscQQjm6maxlYEGoAjt9TGRmoCIDkSo26BME1DWufWTYlmsPgIM7AlrvH2bzPEiEMzMfvd7364QBZShh0V2MkZMLzSg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0c797773-8d73-41ff-9fa4-339ac18df271\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:00 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 107.159 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:10:00 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=CtK3n3fAFUZxHpw20lis8z+FkUo+1acTDrfEqHGSprM=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"s1C5BlftyeqTTLPyjMjMUMZdl9gt+u4ULYHkN+/fUcs4kKUC0RBaBSHhgX5k/dYWAvl4fkbMTCPBaRaI4QfO6HvpB+k/yxWxend9B68wdFRr27kM8LxyvEVzEiS9rlwrKG1nR+4k3zhczMiFjUZao9StEAbstMrzXHxYRGfdib5zss7othyzfu2P6yRkUB+1n3TommHjc3yf7eBwkNc18QtVNrndbGYU3t4/tuZWMJY0WbkMC9hg64ByHvfFkUGI7bULjlOy0jWN+zUH4pfueFBInkPpvm6lsoCXzLkYmud4ROHkEtyXSRLQJcrFHypfdO0Qj1i3aUiorkhHb3xovA==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/42138322/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/0c797773-8d73-41ff-9fa4-339ac18df271\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:02 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:02 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:02 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:02 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 498.025 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:10:02 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=d/ae26knGHJ6RLIzpC3sGpMhw2WQ9VZvpk4juA3Ps1I=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"TXc82K5Qz96Hxum+zQLmYhC8eQtd06GJUaEu9wgPDOFH++xLGI0oLrFf6juVWJiDaWSCq0dMV7PrjwqGO/eay9vIF9ht0VTYNITAWstp55cSEAn+MEQBqOMIOcQoRKhZg4ca8wU5tnt58R+pEFpxEQ2UoeNOtbMr6cBfLCEzgY6ejKiJ2vOrSnZyLo31sb//c6uBu1k701oPC1c4f0w2oBp89VGcIp0m60UG8QWZ5yZ+QnRDchZpX1DC4ZD5S0wot/eqRBf5XqBa0TNSC4POUGVDzGD4EUjxcuIliirqjwvk/2V7hSIxcUVQYODm+XReBW5rBV+WBhg3cag/sz+k6g==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/bb40d806-c170-4cca-863f-58cc4deab5b3\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\",\n  \"_id\": \"661ceeea06a720a4b1be69c1\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:03 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 13.442 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:10:03 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"r/caKF42Vgs5nRgqkoPkyosejx83ox8ZBMMCX5Ers/fyNzy+t/p+PQY+QcluPqQ14AcSugG++yt/Mkk6ukixt57b09s2tNSEX9DLHBGmU3tVb49thjaFaIp1/fpUVjzC3ZgJ+bW6D/nrEBicCo6FInMxKRUYHB4lW2PbbjvZZvEPDjvciPgYYOlOdzknYVU2UPZ3yVjYpLa7U2D5xNywJPWTN2I3Hax3sdsF6iP1uQJY5X14+62UEx1rvBIOeXeH3iyNoKjj/pFZlAbdmMQJQMXBtzPjdafmv4On9BRgzouZqwPhXxiKGIbZd8Tx7vAolTmKgvPjJ3vF2XsgiZdLgw==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:03 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 113.389 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:10:03 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"NxPxGcChGNEe6FOKG/uXaQUnq71xH59wtWg/iGibaXekvF3UWfkZsull6SXiyxNpXIDBOjPn9KKqH7qksVJWZ4+5yGXfEq2cFCLjSEFvREbJ/wPGIvLl0KQpfNBYxTTgn3P9MYOB0sKBaGLzxngwd9ZjwPJPhiOm+FMIDIfK2ESFpSJPZQZ7GYZWrzPKhcSxYilQL1hUSni27UKy106SWOV/SRuWHn0ox58XMhcB3qGgCB+aRpR93Xp+XLMvTBQJT600WcYRRus5PTAl3TkymCjddbOCCRpHpUgiVmyYGbaychg/JbDOas/XZHMCVa1EQf3Ujq6cN/TdAaJopxAxnA==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:03 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 12.517 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:10:03 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"LNutGi1OTCGGyjBCJZlRQzFe4T/NPjKAHwoRcoh4Zd4rtduDBM9H247Wxj/PsdXh2r7Mau5cvGoEQW2m1IA5zndbrW7bXgxtZGFYGzNpYrfqsVOj1DrCgEhzfv4oFvjbO9tqwMjLfFMkYb5TPxLsJiAebXj8UG8ew0gJqHHOhgKM3aa4MeS1wd7cVDAc1LNa5q11pLWG7qJFROEcVdLcI2PWso0Y3iYAJrhACnfTMh82ZUKILmUHQ7rHQ+WMfSx6cJfFm1avgy40xESg6Ag2sFw376dLQX5a+TONfap/XG0SUkdK0DPhugb+Y1l7GU4xBaPva0z8LNOI90i2kqgxzQ==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:07 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 278.542 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:10:07 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=OSV/8DIdH/dnUFgzx8/GN7VEl94OYkupu8fpe8t/KRw=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"ZjPx1J20iRdvWnOUQZGKwS/vTwLEFPcoJBEGyATHA73MDMmjWlKl2uWLrLw0WlNYJZkIS4ByPMn2Dh22xooIPMTBdHi+6Zy6VYigheN4HJpW/DDU+XbXP4zsWEEGVgjY+g1dLBkWRqCCDCa7GYJPlDSlstczdxIW5RmKT4KGZCe+jK+UdVuWMCLoCNImKEcgBWpXbOmiKubhA+viVE3Nt9bbS0rtMhsIV1YLbdDt5hkLHnYLpO5gvycdb6xsVToBq3uOgA+bV2CwFuKBWkperhuFcE4CAZgBVPmAZWCIflzyhfr+A1MbJnAyGU50FyTODkUaro83ZlF6WmKiYz3r8A==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0c797773-8d73-41ff-9fa4-339ac18df271\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:10:13 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 102.319 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:10:13 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=rIa/sH063pNlRviZuxFcEhRk9kesk+Gb0TDtcewQXDs=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"sfd9eQeWDzmItvInRqG3t3/r2Ybg6ZoLR6BvI6mZT3cO8o/epOY1Uvm7Wb2gWMZQIkg1jO5pUT6w7BU6RdBW6Ho8yG6buL9B1aFXDCyijJ2Wfq8KPrplTIBmRSZ6uK5aoh9AJhijutXF91DDa5rodujxUSsxoHJI7lBNl25H0MVn+XvHHrBJPow2+X6/chtayDF/9WAhrz0iE6fZpundxQX6Dt4awb3cshXZeotm6FJdmHTPo7MS2/PVaSc2DzaHcahffv0QSPPoV83ftEsXIuUn6QPYEiWexuwm19LUzHZ7VD0ouct4AyZMmdb84rSGghv+IPbvpLVVP6jF2OYLXg==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/8964f119-7d50-4bc8-9568-233615f45da0\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:03 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:04 +0000] "GET /1111/feed/ HTTP/1.1" 404 149 "-" "Twingly Recon-Klondike/1.0 (+https://app.twingly.com/public-docs/crawler)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:04 +0000] "GET /rss/ HTTP/1.1" 404 143 "-" "Twingly Recon-Klondike/1.0 (+https://app.twingly.com/public-docs/crawler)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:04 +0000] "GET / HTTP/1.1" 404 139 "-" "Twingly Recon-Klondike/1.0 (+https://app.twingly.com/public-docs/crawler)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 3.839 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:05 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://m.feyo.pw/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"sOnU5XgPsX8sl50yRpbHom7C8GJzwjXArGe7nVe9zl0KdMciRwuGUDQOcUpv0vpDHaPEwdx2P/f2YmxOZPNnC4oBLK+Hh3bugHgWeO1dWFOTqOjQJRbxouEv2xwae03LmX9w35OAJmxNOWXe5DxQ9bFSCd1Tdxjduv9ByVAVUjuuT5SBIzEdATAgGF82UI5UjH8vMNMrvsv+RZRWtXI9SiuGook71fibyvlMZrM57fWyjVO1NyCzEJLnPGn1cWCqdy92daKEVSBMx4vZ3PbKFGTQRntLQF49n9kRqs3ipfZUIn25dsvlkC92BItZdbDH/VFBsqxv0TxJxrAo9KEi+A==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 3.700 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:05 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://m.feyo.pw/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"p9lYl5FqGVxx3L8pj5k85j/wwtUr6Xod/n26xsmMOKWR0OkP3wP0+/xVfWr36U3OszKOcYMv53exaq95OrTKG76LrFmw8HoHucPYu8GFWlzegH7NtkkrB5MFofjJt8U87wTzwpvXesVv3QQDsV7hQtEirve4qF39V7d2K27+bEA1xFVY2+yvTmfbmol67uhNI4nU0ZBKy226fh8ZN6wK8+NVXGWbmDoAkXJd0Q/S+a87tua4nL6mNLJtPaDUU+HBLXWbq4iuecmhSbkNQtexr35gVjCC392bL9sK7ZjQ8eAQIZ8jvOmV86fCGRoCS+JqaeoWc8JuLp0JOR3ozDmC7A==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:05 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 2.746 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://m.feyo.pw/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:05 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://m.feyo.pw/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"fKAQzPzY+nciQcW8HSQHXuHwbpAYB9sa0rqnpPxmSL65HsChpurP8NVhVhldBAxRsA/5Zw4TlkyKdYhP2TgfV2mMj5Ld4tv3LRMu90kWjeEwojBAs86d3r5sUqDX+kqvMfytM2YtkoxZhCE66Lln9fzKcktvbH3H+Xv+pco1FNULdlQ+gaUqisM+dfjdP13Jl7SWSqHEpWU9av3R8Z3fOtVq5ijx0E0J/P7Xa14kMcsSE/yDzm8J5m/4XQgLKC/5A9QI4cra6N1/xXvDblUXFXqp9i7w1uSadcb7m6J9F3w3n4c8qbhovEoAMDCNWbGCx5zcyQaacCQwY69fzTY3Qg==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:06 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 244.547 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"2763\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:05 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=O8YGqJL66wQhhntpffJW4RDTBJ7yMOh10EtOLJZ9tYI=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"tkXwcjFroQResyAoDyfoPWtFq9DJFi/hqzH1Y8NCsAe3QPebuH9GXRttpf29DA7buHtGsEw3VJ4l/4NfSKY6wUujh32I6aLiJ2O7+n56Ml834hpnz6NOMIfUHu+SeS3+vunM6b0fBnhGdhX6ZzG6S/6tFjCPY3p6zOp8x5lVM5KsUM3nQai/XLcVUSfY/pC+ajzKlZkEyNQChyNCnmu4er0L4Gz/y7Ppm9KIp/OiVyztabIe5cm85RNstNutJnOOZmXRZNeCiUd55STWu5/+UpzE3rOlEzU5YLjK7H3qEQOeZXmUscdTXyS7luHfmyTwxOVWraFFxQ2cwqELjlMOzg==\\\"\"\n} {\n  \"@context\": [\n    \"https://www.w3.org/ns/activitystreams\",\n    {\n      \"ostatus\": \"http://ostatus.org#\",\n      \"atomUri\": \"ostatus:atomUri\",\n      \"inReplyToAtomUri\": \"ostatus:inReplyToAtomUri\",\n      \"conversation\": \"ostatus:conversation\",\n      \"sensitive\": \"as:sensitive\",\n      \"toot\": \"http://joinmastodon.org/ns#\",\n      \"votersCount\": \"toot:votersCount\"\n    }\n  ],\n  \"id\": \"https://mastodon.social/users/trondss/statuses/112274457400863601/activity\",\n  \"type\": \"Create\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"published\": \"2024-04-15T09:11:02Z\",\n  \"to\": [\n    \"https://www.w3.org/ns/activitystreams#Public\"\n  ],\n  \"cc\": [\n    \"https://mastodon.social/users/trondss/followers\",\n    \"https://www.sneaas.no/u/trondss\"\n  ],\n  \"object\": {\n    \"id\": \"https://mastodon.social/users/trondss/statuses/112274457400863601\",\n    \"type\": \"Note\",\n    \"summary\": null,\n    \"inReplyTo\": null,\n    \"published\": \"2024-04-15T09:11:02Z\",\n    \"url\": \"https://mastodon.social/@trondss/112274457400863601\",\n    \"attributedTo\": \"https://mastodon.social/users/trondss\",\n    \"to\": [\n      \"https://www.w3.org/ns/activitystreams#Public\"\n    ],\n    \"cc\": [\n      \"https://mastodon.social/users/trondss/followers\",\n      \"https://www.sneaas.no/u/trondss\"\n    ],\n    \"sensitive\": false,\n    \"atomUri\": \"https://mastodon.social/users/trondss/statuses/112274457400863601\",\n    \"inReplyToAtomUri\": null,\n    \"conversation\": \"tag:mastodon.social,2024-04-15:objectId=686108865:objectType=Conversation\",\n    \"content\": \"<p><span class=\\\"h-card\\\" translate=\\\"no\\\"><a href=\\\"https://www.sneaas.no/u/trondss\\\" class=\\\"u-url mention\\\">@<span>trondss@sneaas.no</span></a></span> Hei. Trst</p>\",\n    \"contentMap\": {\n      \"en\": \"<p><span class=\\\"h-card\\\" translate=\\\"no\\\"><a href=\\\"https://www.sneaas.no/u/trondss\\\" class=\\\"u-url mention\\\">@<span>trondss@sneaas.no</span></a></span> Hei. Trst</p>\"\n    },\n    \"attachment\": [],\n    \"tag\": [\n      {\n        \"type\": \"Mention\",\n        \"href\": \"https://www.sneaas.no/u/trondss\",\n        \"name\": \"@trondss@sneaas.no\"\n      }\n    ],\n    \"replies\": {\n      \"id\": \"https://mastodon.social/users/trondss/statuses/112274457400863601/replies\",\n      \"type\": \"Collection\",\n      \"first\": {\n        \"type\": \"CollectionPage\",\n        \"next\": \"https://mastodon.social/users/trondss/statuses/112274457400863601/replies?only_other_accounts=true&page=true\",\n        \"partOf\": \"https://mastodon.social/users/trondss/statuses/112274457400863601/replies\",\n        \"items\": []\n      }\n    },\n    \"_id\": \"661cef2a06a720a4b1be69c2\"\n  },\n  \"signature\": {\n    \"type\": \"RsaSignature2017\",\n    \"creator\": \"https://mastodon.social/users/trondss#main-key\",\n    \"created\": \"2024-04-15T09:11:05Z\",\n    \"signatureValue\": \"HikXvQ2fFHAh/5Rvw+ieb78ft6djsaIErA4uRF+H9CMy9r+RBvsefBke9F7McZbxUR3OynG8KIaHktn0tbqxwMYWzulGp0cUuLEcfSZ6zgf7y0Kr8GfcSYusvcKM6cas4M2baDozGH526zh8gjBEiHoCc2QhGSoU+CVgxIcJfnLre3e1n2Oy15vA7kxlPA0/hgnyjK6p9Ym4fAUIqJN30BwFgbOpQuAxxx1Gl6CZ9SEHrN41/wWxjGpufT1+C6Hqaqlunj638W726FKm4iuOo0ke1oMIVLLI2FxdHNH8uv0ejOjEzjVn2RncWmZ9VGiwkQLowbOUTv9FXeBrcIXGLg==\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:07 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:07 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:08 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:08 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:08 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:08 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:08 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 3.245 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:08 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://neverhill.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"ZHtvooUX5Fzse1KrS2DxZxO39GRyvuri6sxtDC1BirO82myiDQqFgOCULoTZESWkPD6st4TTX0pvW8CWNWnvi1KofhV27lO4ymjoruTeWm94K8UM4nHgjjdoyGhmhttqx+7PeokOMYw8mfagGnNqaxOwcLmCMyeGAvdmy7cTICJtznAIOfwxSQcUwVVEWPGEIQwl40tv1K8kWzQ7085ADer9E7ctwiRTCrBcCrYgDDlVx5SZjU/7ki+ei1lfjzk4W2EY98Id4F3kxvO5JB/cr6gM+ZzAv4xkh1f//dTGhjyzo/d8JjGP4delJn+5pA4gZpegbSvyPZ3NVe9uMwKKyg==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:08 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 2.482 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:08 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://neverhill.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"YPyCAzr5daIAD2vo1w5wNbj1SNln8I7NC/lo7vjlgeYPQt3oONCyc525orY4akhWH1r8sQg8UeFYcuumxVaJGFMBiLMSwD4SnnzS40+KY3lh5BF6wUbJ+e5xnmuQrwWp1oEacoWmC2NSm4EiF9+e6NnJfqCUTFXHz+W4ibmbZfe3+S/Wle7PXc0KBQPCjBfXf1+opqBSOLJ3GJyzDX3wrJ5tZrsnaxuDdSal4sBfGKFXyOC4+FLaIPDdl5TBY93oCzcIV05dOPYhNmQANU82PIF5U1f9SzO2q0pM8OFFJpxKo6QO+ivi1jAJchcZK47HZJqsuST3MkHmoQz8/gHf6g==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:09 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 2.945 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://neverhill.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:08 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://neverhill.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"jrc0CT1o34cydzskTtaSTm+X9tIAmszWXrbeMNXUKFyYPBZcxuvRi+jmA0iqwktRkDHFUTVbnaRwH0q5QhdDezrKM1S2/84bBY/x2f3PsTGfxW38Lt2uFRpOBU/cySFoTLX0/OYqNVgubaYjPgrxV/zNu9BpvIrhxbb+jkcOYSj9UGZNfrtew3eBwcUS0cYMJ/1vHtF/GdgcbgwFG75513NNydXioxcT+oz1S5XRWVPC8tEhPnmJoAGz5G4tc7tROWAcYu8ApJpgZZnv7ACGl3G8Mn1iy6h20YdY0Zuc/kN25fqGvIVfrB2M+KIVHns6lY9ezVBbyyvqLR1tuQybmQ==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:09 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:09 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 2.852 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:09 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://talk.mls20.de/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"uYu5I/7lGYCCQ9lE2TshQOhw7dBHoLkn4VpMwz42ybNvAlDBUQhShTZN7s8wTAE1z4Wxccq5lfg5ocBwM/PEpUOn1g+B6JDjcG5cvN3KCgZo/cT2fSJ5uuzn+gsG1p6S+oQ+73EcuD6Ih8aCnL8iSAYEC5vndhXz6vX4bcvWET6VEex2eoddUzPl9HBEk3DAccj+SEk9Byz4yHQqm4eFj2B3nJphOGhLoh57uWLQSxHhydAtfiYHNTfsZWVTamhV4aEMjn1dj47Q9gjZQuppxjyax7Q+7JcZwl5akbz0Ip2UCfDpnRKUzCPD363loJml02YerQEBesgcxnWEs1ZhqQ==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:09 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:09 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:11 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 1.477 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:11 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://talk.mls20.de/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"CUTUXPSP9rGEJeA/+inu3E1SxBcW/pChvNWWyyCfSSsmvWqXqQyBORbgAanLjMiXTtjQr0ULj+3XI3VRzn4+atXSb01dJpP7hWck2Ac2HEGZgRTJ1J6Pvx4xH5S8WevEPuuUHJ4oqi1snNugnbWX8wgm4UQ9Gz6YRPM5++48xFGsm+5OqXusEckL1r9FuEpRAsJPxHuYdgZEtjnGB/h5M2oXLIrvIHFktk2dR7MBUQYbr2I9tYkcuc79YctlNaz6DiQ3Fst0MspS+L1IIt+UtHyCpX03Gx5Gr8Ro+tIbA/J0ZzBSBduI98yHOxa8zFZleSyAm5lja2HKF4pe+VjYYw==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:11 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 1.264 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.7; +https://talk.mls20.de/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:11 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://talk.mls20.de/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"shDVSQ29qN0+pJjJ6NHhbiu68gxjX+xNUIWqI0cWKjsMPjqZuox+5mDlW0tQ47eMoi5Qya1c4vXRqkcBIJGuuBVb+7zI5jTb1JimCZfOjfVojmj+l+guCo30kM5XoxIBavW6ehCWFE7SzcGM394zAXwlnFyP6BoAH+6QsPRolDU5YORWgpdhq4FcuQxay8GlIbKQotJzbggwWkNOkPtYkX9uX3yI7Nnf2Z9/wldhFnMLovL+ipIKlYXR1jOzkWoQbS4NzOgL+t2EuUf31fhL/c+ar6gAipq2VTNr5117i3ZWGvbpF5xuJhVxSKHvgOIjPSjlc0YyKUHWs4mZQGP8QA==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:12 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 1.732 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:10 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://ajs.antrejeuxstudio.fr/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"NIcAHNeXc603eWCdltkbGwsRtu+IRaLdT7TTE+paTy8ZJFlkObJUygZuj6WbKNKduJhi8zKUOWmIy/Q7hQkocRJS8lWCGzprsLI0VYb5/BQftXc0Xujokj4RBd1vcR8oMlzNbInU86FdUbCJAxrBFU/j8IevtMcV9gl3IzGC5U9a1NPn2OJkIm6pF9FJ7cbKvI25xipuAOgRFWRQAm5DKSXqMVlirJSmgonVki4p3dVUjOXFOD+mJB9wi05G34So/ovxXhVq0sfo2oVQ7opQAtE9Rv4dzXAZkhqALBJYC5q0GQNShJu+zJHPefVZ0QUgkl/xQDdy/8zzEzmAZza5yA==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:12 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 2.526 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:12 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://ajs.antrejeuxstudio.fr/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"FtpVQlJzHNvSpAyI2Zm+SLRhq/YVIVDqF66UH30SC0vJbdFN6uok87hwUEWQJWCth6/mWURhC1+iylakPcbsUW/7OqCO24UD7cKCw3raBp/8pReFNHizHD08n//1Vh5n7vkq0wuQKhb5/Prbk7pR3qmNX9mCwVkxifSTWSyZcpTZ1k8BWXq4A3c0wssTZtLFUMhiWC4VMGN5ONt+v4ysZZNhZa0EfDQjPZqiWSJdlnvUA3Ob2f48kPqqbEqx+NqeDcuWHz6ZYPcdvITEhsWcSaDBq5TM2oRJpydtTSBFOw/9nzQ5CGXKBG9ng2rBvG1rItyo7I7UgV+MO907NIQYFA==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:12 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 2.982 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://ajs.antrejeuxstudio.fr/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:12 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://ajs.antrejeuxstudio.fr/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"NlJ2DbXW/Zha3wmilsUN0OVd/nSWKnfYKDMOoklrdRYtiPPQci3kn/+QortrI2lVldPPLZ/MFYlbB/O3maXGhTpMzo4sQnzp4I1sV7xyekZiI3Vdyu2qD2XnfeKnNOV97csHEDC7E8SkiJASRb/ANFWB8ihOKAPKj1+lUN6wuF3q0Ie/NpjbfRG+RBMnCdyn1lo7dSO8youWsasM2PSzD/RgLldb7Dzb53Nm+Kg314GT0jp4h26UpmCb06cc5ZvH416Dp44V3bL5WhJLm+Ki/bXhoGKw/3V3/HIFN0lMfacMWRRUQ07nkHyjxLfVgqYxTFKarvYYZH538VJWFBWyFw==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:13 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:18 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 3.051 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:18 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://nonexiste.net/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"IjguezDbUou0zSirBrVbT/PsOseZ6tWyDcsYQMry5F5sRBq0pS6RAb/GHl/dXNdG+53SdUTutpadvj2wPD1SlFcZi/9inm3VlCDLIWIeT1YKiLM7W+hNsKkWOoVjb1ZHzZP3fcgrZdVtf0MqWmcrKOwjDKScIRxkag6a5DUzDLKIL9HJhUcS50immLLDivMZJP0S7r0Rnpiur1rHZbbHUWpKtAFS4k76JqwCBbE3XBJOquvzKAVOpdtIg1qT+ij5YtkQ1+u/8GVpD5C6M7eoITUNN29Ec6Oc5DCY8+e/0qPckruAunyYFPf8N1BEczQBjZjpyM/uY8xfIFV2idnBYA==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:19 +0000] "GET /u/trondss HTTP/1.1" 200 1222 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:19 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 2.331 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:18 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://nonexiste.net/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"YwReLWyIasKHcWUhEvTs907Yy+UBLf5e19GaEod8VNryM8pncfdXKdHpGQdbxyKOPvG9yeSLx0nl5JnzyQooqYsd8F++Frhri9nufF3q2cXIfm+YUg7oMvV0GI0IMoEcndvJ/9VICTzRsBPv877QcnSyxDADENQqnKgcNDQmNPa2PrrnO6Feu1vv2wwNpXdsIw3mxLHXCjBSNIoXuZEfFxr5ECh0vMgNABYKETPUvk4EBpMD/fMAAQvfRcsDfJMkxyq2uqRF81rQAbgB8OBQ1XOKDmydWshrniXDDrkzIZcMGmz4lwfnn9orQ95oZtzfPShgWkvm+krW+eHLDJ7aRw==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:19 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 2.728 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.7; +https://nonexiste.net/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:19 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://nonexiste.net/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"Aj3mtUedS9SGzHSB3xFrWmnx87hD7x9ZrDDQ55DOrOtpVErjQolA6YdBY/pnJ+JdtjgwpVXaMlsBvb1XmyuS9/C2yv1z/owG7tbZGk2mOhWNCGRaY2VVBv3Lzgls9Wq8j3AmfKVI4b+dBCNh4F48Q8/tQRHIX8kirGJraw5tkHBYvvDwiT08mcZwjZ5BN26JCL0ZL5HGz+QF0XXHZeYeT+wl5P3fS0Fk0x1RULszmL+zgXob5p/VpT5gX8FVIkALnmFCBrrajqTfY2YX9oJcADgjx/ByoCk5NGZhkVW+rm6Ns51GiCSXd3doGb4I6PDI67s726A7i+KG9heNggekng==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:20 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:20 +0000] "GET /.well-known/webfinger?resource=acct:trondss@www.sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:22 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:26 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 91.076 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:25 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=N8idPvO+sidi2OE1uauqdvG+7NmcuBj1RPLU56gp6fg=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"L7f/K2AffeN+UmM/1EniSPZLu2SNWC7y9CNvmIlfwG123bgVCGJMSQU+1N+3REuO3Gi/5gtDOLEpiV9+vynbXJOPpXrlu5GOPgVWKssITnvAxcsch/sK5YuqplkTkkSDLiW75exe4myEUtIY9q1/QU2zz7xf4LM3vgpF7sjIiuzzlHsm17M51sMw7D7Jy4infeqDkItiB64bwqw0JZE9eTG/PJHCtaYLRCzMEJM8S71ipPSX4CNWqmXuPnvv9POrM9cCUZS36+i9whY+nQK2SdZmiOYfxhT6Vpvd+ab2dYMNq06sQXlQP/O1lDgk/GkRJeC9ImWag2bwzYvCYnfQrw==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/0df1dd26-6f5b-48a2-a11d-68649d351aed\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:28 +0000] "GET /.well-known/webfinger?resource=acct:trondss@sneaas.no HTTP/1.1" 200 137 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)"
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:32 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 2.870 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:31 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://infinitumnihil.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"QIILCUFCfP2s19k1PTkeNyHom/ILsf5b5BWm8q1/Bn3wg2UrYev7TlNodE+8JfqRDrHAaU08DVtTAU32E1HtaxaxupfuScBIvquPrxlu3SXJK58WzEH/AQw9FdfsSy1YaoUgxdSwr78XkuUOdm1zkaFjOF7RQ4nsbMH3To6XhsXXpKOi1caJTkHqsQj0KLlMC5HwR/84GEM/+URUnGAY6NXz+0jUS/Sn4CzcZp+b6kN9ZjrCdJSCIWpg4jekyI412d50nfl8VhLa3DxwS2ZWFIg9eChAdrcUVPNz7NUKzJqyrKVSyB7r5w4UqQoUCd/l/R7yWWW1MwuaPI1EcOLU3w==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:32 +0000] "GET /u/trondss/outbox HTTP/1.1" 200 227 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)"
+{"level":"info","message":"GET /u/trondss/outbox 200 227 - 2.792 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:31 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.n41.lat/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"L55rgB1ehe1umNrL7x597gEKSoMAmzDbOeapNRImssJIUST2x2w0X0JrKjB2Pcmepc6fyl1j+/lrAYRuCHZmsigSBN9H/xBaZWFhEtrpqjoG6xEmMH1rpHUBP4F4W5o0QjqcuUdy4tKeAyGbNNZD1uRwsnNtOAMWKJ8MFNyDAzZXRKywo07HHu5GV+jTdhyNl5zrFsazIV4Yltybetsd0IUw3KPVmw+usuKdk+NBvSn2Da+npMthepE8cBp/Y/1vLpzANkRgdhcHxngsHxcpikx7fIVQkKLu0h5jiIX17ZzoCvI7gWM2N65Ud3MbHlca9htDY4qMAyRr5UbeZORGBg==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:33 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 2.532 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:32 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://infinitumnihil.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"jRqbRvyhVU1bUkINQLe3GH1w1Yac3VYo4wfeU8GRINCv1HjivgKLJ8xQ5BLkIIJLNF/XIua4/H/C+P9tHT0IpScgMSKRrER6x+Cdx296zrctIJfmxOHudnVV5MitBVWvvZsdyXxArYqlwwdk5hsjiwTfNnZymbBuBPneT8LOSBijY3i8VY1N8mduTS8eYQ+KNTHGKlQqGpwOpB8W7QmNIldyWIxGVRCnh2ZL12jaRDltUMeqdtT5NEFA/c5VqAAw/yrAWpQLOnuT0y2jbm4p+CJhLZ0f66uQQ/Km63vdwJ5OwdQCmB5tzoL2UqxYdT/VvWlAZ4XU7ZAnY3zudyxdtA==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:34 +0000] "GET /u/trondss/following HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)"
+{"level":"info","message":"GET /u/trondss/following 200 156 - 2.447 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:33 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.n41.lat/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"LxQfKW9Y9dA5qWNqVpsTHXknJl02q5lIeDs6yW5H58lhATBetND08ibDnw0ZzOFjoEqwQJ9C7uB1UCiBZvPFSQQJ9WJLO7+TFmGVZkGyO0Tgtc+E0fnXlGWNCecIK48ysw5A1YKeFeOCGSVc0Agx/mJOaXra3tQVOW/cS49Zfs2gL+QJ8U54OZy6RSAELkdrQtqOEoDXkeplebdYblEHQzb9YHv7eeMW/5pXubKzWbh9aO3d1Na53GHzKqeuhK4J1ieysKsU+A1UpzrAUOv9BlqX83GEtZXfHAfbpyXYQV30jHp/SnYcncj1DyJm8wyUEq5SCNLmUYl2YNFQlgidtw==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:35 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 2.831 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://mastodon.n41.lat/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:34 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.n41.lat/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"cRjve0ILVAO5OEeh4AhbmHlnLvDQMTwOyOGKot5yOaienL2UIR4y4Vt5pOdZ/bCt8VNKRbXtnTwd63gDzdwojXKzZ2PMQy73qx1CGrQQwIfEcG7NnQ4pn2VO2La+QJP15nWrXDzHUGusX8QeSW7aCrDTi0EhapxRtpLOxVe9SZ85mV5hAxwBZ9RTJxhU21T2rsFpPh+xpQkGh9cZCZrvRFgZJnGKCdnvtPD19HTAgPVmZi/hY/4HbAf4ofXpITC+DnNI5B4E8vJdTNl1oClTvJlHLEmbVpaS8EKnmff81iLB0p3Y+/o+PgBoPG5eHOwzSywfObeeG266dL6H3g9zCA==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:11:35 +0000] "GET /u/trondss/followers HTTP/1.1" 200 156 "-" "http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)"
+{"level":"info","message":"GET /u/trondss/followers 200 156 - 2.731 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.2.8; +https://infinitumnihil.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:11:34 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"accept\": \"application/activity+json, application/ld+json\",\n  \"signature\": \"keyId=\\\"https://infinitumnihil.social/actor#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date accept\\\",signature=\\\"WDNmHsROciXSuLnAwbhjmtOkz/FsDdhNMg4U1Cjy7mXFiXyXYNOCrM9QLA8BaowzZQtcivxUdKTJxWW2vB22dmrNS6YwhndHNkImUjNrexP6+huOJ08rEjupfJdBs2ysR9XKyHI4vVWcoIphXJLadTsDNnbqHnNQh9vr72tPBqYdpaU9nGO5553Y0806C12P74da+Oz3lLLzZpdkosqmI8c+QNX3XQgrJNqwPzBgcCVssFsnm69KQBHANjUHiFC6Ni+QCcrvNJ8g5nnBtC/DdSqboaq76oj8Bh7OrmzPXoVfYt9DvPClQNCUPU1CatZFVr+ynA1y4GauaI7V3gypQQ==\\\"\"\n} {}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:12:13 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 100.287 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"367\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:12:12 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=Gv0elU0CEGssK+fTg02iC5BVgFziwzAtJC1kArk3eTA=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"lP6FLB1svLQfsZXkhweZmGucUsZraVzjD1boO+2+ML83cNpw8Co/jrOI2XkuzCfc5r6v7JjKU2M4SEyRdrs2xmBA8C/eGW0cCVy5IJkJo3kkos8bC0SavreVVDHYRZ48n7b6tTHkw4EeSCHJP9ON/oQAPYN9vspW9HY9IXkimg7BgwN16FTxXyDlWXQZ3TwANEEeFWF0qUJprVbyj1y1yBIsInVHS/9qQLvQxbcK7Rr4Muhfl3mF0FNHjTcY/K3yg+k6Hb8dFmsmRpLVe6F0XGHEkXvmOvmq9m7tGZ9naYDBv88SzevTkssZ3qouiynWPacq4lOgXYNjVXeefM7Tng==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/trondss#follows/55325310/undo\",\n  \"type\": \"Undo\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": {\n    \"id\": \"https://mastodon.social/c04e7d9b-bb81-4352-a726-fb01a5b26cfa\",\n    \"type\": \"Follow\",\n    \"actor\": \"https://mastodon.social/users/trondss\",\n    \"object\": \"https://www.sneaas.no/u/trondss\"\n  }\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:13:22 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 169.630 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:13:22 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=b4rHv1p6O/6q20DZKZkX7aMdVNakIVRiWc/48LXwki8=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"GyAVOl5YLddd5xbx9vXU6/LniqaCplCWmgdBGoxPHw2Armr2rtg8S0gI/pk272RQm/qORqnaQmTj/zrPnfzc2+6RPevn2GJTE4byG5iUIEzZScTiYy1kWvWvHVvJYv6EmA7G7UUHDUfpflUhI5netKbJR6waoiJXXlvocVKlawR8EtAKjqvd+9d+M+uCXnmqdxPVpRkLZ7iLhA8XZgubsIXxiJ3gZ0pLZtP3S9LRBF1qZuiTZnuZfVID1JVqGk1XlZ/huiMYqwn/QUHXTPC5QDSyH8ZPBUfPmi3lYimaZXCBBZRlbBjDgS6oNx+7+687OVKY6DVPBcJTzDudijZDjw==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/d77bf315-13f7-4f20-9c40-407e473e751d\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\",\n  \"_id\": \"661cefb206a720a4b1be69c3\"\n}"}
+::ffff:127.0.0.1 - - [15/Apr/2024:09:14:29 +0000] "POST /u/trondss/inbox HTTP/1.1" 200 - "-" "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)"
+{"level":"info","message":"POST /u/trondss/inbox 200  - 112.859 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"227\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:14:29 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=HoXhQYlGCmaceOmaJmRk8eW9Xf/y2TD5XpIAj8EoPkE=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"BbaWVBncMjp6Hn0aSlRi3MDbDWoGRMNok9C6HUNWWKhyEdIi0BQyfAmmk40mOEx10AqvTUHcBWs78BAdlPP/Zd2LOsntZ0x3I/slM8xy8STsvURVWk1zRHXmg590otY7OGmwROulMi8lPWmZFO5PuWLMdNqt0IOVCKoWV5aAC+6OtxX5Acn1a+SmP13E9i7QO7IfYTqIdN4NGEx5YmQTUx7qzOT+4VsFAfpDsNMZpy74mdDxrQmtqoS6mFpXjoMUYEqaFjnxX0aWYvj1YR/sJlr9PJlv0sEdMACjtDUdUp1RAwrNCeIGrWAbbEOn/yDSmyrgMfq0+F6AdNnEC4Q2MA==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/821d780f-504f-42e9-87d7-66e5b71ac398\",\n  \"type\": \"Follow\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"object\": \"https://www.sneaas.no/u/trondss\"\n}"}
+{"level":"info","message":"POST /u/trondss/inbox 200  - 176.082 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"2755\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:16:47 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=2YYMaI3AaTgLc0zNfXTAdEc5DpRXBcmmONDGkYl57yM=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"W7p7pyl6RInmxcO/ePDiDkqhumvBoxXYa2wgU8uDFrY+dnh/HWBogiKXr6l0YNWc1sKRcecIedMsyHlaVZuyGC/YPYght1W5YK3vWHZ0rdsI94S0cEkcv/wDKKcgU8EA8a+VPAa+F0HIZWkQjgve+hHmfxSQ2OEPM771FRsqIrHvK+7UrnewRwuR2EOS/RDdT7fsvYimuafhvYYnCl5fVYxzTwhxgzjwDl2tOFlEVFwop6HLDoHsaIon8qsnsjU2+AUaAyldlWHwMg84TvmAcrtLfZ5b3kXiRaeOR2Y09mt8rSru6Floogi+0yZQfr4k8Q5xYZmXG4iiGEaO0AQK7Q==\\\"\"\n} {\n  \"@context\": [\n    \"https://www.w3.org/ns/activitystreams\",\n    {\n      \"ostatus\": \"http://ostatus.org#\",\n      \"atomUri\": \"ostatus:atomUri\",\n      \"inReplyToAtomUri\": \"ostatus:inReplyToAtomUri\",\n      \"conversation\": \"ostatus:conversation\",\n      \"sensitive\": \"as:sensitive\",\n      \"toot\": \"http://joinmastodon.org/ns#\",\n      \"votersCount\": \"toot:votersCount\"\n    }\n  ],\n  \"id\": \"https://mastodon.social/users/trondss/statuses/112274479958626538/activity\",\n  \"type\": \"Create\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"published\": \"2024-04-15T09:16:46Z\",\n  \"to\": [\n    \"https://www.w3.org/ns/activitystreams#Public\"\n  ],\n  \"cc\": [\n    \"https://mastodon.social/users/trondss/followers\",\n    \"https://www.sneaas.no/u/trondss\"\n  ],\n  \"object\": {\n    \"id\": \"https://mastodon.social/users/trondss/statuses/112274479958626538\",\n    \"type\": \"Note\",\n    \"summary\": null,\n    \"inReplyTo\": null,\n    \"published\": \"2024-04-15T09:16:46Z\",\n    \"url\": \"https://mastodon.social/@trondss/112274479958626538\",\n    \"attributedTo\": \"https://mastodon.social/users/trondss\",\n    \"to\": [\n      \"https://www.w3.org/ns/activitystreams#Public\"\n    ],\n    \"cc\": [\n      \"https://mastodon.social/users/trondss/followers\",\n      \"https://www.sneaas.no/u/trondss\"\n    ],\n    \"sensitive\": false,\n    \"atomUri\": \"https://mastodon.social/users/trondss/statuses/112274479958626538\",\n    \"inReplyToAtomUri\": null,\n    \"conversation\": \"tag:mastodon.social,2024-04-15:objectId=686111799:objectType=Conversation\",\n    \"content\": \"<p><span class=\\\"h-card\\\" translate=\\\"no\\\"><a href=\\\"https://www.sneaas.no/u/trondss\\\" class=\\\"u-url mention\\\">@<span>trondss@sneaas.no</span></a></span> hallo</p>\",\n    \"contentMap\": {\n      \"en\": \"<p><span class=\\\"h-card\\\" translate=\\\"no\\\"><a href=\\\"https://www.sneaas.no/u/trondss\\\" class=\\\"u-url mention\\\">@<span>trondss@sneaas.no</span></a></span> hallo</p>\"\n    },\n    \"attachment\": [],\n    \"tag\": [\n      {\n        \"type\": \"Mention\",\n        \"href\": \"https://www.sneaas.no/u/trondss\",\n        \"name\": \"@trondss@sneaas.no\"\n      }\n    ],\n    \"replies\": {\n      \"id\": \"https://mastodon.social/users/trondss/statuses/112274479958626538/replies\",\n      \"type\": \"Collection\",\n      \"first\": {\n        \"type\": \"CollectionPage\",\n        \"next\": \"https://mastodon.social/users/trondss/statuses/112274479958626538/replies?only_other_accounts=true&page=true\",\n        \"partOf\": \"https://mastodon.social/users/trondss/statuses/112274479958626538/replies\",\n        \"items\": []\n      }\n    },\n    \"_id\": \"661cf07f10268a512f9edab3\"\n  },\n  \"signature\": {\n    \"type\": \"RsaSignature2017\",\n    \"creator\": \"https://mastodon.social/users/trondss#main-key\",\n    \"created\": \"2024-04-15T09:16:46Z\",\n    \"signatureValue\": \"GSBXrn6kXWaMpcXBwb/VaDhxA8vSEyoo07Pb55TBJBitBIOhyMklMd+8nnEm5HpXLD4jiwL5tCo1DU59szDmOwpOGlBcg197KARKrht/1mbk5Trupb3ktfh45Kkas5RyEX6hi48K8q1ZAm+CvwAd9UOn5mvLl3YrneH7Dbd1MwtuDS+/KiTFCQIoSsovCYH3YNpUPan80tN6Cas/sbmtoEDUS5rRr8egkZwC4G1dy+F2gOaNAJsGdpV8lkXjDVYMRUluWPDMqhZs3cTdeBTx2hXidyL2feI/uufyFU0g9fcK9tp8cLFacs9/XiUygpAEZQVS3KNM3/mDCxL0qWAy/Q==\"\n  }\n}"}
+{"level":"info","message":"GET /u/trondss 200 1119 - 3.114 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"0\",\n  \"referer\": \"https://www.sneaas.no/u/trondss\",\n  \"accept-language\": \"en-US,en\",\n  \"user-agent\": \"LivelapBot/0.2 (http://site.livelap.com/crawler)\",\n  \"accept-encoding\": \"gzip\",\n  \"cookie\": \"\",\n  \"accept\": \"text/html,application/xhtml+xml\"\n} {}"}
+{"level":"info","message":"GET /u/trondss 200 1119 - 1.027 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\",\n  \"accept-encoding\": \"gzip\"\n} {}"}
+{"level":"info","message":"GET /.well-known/nodeinfo 200 118 - 1.396 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"sneaas.no\",\n  \"accept\": \"application/json, text/plain, */*\",\n  \"user-agent\": \"FediIndex/1.0 (+https://fedi.wrm.sr/about)\",\n  \"accept-encoding\": \"gzip, compress, deflate, br\",\n  \"sentry-trace\": \"56756e7f3a3e45598f51897c55ee8445-96d00d8f7ea784f4\",\n  \"baggage\": \"sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=56756e7f3a3e45598f51897c55ee8445\"\n} {}"}
+{"level":"info","message":"GET /robots.txt 404 149 - 2.944 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"accept\": \"text/plain\",\n  \"user-agent\": \"FediIndex/1.0 (+https://fedi.wrm.sr/about)\",\n  \"accept-encoding\": \"gzip, compress, deflate, br\",\n  \"sentry-trace\": \"56756e7f3a3e45598f51897c55ee8445-96d00d8f7ea784f4\",\n  \"baggage\": \"sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=56756e7f3a3e45598f51897c55ee8445\"\n} {}"}
+{"level":"info","message":"GET /nodeinfo/2.0.json 200 202 - 0.889 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"accept\": \"application/json, text/plain, */*\",\n  \"user-agent\": \"FediIndex/1.0 (+https://fedi.wrm.sr/about)\",\n  \"accept-encoding\": \"gzip, compress, deflate, br\",\n  \"sentry-trace\": \"56756e7f3a3e45598f51897c55ee8445-96d00d8f7ea784f4\",\n  \"baggage\": \"sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=56756e7f3a3e45598f51897c55ee8445\"\n} {}"}
+{"level":"info","message":"POST /u/trondss/inbox 200  - 23.520 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"787\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:18:00 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=HF1SXhcQqp5Uij9hdd+vW9Y+Zxv7Sr0pMVgx5ZpFlAg=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/__realkvan__#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"GJGiauPbYk+P3umGT8M4AHha/rmPCGtid7Od8AU0n3cNRVa9dDxwHNUDKmUhSW/NkZLRgr6gML85lmPt7BHsZkferCBzDKYfFHfK3qHR3M+O5+dbwtklASbKggd0m0iZ4M9Nkmm8NRIBc/dWR9nXULGA8gddNq+GIr3eOgLnvx5TsfZ4ML0QxYt5+aQStokVflXV4IQamrgTwm58xvN5lW9ClP3Qj22ifsYMkfKRRDBosZhegeOjI7nsiICxER/KSwzXWjMousQUX5dDpoLP9SNdk2xPJOPOLKtQjYLNlKETbEyJdmUMHN2WIcXf1kE4fqjMMVg0mieAwYxEoYkhWw==\\\"\"\n} {\n  \"@context\": \"https://www.w3.org/ns/activitystreams\",\n  \"id\": \"https://mastodon.social/users/__realkvan__#delete\",\n  \"type\": \"Delete\",\n  \"actor\": \"https://mastodon.social/users/__realkvan__\",\n  \"to\": [\n    \"https://www.w3.org/ns/activitystreams#Public\"\n  ],\n  \"object\": \"https://mastodon.social/users/__realkvan__\",\n  \"signature\": {\n    \"type\": \"RsaSignature2017\",\n    \"creator\": \"https://mastodon.social/users/__realkvan__#main-key\",\n    \"created\": \"2024-04-15T08:52:21Z\",\n    \"signatureValue\": \"TUlXVB4PSTBII1ev6+95hhnPnZammSfimid5X8m7t2vIHop8edSqdTLJyMujoGcx2A1J9hp+zadnax5vxGjOA4keGlAbAhSJi21ztBmckBqUmz5edQKHzvy17ISdThhN8pCKlMliP/zT003eDfsfTMY7+aKeIrhQdCOi9T/SNawArWd5kM0pKPLRaxmceJ4+OVOS6qIc3Wmv/eRUTdbPTjrIOxO1M+7gopp2NqKOmLM75l+4TfplEcNRzQB9iUmQH8YWkbFDR3P70R0O0qX+ETcZn5+PRrrJs637Vrh7EQ5qS7yySLPDjtYoWCDh1cPxczE4I95264bWZhpr1wl+cA==\"\n  }\n}"}
+{"level":"info","message":"GET /u/trondss 200 1119 - 2.033 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36\",\n  \"accept-encoding\": \"gzip\"\n} {}"}
+{"level":"info","message":"POST /u/trondss/inbox 200  - 329.044 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"2757\",\n  \"user-agent\": \"http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)\",\n  \"date\": \"Mon, 15 Apr 2024 09:19:54 GMT\",\n  \"accept-encoding\": \"gzip\",\n  \"digest\": \"SHA-256=aJR7rmo68mfg6Wk6qqN3H6SGg1c/lRJgOEztakHrwUY=\",\n  \"content-type\": \"application/activity+json\",\n  \"signature\": \"keyId=\\\"https://mastodon.social/users/trondss#main-key\\\",algorithm=\\\"rsa-sha256\\\",headers=\\\"(request-target) host date digest content-type\\\",signature=\\\"GBVkzTAu4OUEvSkivhLd2fKFibdLOptfrCU8TjSnEdyTxvBNOvjdsIOebqk75xnTuUd2+1l5HUkfPBHwPUYmk7Rm58ZMhVZ7Z/sXU3cgQXWfauYMZ2JYR6m2lXvpAlmUw9zWxDnDvPcpgJvlLGxJLFgxdjFelV2YC5ApNoC/lwhpSyHOkbFUbdLWzbxnpHwulHoZ8PCu+0XGKW67VW0lSR0AOI9Za72vp0iDchcfcGegPhwQCHRt1PjgkyDH/NFl7aiBWw0crFJT+9nmt2etzd6nrKpUTE2dboBrDxQU2G8UE7GY5sDmAa6fzDM2/n8CtKI/qp6iBSlPsHfnluHkMg==\\\"\"\n} {\n  \"@context\": [\n    \"https://www.w3.org/ns/activitystreams\",\n    {\n      \"ostatus\": \"http://ostatus.org#\",\n      \"atomUri\": \"ostatus:atomUri\",\n      \"inReplyToAtomUri\": \"ostatus:inReplyToAtomUri\",\n      \"conversation\": \"ostatus:conversation\",\n      \"sensitive\": \"as:sensitive\",\n      \"toot\": \"http://joinmastodon.org/ns#\",\n      \"votersCount\": \"toot:votersCount\"\n    }\n  ],\n  \"id\": \"https://mastodon.social/users/trondss/statuses/112274492241289272/activity\",\n  \"type\": \"Create\",\n  \"actor\": \"https://mastodon.social/users/trondss\",\n  \"published\": \"2024-04-15T09:19:54Z\",\n  \"to\": [\n    \"https://www.w3.org/ns/activitystreams#Public\"\n  ],\n  \"cc\": [\n    \"https://mastodon.social/users/trondss/followers\",\n    \"https://www.sneaas.no/u/trondss\"\n  ],\n  \"object\": {\n    \"id\": \"https://mastodon.social/users/trondss/statuses/112274492241289272\",\n    \"type\": \"Note\",\n    \"summary\": null,\n    \"inReplyTo\": null,\n    \"published\": \"2024-04-15T09:19:54Z\",\n    \"url\": \"https://mastodon.social/@trondss/112274492241289272\",\n    \"attributedTo\": \"https://mastodon.social/users/trondss\",\n    \"to\": [\n      \"https://www.w3.org/ns/activitystreams#Public\"\n    ],\n    \"cc\": [\n      \"https://mastodon.social/users/trondss/followers\",\n      \"https://www.sneaas.no/u/trondss\"\n    ],\n    \"sensitive\": false,\n    \"atomUri\": \"https://mastodon.social/users/trondss/statuses/112274492241289272\",\n    \"inReplyToAtomUri\": null,\n    \"conversation\": \"tag:mastodon.social,2024-04-15:objectId=686113197:objectType=Conversation\",\n    \"content\": \"<p><span class=\\\"h-card\\\" translate=\\\"no\\\"><a href=\\\"https://www.sneaas.no/u/trondss\\\" class=\\\"u-url mention\\\">@<span>trondss@sneaas.no</span></a></span> heiheu</p>\",\n    \"contentMap\": {\n      \"en\": \"<p><span class=\\\"h-card\\\" translate=\\\"no\\\"><a href=\\\"https://www.sneaas.no/u/trondss\\\" class=\\\"u-url mention\\\">@<span>trondss@sneaas.no</span></a></span> heiheu</p>\"\n    },\n    \"attachment\": [],\n    \"tag\": [\n      {\n        \"type\": \"Mention\",\n        \"href\": \"https://www.sneaas.no/u/trondss\",\n        \"name\": \"@trondss@sneaas.no\"\n      }\n    ],\n    \"replies\": {\n      \"id\": \"https://mastodon.social/users/trondss/statuses/112274492241289272/replies\",\n      \"type\": \"Collection\",\n      \"first\": {\n        \"type\": \"CollectionPage\",\n        \"next\": \"https://mastodon.social/users/trondss/statuses/112274492241289272/replies?only_other_accounts=true&page=true\",\n        \"partOf\": \"https://mastodon.social/users/trondss/statuses/112274492241289272/replies\",\n        \"items\": []\n      }\n    },\n    \"_id\": \"661cf13a3aa64e2414d084a0\"\n  },\n  \"signature\": {\n    \"type\": \"RsaSignature2017\",\n    \"creator\": \"https://mastodon.social/users/trondss#main-key\",\n    \"created\": \"2024-04-15T09:19:54Z\",\n    \"signatureValue\": \"cWQvqB9zLSuvgSfrv5lopJThft5QokCLKSXDcQ42fTfKLAh9mBpNdK3BbnvIfBC5mC4zwWlgio0c8+Ee4APjhjnBL7mYFsFT8r6DABJftKj92n8+Y+0dmYPYq2MYIocskz0QGVIFHMpOZpeMoDTEQeUJPiZQnQBQ+gN/4Jv1nluMA5IGAyfYTV45nQ4K77PKka8jkq71IVfZHjcA0QJjWMqs2kOjISKb9sJEuLjkQ7+wc7ccHZRVn/flSYqSPnLCQNm/PTfcHnv30tBRgeCGFhJJ1Lc9bZeoDXyGDQlhgI6nb2+gVkj1ouXmnHvzpvsGVtDVp//RAMZdndSIMAL7pw==\"\n  }\n}"}
+{"level":"info","message":"GET /u/trondss 200 1119 - 0.936 ms {\n  \"connection\": \"upgrade\",\n  \"host\": \"www.sneaas.no\",\n  \"content-length\": \"0\",\n  \"referer\": \"https://www.sneaas.no/u/trondss\",\n  \"accept-language\": \"en-US,en\",\n  \"user-agent\": \"LivelapBot/0.2 (http://site.livelap.com/crawler)\",\n  \"accept-encoding\": \"gzip\",\n  \"cookie\": \"\",\n  \"accept\": \"text/html,application/xhtml+xml\"\n} {}"}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "242.747 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "227",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:42 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=UdZ2D0Ke1iOP1DFZqiDKjrg2bMHC5gv/iAvPLMHU0N0=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"ACNN6p+U/caNrOIC6mrxQVcsK+N38PaAD2muTwam88O+FauKPhLuRfeXzJ4+t/CDyvx5mBPdjpuoLjxJ0CQMkUlJ+v1TAh6vWp3ZRdbnLQ/tu07+uxu3XvECXpxWYuipD64t49Nbl9qOobr/pQ19JzCEMoIo/suQf8unFdQ7oJ484vDpfT17oyEZcahRLzHkxHN0M++PzcPkrSI20XY03JjGlOPcHONhA5lddyMZidUq4p8WMyzpM48vRrf7BCGoGKLKa4rbqImHTJtueAmiIcxBjOIQpnsXO3J/RSNpBjWGbT8cMgR/hYqErkr/xgPWn7I2+qL2HEjUPiHCy0fbFQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/1048ba43-3256-4186-ba42-43be6227451e",
+    "type": "Follow",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "_id": "661cf25acc57a4bbc99c1f3a"
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1119",
+  "responseTime": "2.774 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:42 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"FcNIZsiPDkz8ssngP4UxBeJokf860ggkz/v+76zc/OaeOW22EnSQsl4MFZGMoqRDzKJmySaVfLSLYneEikhCLYxEOW8TnY+JdT1sC/uMJJPPJYGz4gJAeTWxPfrhMae9c2RRb4m4Zlrdil6zmt45r9HR8l0282C2G3g09QB6+bUqkZuAZzZZ9LAJlmgtqFxYXQYioowdC85q5nPoqy0CYKbZIjw6kEy1bbDr1dpTeQSVLT/u8WhMEv0U6VxRL0oVaIYyAAjBnM1OocypFcKBwiiWEYIjspYuzp0r+Jx4EYBKgXKt3z3ZCaz/NgA+bYSf4XhgSnJsPtNCfCPljhfnaA==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@www.sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "1.239 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:42 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.814 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:42 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/icon",
+  "status": "404",
+  "contentLength": 216,
+  "responseTime": "5.185 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:42 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"ccoLVwor3gBygAZihCW2pweiEKI7qnBoDTKgysdaLYMIgtiTBU3Zm/DMpidZdxDlqcs0qseNiQiWvZ4DObh0OW6H4Xj/gBjVUEpotOad9n+nhjQuBKHqMWkczMpz/TEknIV98PoXtV5mPbamSqV6JVvYmMBmVLYBjKMZ3zNfCHLgJ7vWS/b/Sj9U2Ful2waTkHfeceWcJ7EBA2jBu040MEu+RnXD6rGSYb1uDg/kiJXqqB2S6vDpMWTrCAy1h3xC5ZhfQL5UFLSxRHHkblYTuewFVFqynH9lwQLhKE0HpOu2E/FtccTr0Ps0s1/VhKaCia6TXPHwZpxhg0Gey1GIKw==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/outbox",
+  "status": "200",
+  "contentLength": "227",
+  "responseTime": "5.468 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:43 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"Tt9ZUwnhvtYsgReUmKbWusL/OH93/G+hDbfar8FOWQORxYe17MrhJ3dvdvZIkScXwQ941GreC7YeL2hSSMBen16Vn+viOTouylRnkK+Z5x0q9EvtcyKPrF0DHXRFyTkjgpG1Wez5X9ZuNTWjVxxYsJYCHf8RrlPvo7g4n3cSEXkUD/c1CDo/+gBtcdtLv8NbDFZR+Lfz53AM0ahIlpl9XxkckQzuoAvTKxvYqMfQKeZfKKzYCHZvwmfwOVKY7UgNJEhd1WCKP/QA2EddhCmsnWedAa6ZF0IpAVd0SX8WmQlqR2ICZ1jSO60D+jeQPmDmvsZ8/dUiE7bvO6Crk1Ql6Q==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "5.316 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:43 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"gvrjNRWGkuFaxqaufgkrr31HaDnaIfXGA7LLVLEuVDAIaqZvWM4BSOZcKqEf9zGvxXNG/OZuDliQG+XFuktnlL2qu6VA0ZuPVJUNCRDNsBGtuG+QDJ4Yfj5Aw0OErb7OfTyvjIWBOte5dxgQDSfSb0YjbzIk9qOyjCpobdfXcy8pWcs2FAd3s8RaTlnTuSFjt6eTzDLqAoN97l2zKVzHwgPblfEAG4utmDZXlTb6ZNUmwZXQLcpDnZ49KSZ/0IrKmOJwKEL3LAPibqkLtwWjZC3wMNXYic2AZ6TBxUjtEDzjQUviz1goSRsuuncxLzWAAdJa/clXQgyNmm2CI4A4Lw==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "4.410 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:24:43 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"NWYPLLcOVnhycMD1ylrEK2lQXSV3UAL0/e6NU4Gfu9NK+vnebnRpoG11sxPH2Cx2khGdAOJCp8Rma7+Oe3FtI1q2v4SWzVd5HEeAoxx3A8p49ReM9Oj3UUi808fuU+Wpn9GAAil8boJQ5xfAY0MJiYusIVn6anmxFdvUjZOnwwTM/x1BaPKILD6zgeCUrWx+8gyZLpdT06aj89+keLr4QFlCwZhMlHj0kcrg3Xtaq4xKvTXSEGLqRYhksIzyAgf569IJiZV+IwijYVJFaBYDvZldiI7oxNqjRmQNAqQ0HVxXsdKdcx1cksCdh+m4Ec6Wxs+7g1h7Twi/yw+nHE2vzQ==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "75.716 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "367",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:09 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=HYnG9KRx/uHtgjr7tLFwrWNZ57V3wpxFZyH16JCdDFk=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"VykorMqH92JSNWpjU6tv5ywYg+I6eU6bE6Zye7DOuo4nIuLaq0+/jfgwdn9GvuNpOelD5tRI3Ki3Twu3cv3d40f7CTEzYTEuP4hKzQL1HbEKyaXYZvZzBbbj9GPuMkQ41/gx16rOXxLoCpVodO2cHjQQ/8KbgQG1Ogx1OJKtxcSKP2zuLkubYVBWSmly9PKuRxaJKZ41X4T7GcZwo71vesOnYcpQMXhO31HCBmcD991nl1sJjcSUe+eGsXA+lusVsofWKH+VBPzNtCwSsm0SKNB41pkONd61lnEwXC0KiBb1VGGVfip7CUtug/mLlnK4YWT77UVz0uGYFrJSbYpv1g==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/trondss#follows/55432556/undo",
+    "type": "Undo",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": {
+      "id": "https://mastodon.social/1048ba43-3256-4186-ba42-43be6227451e",
+      "type": "Follow",
+      "actor": "https://mastodon.social/users/trondss",
+      "object": "https://www.sneaas.no/u/trondss"
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "117.170 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "227",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=mZ4Izor1juc5xOUfU6BsEiugUNgEYpj7Y3ESdoH3Sp4=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"dn0Tue62DWHFWeBqm5LxK/tDX3zhiG/hKb19Drh1KZwav1u9E4UO5/FHrl3YDljDfrXHenrUisMFS93Hc04Fg2c4xR7Ry2YkbsnFpoTo1Y071VRZlJGYqj9I1zI1iFKDKxFrDj2zCjDtKjW3P7YXeOloVX2qjv4GWNMiEQzERljL3xXAsYA4YK0VdfmnGY3pFwjWx6atQh4UMnWs9XlDYluBOyXEcvmA4JZVRaX1hZK6crP3d3gIHj05cVxvmwQd+ZTjhvWNDROjpUSobRWqAfFzeOmk99SIVrRy7t+4qZSSppQTpH0y3DRPzw7isJI4Bfjmm4YQNNivsYBuW9Gw+g==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/aa9f683d-8a50-4498-ae2b-e50fdc4fb2e5",
+    "type": "Follow",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "_id": "661cf279cc57a4bbc99c1f3b"
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1119",
+  "responseTime": "0.598 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"OVQQkhCxSgQD/YIgKczB1ZOJ8aCWVY5oeCY51LVy+hggZ4CLefovtqZc6VaRndIQNPjUZIv7ZkLwssLxpZ1JRqI/YjzDRgqk14q/4Rz1A+ktkF5cLqUYVdS6G6Plgq7qWkUctKac8jPUVSPtuF6RI7s7WgduS51uOsxIH6Sg/n740WwTq6iGwbZn6jUriZYfR1EhJA6C1QAvRuQAULOLMKBS2cShouN3ioKnKt32QUD4fB7Q57qjUpymN6uzSlzC1QTIYWF/o36IQ1FK2V1JjnxDOXcQusRY1kFAU3HsSgp51VZ4lG3zXJiCywpe7z2/acbJOEdPMEiJvq4yC5/r0w==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@www.sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.578 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.742 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/icon",
+  "status": "200",
+  "contentLength": 6240,
+  "responseTime": "3.976 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"wCIWvvaBBQZRy5zhCukwR6MM2cYt9qxHzRFQJ3TRmeoxN8Py9dhGkFfijjXNjQESkBtdcJWu+E0OWds6MW5clajSin8neQ/xMpaLyYndi6eUPsB9n2rw/tWdJHSDotiKfZLNTM4nhSuFLjt8uKkEXAdaHSoukZIc7owzOs9M8K3E934z2Gznf4CoVNgJOQ/sJhj5VNiURdc/UuexdJiMSSCLiG24tRCRmCG7ZW7vlGPQ1m0NDH5bpu8trOpYAAbY25vLMDroglhty41+fSeM+nuWXO7JSKhHNyMYQaeV0RFA+D8MTiE+NBGTVM3hNCSq9RslQQnEtEDp20DuoIL22g==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/outbox",
+  "status": "200",
+  "contentLength": "227",
+  "responseTime": "3.770 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"G6D5kjTYWr4jzZdSSQu87JiVsemB3mqRM6rlMBNyaMmIbs85Qjc2rNxPFiM9oNjWOIhIasnL5aWKyiEaqRSozGoD1v6O97yYtpj6/w62uwN4NZJuqt5ZMBTjKxLelqbfB/hyW9/Fny3RAudHRxwLnj6yBPZBzOTEqMUNYxA/6e7RHxwKiVS4K2kaJqGKjnlcMll6BdzirlSrMbfDBXGv/keJ9hsN49KxLa2RYSYC0AumPYWJKpzsGKfBMLJZBkbBGQW7o9yVZSpmdUagX+VeUdbyeker3fH2rm9hkoT8L8mzuXDoVLVrTS+tRGZ5WzHHX0x2IK7oHmUE3UXtAZgxOA==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "3.595 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"Dcdx7pOxeONtV94GxQGysBmPZcqLTcoVcioFgK95ofuyCOhI1ecTM7K5cRpC5+BiTwjQoG9wwn+rV3Is6Cl/EQ2bk7C4YPGgrMpkF8sPlhWLJIFTZQgRF5r8dRGJczuLsGDD6h32rNHl8fdVe3AHyuJFWkxkhuTEbBwk9v1xvn1FxUJzMvIgbfYEjVuDON4yQgtXebbCNSDnNNwGsLDbwMdm+JaRcNzbdRpFBaegXywUXa03LO9Ifg6UlkQ6cUS6fDgU8Wll54be1rVI7E9hsKHXcmtQIhXhAJK9uGYj2bg7BbDvv0LOKlreEkdG9of8XNuZw3k06JmnLLjdboEb9w==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "3.219 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:25:13 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"PCoLEpmkmNZnreuadNJfpL65yWop+nJZu+GDpHg8qVinT9yAEXvrzLo5rymut424zRu7s5MMipK9V79noX5hb1X2h2AaR37abIrjEVrmMvgTkxx8StGqiG7YynGgkomHJvmfHUYsZiPMMKG33ySAZOeuiEP7LsksWPq/aMc7jAVt+Xu/4hBLQt7XIvPKNL/NY6R8wRmMVS0sYrY2J83t+LABLeFyj9+80A2wk4J/fsB1IcNql+4NAbBtkYZbOQoWoSn6wSUIUrMom1hovEU9eif/xqn5uNF7NZLfdaXwXZUKPn21Lschm5NbPTiPEKNkF6dAgt4NUx+LP3AFErewyg==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "331.947 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "227",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:30:17 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=31//euOM2/SVVnsG0PvDaqgrGTfP5Og6e+G0ILwv8P8=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"I6EnHle5+/JZIU8Ntz1ryhrs3DXUJznDg+V6Sg41dIa26i6/+NBiYfFgY015j+rXyp+r563dMLBU0TMriwGMf2vLJktZUJOjeBtW6iqp658rpkibYTPtSVuOIA8cJqFedas3PgMAmt91Yw8xWHHpLFd+82WA0QK8ybj1+VZ82JZj7mDCmltKT24jhJEWXdzkqsEafhWLeU6uKW0VZSBvy/iPezR9gtR/Y0tx+GSwwsX7+2Z+lOWsCX0r6r6zBCy7qrRb05epJyU67oCuUTvdgYKBEH2VkDxbO94zgR9oMnuDJeiEDUmyDy1io4qqsyPY61THtRlAgDsa2NUS+3Vhhw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/0c9b946a-867a-4b99-9282-b57ab21259c8",
+    "type": "Follow",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": "https://www.sneaas.no/u/trondss"
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/icon",
+  "status": "200",
+  "contentLength": 6240,
+  "responseTime": "1.444 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Opera\";v=\"108\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/favicon.ico",
+  "status": "404",
+  "contentLength": 150,
+  "responseTime": "1.164 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Opera\";v=\"108\"",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "image",
+    "referer": "https://sneaas.no/u/trondss/icon",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "23.910 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "759",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:31:23 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=vWO7gsRaOZqPKyog6W26L6dm+go9Rs9M48NTesk2rAE=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/menzy#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"W2Q8Eaki61uO4yST0aBLhJuQJcm8zqzL5o4B3chKL/QCW8rMctUv/K2OGS0i9+Suxhml5ypg5EmTe2CrdW+mV5XKENiz6NFjtWg4SFR9uot2Oimc6aGAw1eobgLw4NijoB/GGijYiKT2GVciIMBU+NPvJYK3xv0JUpoLQ0KG42GtesIhFMqBr/C/yQLxgwLyTAhorzvIbDzKrVe37JR+qdonYoc/r8q/kjtRymkpXzfA1atTQhFz+Gm9i4d6YfDd1FcV9wwI/KqvKQDWcDQ5HBNaQcubvwbWfZPOChx7R322x9dvosq1hTB6ecieECZ4FHQZvHVAP1HuoGioQBIqiQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/menzy#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/menzy",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/menzy",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/menzy#main-key",
+      "created": "2024-04-15T09:30:22Z",
+      "signatureValue": "eUeeh/osspx0aZ+E00sH6/bj2r/BFNy8Cc+jQ9zV1j8Tg0Fx1qWSdpg8Hy5P8EMjmBgLQfH9XPv/HBGqXz1jfkpKVrV1gSMcm+7x3HA05yMHo4a7NudHoaIdod/QpwdpUpRo3Y7brk3aWj4NfqHzDhvZlo1jtOjQZtQd82dOWr8NW2qcLw9yhhOO59P9maDcTuHlj7KkGAAftuapGD3FO4lwS5O93vkN9W2y1EH+zuyBI4zJub+6UYMvqoRfmS7LgId3UIzl9UV7B8uvz2/+bHgVpgB4BLdCIgVEYtxtRTN6lPNBfsPz9dpxZeK/xQ57xjgQHRFijONZ4vX+unGG7Q=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "3.070 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Opera\";v=\"108\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "304",
+  "responseTime": "3.423 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Opera\";v=\"108\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"9c-enZpIFy8JQP5LqELWcOmN9PQpPM\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "427",
+  "responseTime": "12.086 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Opera\";v=\"108\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"9c-enZpIFy8JQP5LqELWcOmN9PQpPM\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "104.807 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "367",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:26 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=1JElYXC9XjmB6f+Z1n8mvvGRJSps/whGvlBlKJjD+Xc=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"hVLWpFt3EB8MRdlWBZuoxUxPgZ7rl7b/vYomYDgK4YASlUVQpoBDvFkxrdVYNROgTCb0tKdZhAAXAXoNAAgVepzVciwqnNveVfq0Aigz7lQDMGWPssYQTEA+w3gUnZnV8VbY/AaP3MFooSU/s6LSOFfo++jiAdGDzljntfKLhvdw+GidM19yg75r4IAjIYNOWJkci/mmNOC3PkZAgyLf1F5gcV9O4JA4JOMPXo1NFtgCAl50HCJlAdbcAclJN93lS0M+jOM7xp5ReFD9/ut/q/PWUbx1moFBdvtaxcvL5AKkn8tgRdEjbo/EyLoETB80884fCelhHbcU9UVs1yVhyg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/trondss#follows/55432666/undo",
+    "type": "Undo",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": {
+      "id": "https://mastodon.social/aa9f683d-8a50-4498-ae2b-e50fdc4fb2e5",
+      "type": "Follow",
+      "actor": "https://mastodon.social/users/trondss",
+      "object": "https://www.sneaas.no/u/trondss"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1119",
+  "responseTime": "2.481 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"XGki9wt8b+iEjp2wSkqL9wsxTb5iQGXOgVdvAv9j1+w2dLAZ8djKcsOH5vyYCeIdXJvJ5WtyHv4UXI0MF9FTEAmR9chMNM4HRzT4n5Wh5w6xZMQe2CIiTwv/rbOODCeVs/sL1q8e8dIjno2m55kXrbpruIhFSK0I+SXE9aJXwUUZRS2lFiAq2KOqgWrsz4p21P1TEf+nlU+W5OJPfsuoT45AE88EqGnXmfES2e4dfGU0kTyJS5fVyAvKSChUL4ISGJMJstUwK4xiQGEOy1EUpwlKSH8oalmuJ3LLqP1i6p+9R0JK1wHwRLB7I70j2lUNhHBzdYtEVZ5evMfCo+8ogw==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@www.sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "2.423 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.674 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/icon",
+  "status": "200",
+  "contentLength": 6240,
+  "responseTime": "5.135 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"iXQRDyQgxXKfvviSCuBa7cb08jmJLpLSiwnYbDiBB1OanSinjzYn2YOJFXxoL/zVDw4n16ABppDFs5W4CPOURFSLFaYI4zVgIm9jpmp2by3nhP4/6WfKhoMESQ3NwhqExdVvmqwx2EKlSGvBCSG/HFnXzUc3A2Jc0nPKs0XvqvzjkH3nA2CsEUr6ghJOYHNkuGfjKovHh6U2e1bWWd6XyzojhkFWRmn1EGpnzC8u4EtGSrmTAHgNMpM14tVocMG3ZYrgNT/Y/vygp7r9SEN7BaYzBp107UJdYSODbwvug/ZIcoFcNaHmiOnzW9rUX/ikuFwmLMzwuT3UmjRAy9LUtA==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "512.613 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "227",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=ndhGrp/iZP7sFXRWtLYB6jOBaVx88xE01gCIkAUFeWA=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"gC1mkFvA3hHTBPVvTmoJi16kMahOvu23sebLvo16YBZtrZz5O4nti+viq+vzwOovsrWSqnKBbXUVYmfdfwXwd3uk4sqkdXilLHPWVxaf43kgP8Tje5RL6xski4HqRRMmXh9cCa2lY2huY7ACkuYZV4k2zVOCSVV4H2tincS8+4GadqZYMICogvnvKzPpiDngQOxacysSmn4OWLCe79d7lZl8cvh1igryzQ7TugmZvC3sJGl2fIOfLTqTS8TZZF1pjL8ebB/Q9/00iQ5TpYEXw9Gka5WOOCsaX8Ww3vMTD4H5pcREunV+Xo2sd0Bw4Bw7Cs8TK/UfaxNd9vjeu/sCXA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/3f7bbbfd-fea7-40a5-87b2-ea78f0f3e612",
+    "type": "Follow",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "_id": "661cf68a28166545f1f28c07"
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/outbox",
+  "status": "200",
+  "contentLength": "227",
+  "responseTime": "36.324 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"Oizh8u9dojcAFtWYtiqmzXM54vapt5akhycXobQABKW2uQLsUU53x5nf37xcBagBAZEanGEZboWVXS9CK8crdRvTIRHLDsZ0sfeVwlkyadIzZZAWN5PNqjsLf1FIwoXYARdGoSrCVK9Qduk5u6hPmGjftcXCXCt7ym1ZNgRpMYuZwSdpcjTfpzGIyos1tmwVEmFPjdXk/xAvlilbmrA4BSqn0m79xQFw4kJSBAtVnFLKdpXUJ7+yXTyq6V1bIHM2f3eR+xf649X2LUjZ4x5XjamHhv2ODWNDPyUYM+5zfhB2k7BCPp1CQlm4509yqhMmwU0pol9aPyU/qOjKCRqsbQ==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "5.386 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"ZbkEFL1P9By88JYN4ghoJQ+7OjhiEo/ki+fmGP65Hob0y9gXjfV6Ga55XT3soLlp0e+lwA95sT6dJ4M2vjZrgxeiuNOVIZWQnLQtyH+pZ0sEH9KHQrgUQUNNXWWwB3IAd4/m8BsyarEYNOtfS6D2g/X8VKHnZv9D+XiS0fI0g1EcccM1uc5owb9Cfj3AyNX+lSLHVCKgaIfvuq5jEw5cl3ewGDGv96FuAhozbRNDGZ/RPkZE92F71DBWNxzdPmI0DjkifTjHMhKj5wv8Dx+t9g86YXIGrQpro4YOK+YNgruWsro2gmd1uC9JHVWCBbBppZsdCC7Ddmz/dR0AsZ2PiQ==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "249",
+  "responseTime": "6.989 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:42:34 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"cyttNAmacCLZ20Jyh+eBfnhNAHwiySRDgB6mKZH9f8t5+xDxnCAP1Qr7F2pfkFZIPrhqD55ytIAGzLwNguI1MC/ZgHYbt6Bejf/HxHiVC4M7Y8cQODM+LtyNde0GrQRRAUCVQuya5mA8k6gQTl4PLF43Kim0kBbb/x3nMcx90WgRSCqN2SAQBMDh/x2f3dfAOTEMNUEbmlksz9ibk9oOIzTDowv4pm12EZy6CNuk5Vyvl/VgW/dCUco+RS1eog61+oVmgpbSrhuP7ewooUK/PwXAsnu1vqeAZOC0EU6kUPw/DmQxYWZD4xikO6wUsjNO3cTxV0AZ6YQflSz3MihfyA==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "249",
+  "responseTime": "6.213 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Opera\";v=\"108\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"1ab-e0B8mYEQ8vrMrJoAZxLyaWXYG3w\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "202.672 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "367",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:43:18 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=/pGeDGEDkH8Q3sg4jyg1UuZ0bRDOmev5epw00bOhRug=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"onY8MYqpo/jgoADLOQE3Dh2KfdxqGfFnxjLICB5xOtvjZXA3CNnL7LUFsBzJLyyDonTuVVhJ/kvKPoZHnD6lTcQSCxPOIFEQlUgyCAxL/Cd/zmIAikc3Q8JaVwTgufw3xG3eIZwUMh4OqlUHkukuJwr7J/PWvb0/L08VrnPBbYhsWxChxySQCDMnIvC1Se+AdXE8O5xNwj63zw9++x9FomVr0++ROY5bIEUwocXhTOiyaUcxJsQnA7qVtkNPU9KkegElLE47UugyWhvc/BZOmemlmQHEIyCeLYKRtSbtVUvCNJvfzoSp+HKffCCECntoOAMLja3z1e9NDGRSyKfwDw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/trondss#follows/55433003/undo",
+    "type": "Undo",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": {
+      "id": "https://mastodon.social/3f7bbbfd-fea7-40a5-87b2-ea78f0f3e612",
+      "type": "Follow",
+      "actor": "https://mastodon.social/users/trondss",
+      "object": "https://www.sneaas.no/u/trondss"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "167",
+  "responseTime": "4.981 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Opera\";v=\"108\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 OPR/108.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"f9-NLqiDQDxk4/eDZ7TnXFgXw5EnBA\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.728 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept-encoding": "gzip, deflate",
+    "accept": "application/json, application/activity+json, application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"; charset=utf-8"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "415",
+  "contentLength": "22",
+  "responseTime": "1.073 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "219",
+    "date": "Mon, 15 Apr 2024 09:45:51 GMT",
+    "digest": "SHA-256=k4gWdUt1ClQh7SgpPxOZm7GwI6YQF3+533l/VAG9vTE=",
+    "signature": "keyId=\"https://books.babb.no/user/trondss/#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest\",signature=\"Ieek2B4SKTsbZUKQsalP9lqidGZ7Dn6Do5xBn/l5qMjcgwztuean21i0z0oK2gw3q5SEGKeTufCKSMlgJW42RWYyUouWYkRWvGCnFo8I8LrG8VgfjFn2Onb74HQx/xp/G3GFoY8KVCaiynlyWOyNU5w6tSPlVhyb2nkGuz4heNBgASSM9+0s9Hr5CkIpICmsCpv+ttxsJXo2x+91Ugs/Gw1pWujUD0pnpvZ1P5+LC356yAgWOzYvquafZtSGQcAQmkQrXKB8la68IxAlk4xBLWqH89bqDsAyK++xv7LuXvy0I+Ils8KKz9TvrqowKdRXFCYkjr6agBATds6Ru0k3xw==\"",
+    "content-type": "application/activity+json; charset=utf-8",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {
+    "id": "https://books.babb.no/user/trondss#follows/427",
+    "type": "Follow",
+    "actor": "https://books.babb.no/user/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "@context": "https://www.w3.org/ns/activitystreams"
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "415",
+  "contentLength": "22",
+  "responseTime": "0.671 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "219",
+    "date": "Mon, 15 Apr 2024 09:45:52 GMT",
+    "digest": "SHA-256=k4gWdUt1ClQh7SgpPxOZm7GwI6YQF3+533l/VAG9vTE=",
+    "signature": "keyId=\"https://books.babb.no/user/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest\",signature=\"p+HIQmuVzdZ1Jp4rAH1n/ykAap+K9ho2FWKreBd9g303MGrlzVo/TmzDp/G2enVVW9PwjyqMwhRHMQrfXBJFw2t596sR+FoCv6g5V5SZ8rqNlbYWsJ46aNXmfUTOfNMmi+x7i1qB8UYQ53kG3bynWRGZWvvdAgTW1ROzdnX0A9qPua+CZWeAc7ujcdWroJyZO8zcvDD1ljDq66y070B6OeEoWBWs33QTt+5vJbL2tdVcWfjKxvdAE+1t6X599Yb9K3e9BgtsRoMtpYMYvKJZffMQYFrDn7jJbiRkRZaOFsKGGCVJ4m67Cxkwq/wp3sBFMV2C/oxxE1wzwGsZoMkXjg==\"",
+    "content-type": "application/activity+json; charset=utf-8",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {
+    "id": "https://books.babb.no/user/trondss#follows/427",
+    "type": "Follow",
+    "actor": "https://books.babb.no/user/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "@context": "https://www.w3.org/ns/activitystreams"
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.520 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept-encoding": "gzip, deflate",
+    "accept": "application/json, application/activity+json, application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"; charset=utf-8"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.731 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept-encoding": "gzip, deflate",
+    "accept": "application/json, application/activity+json, application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"; charset=utf-8"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.512 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept-encoding": "gzip, deflate",
+    "accept": "application/json, application/activity+json, application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"; charset=utf-8"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.491 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept-encoding": "gzip, deflate",
+    "accept": "application/json, application/activity+json, application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"; charset=utf-8"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "75.652 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "771",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 09:49:47 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=fUkYqBCexhaQ8iXbsCXOB96lMRMVpedsIE/e3f9i+qE=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/Saxman19#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"bbj9NrRONzewKUF0CZpgIAjU2MeBKDLdz+RR22jaTZXZXp5GpUnsN4fGsph7X6zXuUdkt7zNrQLRRc2/lGvAQkZvuC5hWzirZE5EkoH5Q1lDUFpWRS6gBj99TSCUXjhf23C7++x/qJkaq0CUvlST4ilOddTD/qOeghWkdRkVg7ogw6MQvVvT+VQxL9oH9B61mzNDosROUM0igPRz1THXq3mtgkyUsPAoIju42cU4wZ9Zl76infJynhR4mCJzcHXil3hGaV6myNkNuJnIyI5fxq8qNe8RUzote5tE6O/F3B1vw6bELlW5kxhNRtaOxxUNZVLAEMxnmMIWq6chhoZzpQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/Saxman19#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/Saxman19",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/Saxman19",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/Saxman19#main-key",
+      "created": "2024-04-15T08:54:03Z",
+      "signatureValue": "SZgp9aOnNkIKmFeleKserOgqAADKhRXDUKPQm9T3zCgDDj/OYHn1tSTOhMQ3oo21lrmuQvq+5WaoJPeHQglsMnLyLsTQuw2nyHGqGVJjI6Pni5pthXK7DgdQYO493cWXib1D188djQKrGGcRscRWQ5chIq3xiPfM1hHi2bX0ToJ9tFXdWhbwwyfZzXmKctEBZMlTg3AFuvF3uoLgaDyrqOjONI6erL26Jne8KUHF97teSkF01rwwNIClxliBgh4f24Z5u0NbeDAo7x3IkSb1z+Sd4pUk/kN787FHcCzEOTRH2UD3EINzP4QMyLMREOIWZsWVKMJmaCb8kIpzHDBw4Q=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "415",
+  "contentLength": "22",
+  "responseTime": "2.181 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "219",
+    "date": "Mon, 15 Apr 2024 10:01:51 GMT",
+    "digest": "SHA-256=cHeZ4qCdqbdrX9yqc9W82ZzdMxwEW9Z4PjFYpaES3og=",
+    "signature": "keyId=\"https://books.babb.no/user/trondss/#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest\",signature=\"d79AQnetmLZKO2astAFHVBsBItFO8M7YIvXasP7nF9CWdBLVt77KLH/I/oRcFYdq98QQZ/laOourFPSNZAjnwEm3gPj/UzHP8ncUnaIZFhHRDil6q1n8T7bhiYCJpzcpeV+lmMTXdcGMi5HaEdvUOD92dEkS49pg+c7y3wYVeet7fn4YFK9FTMr2F/vwDLtfktyFsoqYKXPzR1p4DbYLq1uc8PZOrceps9p18RgUtTjzcoOBykGIA2/zZ64SIa7ycZ9FDRib5pEl7kmf6KIGKxi6K3nxw0i+q5yYI4OB7AUjflJSpIjMz61BoALXk5pjgJHR3hI12/d1p3AYbopl5w==\"",
+    "content-type": "application/activity+json; charset=utf-8",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {
+    "id": "https://books.babb.no/user/trondss#follows/428",
+    "type": "Follow",
+    "actor": "https://books.babb.no/user/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "@context": "https://www.w3.org/ns/activitystreams"
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "415",
+  "contentLength": "22",
+  "responseTime": "1.584 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "219",
+    "date": "Mon, 15 Apr 2024 10:01:51 GMT",
+    "digest": "SHA-256=cHeZ4qCdqbdrX9yqc9W82ZzdMxwEW9Z4PjFYpaES3og=",
+    "signature": "keyId=\"https://books.babb.no/user/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest\",signature=\"d79AQnetmLZKO2astAFHVBsBItFO8M7YIvXasP7nF9CWdBLVt77KLH/I/oRcFYdq98QQZ/laOourFPSNZAjnwEm3gPj/UzHP8ncUnaIZFhHRDil6q1n8T7bhiYCJpzcpeV+lmMTXdcGMi5HaEdvUOD92dEkS49pg+c7y3wYVeet7fn4YFK9FTMr2F/vwDLtfktyFsoqYKXPzR1p4DbYLq1uc8PZOrceps9p18RgUtTjzcoOBykGIA2/zZ64SIa7ycZ9FDRib5pEl7kmf6KIGKxi6K3nxw0i+q5yYI4OB7AUjflJSpIjMz61BoALXk5pjgJHR3hI12/d1p3AYbopl5w==\"",
+    "content-type": "application/activity+json; charset=utf-8",
+    "user-agent": "BookWyrm (BookWyrm/0.7.3; +https://books.babb.no/)",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {
+    "id": "https://books.babb.no/user/trondss#follows/428",
+    "type": "Follow",
+    "actor": "https://books.babb.no/user/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "@context": "https://www.w3.org/ns/activitystreams"
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "83.825 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "819",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:02:42 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=G/hg7jwJa/hAfu0H4I6zT3HwstVaue8v3foZe6P5waA=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/ecoboostsalespointer#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"hgyIgFt4gkkbN8Z9cRn4ChyXy5LN2XnqpEemojWwNnX8qssjHJlh9dVS9naOKPfnYQ2saFn3aAgT5Q17EVu8fjETpX5kOVFqTbGwSyi4DxqbfG37XJoSEzYp8Ou5UIvbb3V6VJxg0HIUJostz3k+HnjiiXkRvhT9NMJZwKz21E/IsHJPRcv/jEWlYnXM/ldLfhOeHfiJ9wJ6k1RctwKD3SOdyDW1YOsxNilWWvyO4ULdo/mUogW5qJ+NtrezC+GcOczYjb4zMIG4RJK4uiq2rDnWyt2JYSjbBTsxg9zv2xBBPkTvMDEE6RK7C6OBANtggYzzsrwoxI7IueSzoApQyw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/ecoboostsalespointer#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/ecoboostsalespointer",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/ecoboostsalespointer",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/ecoboostsalespointer#main-key",
+      "created": "2024-04-15T10:00:43Z",
+      "signatureValue": "n9RMWHa8ew18qnex1z/Zsfxvh+6dcv37PiGpfuLS5X5xYjCaNq7tvyEVvOvzbBDMWF/QvIEP+d6K3P3hZMebfNTAI3ceV7RcAOsZvAnBOx3Z89wBXggkiMnciORI6f7jSgRdqOaQsyi9dxW0F3JUZW+bXCA3YYMr9WJHrBKpAnMugmGFM/1KRdCfO7mKKaBWDrG5W9ddpn7mlRMC4/pLbabUEjd3W9NrsAz7ZbBqzeEgJwKQpMOQmtuXspzDzh5JsGYRJmNMXr+UzwFupWytsNf9H6/u3wcUBLmIycExXJLlESCkTYWf3BMz3PA29oHcK822BEcwIivODTp4vPjqmg=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "440.063 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "227",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:03:13 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=+6KI4lL4wM6nxU0Dqt4R+GGO3B/hXE+Co1XW6son+nE=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"J7iz4sT4cGyTzt7dLXOxfDbElbWrxekFYg4RnHZbNHkmhNRnHMVy3JQ1eeQBFVGwxS31TPRUBBOyPO5nDyE0X1Ms/39vCpMFbWvqo69ULOgJEOEZNOlaCHWgJL4Lf3k+MD6Soo10Xtm+ANVMFaPEDjtkmGLyZrZUfjB4LYIG2RdOVuaKpO7LyOP4dsZRsMjF8pZYRqLcyKthekO1zGvcnEcEV7r19a27VEqomfX8uhDJdM6pfUdd8J2Hgd0hp6QlWoeDRzMYDwtt0bvBND8Su1YmZflDuUVeg7Xx4S1jYQtmVHj5uJXMr7H1lTjui4v5jmwWD7B4Ch8GN2AAGZMN6g==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/83fe963a-64c2-48d0-a26c-af8c9e547c62",
+    "type": "Follow",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": "https://www.sneaas.no/u/trondss",
+    "_id": "661cfb615fcdd60f399f7d35"
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "24.153 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "767",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:03:58 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=/wxVhzMWgDGcLS5fQSSw4PxI+U2zfQcmPeIQR6j9zwo=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/fluf_io#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"hmKgx5X27NyCuqY+XbbMCy1rAnZFk17brQd/L6KCnrodtlPUmJ8aVN6JJBGfkAsO/Q65VRzmlAHm4LSZzeeJ/t+HGZFXPxLDHLLPavcEV8RCs6q8+W0r49Mg83yO6EKl3K9Q5DNOGzI2d1O1hXyQlQzdgEg5BiDCIUxLmqyKRW1DISaEm21mC1qu4BFqkdO+4CaElCRPdmTegHxs0JXpMF1n7eKnSHbSWPBeFZC4jYT/26pcUP2LKcrmlRjHF3OhZKQrCWpzRsKqCy/Hc18Kn9KIKBwCCspHkFOwSrKBY6quVYALgrOkzQXffnnt5p+U8oybxQYYX6P7KEZgxQcBFg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/fluf_io#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/fluf_io",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/fluf_io",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/fluf_io#main-key",
+      "created": "2024-04-15T10:00:42Z",
+      "signatureValue": "oEHQhO8ABVCsivjSzatizMp/5ZaKKxcG36z/J+5wNu3EJdPsNFtLptTzzDyVUAgbQI0igXFtfiiMt8sHxIQ9g3r13VGIkw0bvTWLncCrD9UZDzxM/6dnMurwWYDKa9irCG53D2IOH6T4tq/FMBHMUND9p73RLYNpuqx/O4uxGrzsVo1P8ELE92BZM87RQMMzIvkoIGikVnGw/mHDdYKLI/tzi4xSyWbhx1ke35PPD7GN+kzK5z8ETXhjY4+Uu2qT0bsXDj19LdrfSK4miCrotoB40vfDRS5iUcna/uouBSeXvrub22aWNpdkQXTnLoRUggNQv1OMo/1vfmBhIjs/Dg=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1119",
+  "responseTime": "1.183 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:04:54 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"j6NqijNZQ8ZqtUIVPRKwt9m8eza0GvywxRX3YoNidPi9C6b7c8tXV29vc07hVEFG7uvkjC7+imCxGzfZUiNd1/1QArawSRoCK/KyH4BdZVh1gpdnfegddSZxF3Y7DWlqQl5fEctKPAjjF24BEk6KwT6Qdy9gBwWSslIV2AUQXwjB3TDj/ZUuuYc4uX/+R6tRnyfHVmYm7+GWgPRUJxTkcAXqPlgngjGPMKebO+KpMKbGoQYIRa2+MgzF8OUrjqf+iey2YVx/cEdkN55iMsQO4/D/IpqKK6KFPSvUtnOaMd1toHJN7hJXtmOGzjUxz/rCPZzFhdxOVrEYLj0UMUrBng==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@www.sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.603 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:04:54 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.586 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:04:54 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/icon",
+  "status": "200",
+  "contentLength": 6240,
+  "responseTime": "5.466 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:04:54 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"rUQGR3EKyeIGZzl1WInVNvcwBpj0XyWMzvtFsCnpLxVBmo0oTXX5I9UYPU7SISWEnUufu4L55Fk6ZN9XIWy8vgkcbDlIBZbxgiy7XjPx1L6fuJB2xYiLiJAUToKDkwP3nKFY+7aR5Hli0EEVYbvOtJw8kc8pj/gCYTqqHS0vT4Xuf65lsObY/pJKL/xhb5zp0/VhhiBskWU2U6DgS+xJn1EXd2R262rNXceTwTGJYDpXAeC9JPVlC/kHnGe0yhdJ8nvfqAh6p+b4pivqeucUJbw8Q6SS6JWiqs4iEsA0hXTpf3K2Y/S3MrkmuRc39YLkc5VCjBMQe08xGEf9+vtueA==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/outbox",
+  "status": "200",
+  "contentLength": "227",
+  "responseTime": "3.750 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:04:54 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"F8D/Pr59lIDU1bs2068rfRjhRF6zGltNKuaRUkwvV+tyvLrzIdN2h9+SaYwGEUFT/er11D8QmtVElLnqij6S4v1EBlYMwzQ06uKNypVVS5ooSw1vHmnEdH8TaqM75DzoQoHbm3/h93EGAWszu+QayATIjZ6DeoYzn4QqFo1RcOgjceEYAZxB7B04s5FVTsF7OmKWl0R8BVD2PJX21GpWCn1Y78tdR6JYV38EmFqKbeEs7WoOdWa2Oabj5NBz3wHBXLdeOCc/BykxlzNV8+SOIwCBUj7bkoIrcwDjh7+BGDH1bBzeZwIdiTxstjDgagMqciq4Sd9tBu1WZ5Aq8XW3jw==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "3.696 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:04:55 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"sV5xVL14xsRgv3wOHvP8mFksVhvrIG9q8vK4Auq0X5gba26Z++4JafdTztnwrfSeOv5nc4qiGwR8leGAEqYc2Ct8fuhMv+QlEfovnYmjKdZCw3x+jAtUBMXEo0HTAxN6CsMGN3whZWGg/yXaFkVAcojGkkj2j3CFAtXZC69Jw4cyGPKLEX8xG2hN7862RCs/El+dZINikPm1Y75N7oV9A/JM1nuyKAiDKg+JRZTZRFyGJ26lZR7y+32VBzXR0QXeoiQgHNEiiEMiOo7mAKlMJXpC2dQZd8yhW/+3j5okEjRIvVYyl/YkSCWmgWXOTlXV6zTqg0Iba2uaFbe1I0c2JQ==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "249",
+  "responseTime": "4.916 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:04:55 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://mastodon.social/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"fVeXS7lER8oRTUTdigb298RUCTMtqbtYVRxtGx31gAe2z0Bda3M/eYViOxCh04JLo60DvHgqVXAPx6XaV5q+qXpgVq/PRTGdlgIyiGiSdhH1HCBxumvYbRdQGp18Z+sQEira/9Yu0Vetp1W9we28JwtvcsL6tALWZKsbilxfTZW2avRxmeHLE7Nm74s9XBR1l20BSJxR3tEZF3zL1dqN8je01F9sz9KLwTwwyoac8+kiXavZiVPjgTrBO+DgtgA7FNXUMPFubKXsPrKVBNruq3OxLeGSXx2/6LORfsWR/EWO7BE/qAb4yDBNJKbG7rdsOeBz1AyuzMtsikHVvbLBXA==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "23.968 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "783",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:07:52 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=WubBj4KghY91pp0kzihV1yS9f/GTFZTMLEtW0qY3qG8=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/theleftfist#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"P2C0y/TArhI2kMm0lqU0hhwh4xmK1PmRPDhSEI0lpWRg2pa7X499AGSr01MGnMAC48rjCZ0bXMvBQ+jeVACPi15uHA5ofu+mhhsV6kywQckYwhh/AJXj+hWIowsEe4lpNpDChqreQgdyeuPwwovNW7zFgpa6Qvgj9o4yxPyK5NVLiZtVkqWIGbkh0SV2gQVWotZF1bir5ciKks0SRAqs7M3Y154EVHu/pJRGTXkkfgMwJaKRBJOlVpY3AyWT2E170EU1F2tbGMVW4qsMB+oveZlU/UhnLHwzmUEseOenS04sUlII7HWqVdTU/O7UsWx2qGKgAAkyG1H6op15GtIZRQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/theleftfist#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/theleftfist",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/theleftfist",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/theleftfist#main-key",
+      "created": "2024-04-15T10:04:48Z",
+      "signatureValue": "d7KxOVH3yz7TzWRWBnQgSNOsE5sltHz+3OhR4joFND1SxgQuqE9yuj296Oe2aQbfVXVVy4mBgtZ5nHPphC1S1XAWe7y0peFdNCvBJVZBby3NINkrXMG7VBnNoSCzIgY03wRYfo/lNqqvaUg44796mLuQwWaaH1X7glIrWmNOj5mjfWxQivWY0J9y3J0yhfxyLLjw31p/0B5+Dl4OJWnhPJe9836wpbTRLgzjGDdXkZw+Rc7KvVM2fzinzDdwcso4iVVGOpfENgNM/OVRk9zKyj3uHKMSEDic6pA6Hzeh3MGGbkOxTZzblLn7P+hA93BRhZTmrjZDTv0Igr/nbtCnXw=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "135.370 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "991",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:10:14 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=MDC8gGjctCzvUh7nL4r7IJz6lxgD8m4lRNDt9VLidPQ=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"rt+ZoQdZ37lspRJEOL7aF4MxURxp8jci9yn9uJ+zpZE4xR6CO6qx33L8hAed1KxZr0JMwTW3GR1GiHk1Ws48PF5rC1ZAip7xCQW/UfMq1PZ9gFl4KvfbwTxrS1PhmglM+G1ndcBelnKfT44qgaNux+s61krpUv3C7OPhkVMwDLHbCny8SVzUvJ98q9Jd0f61ovWmXoM/FGenNYadXYFHOrnYDVByxabPQ+mKDzuoaeFsyQ3GzGQOYqId4bO0SkGQqla1UAFmu6PuL1dL1YUtcUPgmyFBNtXDYNtTIgLcXK65wUt2hDaS5gBhijlGqpOUCPBCsqhO1PiIbapWyQJ1hg==\""
+  },
+  "body": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      {
+        "ostatus": "http://ostatus.org#",
+        "atomUri": "ostatus:atomUri"
+      }
+    ],
+    "id": "https://mastodon.social/users/trondss/statuses/112274492241289272#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/trondss",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": {
+      "id": "https://mastodon.social/users/trondss/statuses/112274492241289272",
+      "type": "Tombstone",
+      "atomUri": "https://mastodon.social/users/trondss/statuses/112274492241289272"
+    },
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/trondss#main-key",
+      "created": "2024-04-15T10:10:14Z",
+      "signatureValue": "nTsOstBEGJQIE7bCaOTxYHXOJh0/Hw6jBzi584djJpcEwdSJxX+xZP8pSUliVLJrf3pf6UFOKAUpVT7gh+iKob/r2MV2JSSC2TXiA/oZkmO0SsJ0gT1jQ+kY5bja5+WEo2v+BElMbuQ6rz1XEJX/emmuU9NY0zC6DWgLD6bYZkkqKn5ed8IPIyZ7bVtICvVXgpMPXH+uM40UkLi0k5gbzGx04jTySPWwOYLVohRcD11CXVomHE3/VKDvtwNtmBQfU9UJj6NsWIW8RRBt+4zTmIXR2qwvlOhn+xRLXGfKChKvTX9zAzB7xP+6jadlSRtMAeDE3rLDYUFgKQuAW6G5qg=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "39.050 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "991",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:10:19 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=c4a81Ygzjxxuir01t80ePrv9EKX1JRWT8c9rmn+YmDI=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"mNotlTuRimikukclbd2hmrCmSmyxz/E2dG3K9arLWBCcXe/Hnk8/BB39ayxpAGl42MrtIY+g9tJxooqBCv1/981ukLcZSUeJvtx6oEHTMPzgi4SRBxY5CJDF+KI3VCD/5wyG0wju4oNFJtEaNuGnqtVzmF1303YNR/0pCdqP5egpkiEkbuX5dXQd/io9sX17w4d3XOtQ3mQ1JAUJ24WM6mhR/iUxbvxAK8Ycm68+xLUuhes0Rx7ZRNHd/Y+my2PBznF215F7WgnxJuMeGdDH6vj4m9AENaNRXLat7UrxPcqZGQj1CyQUkVxmP3M7bEX47LKLz35lDSVABbXzWHna3A==\""
+  },
+  "body": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      {
+        "ostatus": "http://ostatus.org#",
+        "atomUri": "ostatus:atomUri"
+      }
+    ],
+    "id": "https://mastodon.social/users/trondss/statuses/112274479958626538#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/trondss",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": {
+      "id": "https://mastodon.social/users/trondss/statuses/112274479958626538",
+      "type": "Tombstone",
+      "atomUri": "https://mastodon.social/users/trondss/statuses/112274479958626538"
+    },
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/trondss#main-key",
+      "created": "2024-04-15T10:10:19Z",
+      "signatureValue": "WwmHqCG0W1DCDD9qeR3o2oS7fLHyuwsrL1EOsVf8UJtIvoXBAeb6+B4mLmQIWSD5BD1P5nW0D29PZqQc6Pf60RynhDVWxHxiK+SkB9UPO3EAVX92xPiW64nVEpkReIGy55ImBeItIB031BMu7PliwugDLR0gr1gVrUR9eGa4+/l66gwHZG1LfF7KEnx5Bl4uoHElhSoz+ubuRIPI+IOQ9JikMCt0pid16BvMz6zNAFXRgQKNACh0ModBbj1Il8PnA7Of4f2IYb5k5V2xx4gtzd5SiktMLe/llnBSh3aqyUefphHm89SY9gP3Gi8Fv2xcHBLBWmmGpud2GYfrspNPQA=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "37.961 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "991",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:10:26 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=OoB/8uS8BwnNGlHG2v6jMdy1IuJKwjvBSwOkq/xXtxs=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"jwadf1mN+U5JK+5hPXF2Ad42uc0cE8r7OUp4k0TSx2FkE1m12KxsLAhIt8DnEjRt5imBhKp1IxjPmHG3Mby8uiO+60X08sm/DTmCbMApeqJsewGbA08W+1ZCxeAY+3vHZrUns3sAPGW84nLyn5IGfQ5baIQ0ubdDLgW0z6fiVzx/yF9BtHPkjP9RfUqMmjSVc3k0kdkMw3BgVrN01Od/VFmv2HLgV63qF0hQs7SofZ9BmwhNcH68x7I14zlA36jk+RUw98Oh3/C4mFDZyWxQms3cI0QEuqqU7KXNQ1V8fJY7AJrIzdzUoaAJIbvx5eJfXS8ZFTK3kvzG4YA0iCC3vw==\""
+  },
+  "body": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      {
+        "ostatus": "http://ostatus.org#",
+        "atomUri": "ostatus:atomUri"
+      }
+    ],
+    "id": "https://mastodon.social/users/trondss/statuses/112274457400863601#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/trondss",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": {
+      "id": "https://mastodon.social/users/trondss/statuses/112274457400863601",
+      "type": "Tombstone",
+      "atomUri": "https://mastodon.social/users/trondss/statuses/112274457400863601"
+    },
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/trondss#main-key",
+      "created": "2024-04-15T10:10:25Z",
+      "signatureValue": "F8WbhqG0nlh4C8aZtuYLKy34SIsP7GqAh3jKLurSdL5o6FoaJoXLNEL2+ooX+gd94DcqDrx2aeOvo85qosHiVfo4+RVxUI6DHNW/xMdcS0sb6fqgoiZTBvF95R+z/dwiZyEXafoj056r0eTThIw+pBe0rJYSHSlwxBv9tUJBb76iN7jvkRkl/07IZM4eZcFX8/443wSBL8HWz8SWVsp+OMoYLIMilEg6bXf9Bbeg60z1sV27UrrpT2nlh+2gFjSDPLPk4AnUzpoW5iM0JcET54Ai3I0Z3XKX9T/C/0sc/ifmx3M/H9ROQ9cGIpZFj1156THEVIyY+vp+LAfz0rkTng=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "9.519 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "759",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-10; +https://mastodon.social/)",
+    "date": "Mon, 15 Apr 2024 10:10:26 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=YWUikTldlorpnzGoSYoOCYhIZGLbbfO/Fg6lp/8ZYdE=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/Nobud#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"ZC2RqalE+0tMhP9xFpKshE8XQnlXKVj827yYjXf++2e4kU3Ky+3aLSVQJD3HtoeVNepuNLesvj80WGluvSThoHTnxwoK3QhlwRR2HrwwS8W+8ebrgf5Qb3n0KkbN0tb8EnUnm9ttZVBBP70bBd4/1vRxyi5P2k5MSezv+vs5iWoDnfbZZ300tq6nKlPdb1Xey5+3zzjMZqlaT4Xk7pfIfkkMGxUi7P5ReUn+15nLomSPeF1jdZOxKL1T37qmGLWDr/nlRlGhN29myT+R0RSNSw0ZSkUTj/Gfo7Vr+SkQrsVl53clC+CY/4oFFFVx6XMQ31Sjpk5dHS7IDjO96TVeYg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/Nobud#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/Nobud",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/Nobud",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/Nobud#main-key",
+      "created": "2024-04-15T10:08:26Z",
+      "signatureValue": "hpSPozlDPRyEvSm8s/m4lXDhT4vw7U92JDZ5tRZ6WlO2W6JHyht0yAJJ1HFH1pNJ71znD1QjN1oIuGAREgtlVY/943giRVCkMD2a6FkXebAQYmUvy8kGvYleWzQ6Tk9S8XXmCugm2WMoinAXltcuNSlgOMAQt2/rXiXrAw69sIGCjXaoGoWKDB9vdAUtMJ3cKbUhVs9p8qb7O2kco+0ZOeljcDHMbKuYLqUpj5KxW17ChfDFN9IK2D9TTckb5LvRHC+Ky4K+VhBgzpU0SQYuM0DXSD70xYZvadNoApVW9uFWo2+jAtkXAMI5ngZaxZiME1pd5WWMMBICvK2yuMmNjQ=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/robots.txt",
+  "status": "404",
+  "contentLength": 149,
+  "responseTime": "2.618 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "0",
+    "accept": "*/*",
+    "user-agent": "caveman-hunter/0.0.0 (+https://fedi.buzz/)",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=40",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.755 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "0",
+    "accept": "*/*",
+    "user-agent": "caveman-hunter/0.0.0 (+https://fedi.buzz/)",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/streaming/public",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.508 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "0",
+    "accept": "*/*",
+    "user-agent": "caveman-hunter/0.0.0 (+https://fedi.buzz/)",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {}
+}

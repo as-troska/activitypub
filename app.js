@@ -15,6 +15,7 @@ const outbox = require("./lib/outbox")
 const inbox = require("./lib/inbox")
 const followers = require("./lib/followers")
 const following = require("./lib/following")
+const winston = require('winston');
 
 // Middleware
 const checkContentType = middleware.checkContentType;
@@ -32,7 +33,31 @@ app.use(express.json({
 
 // Logging
 const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
-app.use(morgan('combined', { stream: accessLogStream }))
+
+const logger = winston.createLogger({
+    level: 'info',
+    format: winston.format.printf(info => {        
+        const message = JSON.parse(info.message);
+        return `${info.level}: ${JSON.stringify(message, null, 2)}`;
+    }),
+    transports: [
+        new winston.transports.File({ filename: 'access.log' })
+    ]
+});
+
+const morganMiddleware = morgan(function (tokens, req, res) {
+    return JSON.stringify({
+        method: tokens.method(req, res),
+        url: tokens.url(req, res),
+        status: tokens.status(req, res),
+        contentLength: tokens.res(req, res, 'content-length'),
+        responseTime: `${tokens['response-time'](req, res)} ms`,
+        headers: req.headers,
+        body: req.body
+    });
+}, { stream: { write: message => logger.info(message.trim()) } });
+
+app.use(morganMiddleware)
 
 //Routes
 app.get('/.well-known/webfinger', wellKnown.webfinger);
