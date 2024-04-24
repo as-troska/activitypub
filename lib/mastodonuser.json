@@ -1,0 +1,87 @@
+{
+    "summary": "",
+    "featured": "https://mastodon.social/users/trondss/collections/featured",
+    "manuallyApprovesFollowers": false,
+    "endpoints": {
+      "sharedInbox": "https://mastodon.social/inbox"
+    },
+    "preferredUsername": "trondss",
+    "devices": "https://mastodon.social/users/trondss/collections/devices",
+    "indexable": false,
+    "published": "2024-03-11T00:00:00Z",
+    "publicKey": {
+      "owner": "https://mastodon.social/users/trondss",
+      "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAue4A0KJdjC3OE85D8Sjl\nkqg3ay2ylECMMyKOLuvhRUpFA7a70qS4NrBx69ti7J/FAcUOIFr96z3W0/0nf1AC\nRiUToTSexkBEnE4LV0VfUzPs6F/WrCgjPm0EduukjGZ26Kpqoxx2hFX2X+B0dcK4\n/qnNpg7hkVpoHX/EA5K+tQy5yEkmRSmQdBn7jZDQcOZ3iIz78En2kvFUg9XWC3YO\na/Hnhyxml0LBZhnzObIr+O6IgI4ODPebxs4SW2IuGfrhlS8NXtwmCruIJnCXM3wZ\nA7xSatAWdImcKfNMY99m+splXV9mQRcLRYFhkJIUwRvUVllJu6u5BXkT+FiHR3Pq\nxwIDAQAB\n-----END PUBLIC KEY-----\n",
+      "id": "https://mastodon.social/users/trondss#main-key"
+    },
+    "type": "Person",
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      "https://w3id.org/security/v1",
+      {
+        "schema": "http://schema.org#",
+        "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+        "featured": {
+          "@type": "@id",
+          "@id": "toot:featured"
+        },
+        "Curve25519Key": "toot:Curve25519Key",
+        "indexable": "toot:indexable",
+        "deviceId": "toot:deviceId",
+        "alsoKnownAs": {
+          "@type": "@id",
+          "@id": "as:alsoKnownAs"
+        },
+        "movedTo": {
+          "@type": "@id",
+          "@id": "as:movedTo"
+        },
+        "Ed25519Signature": "toot:Ed25519Signature",
+        "cipherText": "toot:cipherText",
+        "messageType": "toot:messageType",
+        "toot": "http://joinmastodon.org/ns#",
+        "EncryptedMessage": "toot:EncryptedMessage",
+        "identityKey": {
+          "@type": "@id",
+          "@id": "toot:identityKey"
+        },
+        "claim": {
+          "@type": "@id",
+          "@id": "toot:claim"
+        },
+        "memorial": "toot:memorial",
+        "value": "schema:value",
+        "messageFranking": "toot:messageFranking",
+        "devices": {
+          "@type": "@id",
+          "@id": "toot:devices"
+        },
+        "Device": "toot:Device",
+        "PropertyValue": "schema:PropertyValue",
+        "featuredTags": {
+          "@type": "@id",
+          "@id": "toot:featuredTags"
+        },
+        "Ed25519Key": "toot:Ed25519Key",
+        "publicKeyBase64": "toot:publicKeyBase64",
+        "suspended": "toot:suspended",
+        "discoverable": "toot:discoverable",
+        "fingerprintKey": {
+          "@type": "@id",
+          "@id": "toot:fingerprintKey"
+        }
+      }
+    ],
+    "outbox": "https://mastodon.social/users/trondss/outbox",
+    "featuredTags": "https://mastodon.social/users/trondss/collections/tags",
+    "url": "https://mastodon.social/@trondss",
+    "followers": "https://mastodon.social/users/trondss/followers",
+    "attachment": [],
+    "discoverable": false,
+    "following": "https://mastodon.social/users/trondss/following",
+    "name": "trondss",
+    "tag": [],
+    "id": "https://mastodon.social/users/trondss",
+    "memorial": false,
+    "inbox": "https://mastodon.social/users/trondss/inbox"
+  }
