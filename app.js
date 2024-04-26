@@ -70,8 +70,12 @@ app.get("/u/trondss/following", following.get);
 app.get("/u/trondss/followers", followers.get);
 app.get("/u/trondss/inbox", inbox.get);
 
+app.get("/createNote", (req, res) => {
+    res.sendFile(__dirname + "/www/createNote.html")
+});
+
 app.post("/u/trondss/inbox", checkContentType, checkActivityType, checkActor, checkSignature, inbox.post);
-app.post("/u/trondss/outbox", checkContentType, checkActivityType, checkActor, checkSignature, outbox.post);
+app.post("/u/trondss/outbox", outbox.post);
 
 app.listen(1814, () => {
     console.log('Server started on port 1814 http://localhost:1814/');
