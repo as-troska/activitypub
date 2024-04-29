@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Lookup</title>
+</head>
+<body>
+    <form id="user-search-form">
+        <label for="user-url">User URL:</label>
+        <input type="text" id="user-url" name="user-url">
+        <input type="submit" value="Search">
+    </form>
+    <div id="user-search-results"></div>
+
+    <script>
+    document.getElementById('user-search-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const userInput = document.getElementById('user-url').value;
+        const resultsDiv = document.getElementById('user-search-results');
+
+        const [username, domain] = userInput.split('@');
+
+        const webfingerUrl = `https://${domain}/.well-known/webfinger?resource=acct:${userInput}`;
+
+        try {
+            const webfingerResponse = await fetch(webfingerUrl, {
+                headers: {
+                    'Accept': 'application/json',
+                }
+            });
+            const webfingerData = await webfingerResponse.json();
+
+            const actorLink = webfingerData.links.find(link => link.rel === 'self').href;
+
+            const actorResponse = await fetch(actorLink, {
+                headers: {
+                    'Accept': 'application/json',
+                }
+            });
+            const actorData = await actorResponse.json();
+
+            const actorView = `
+                <h2>${actorData.name}</h2>
+                <p>Username: ${actorData.preferredUsername}</p>
+                <p><a href="${actorData.url}">Profile Link</a></p>
+                <p>Followers: <a href="${actorData.followers}">Link</a></p>
+                <p>Following: <a href="${actorData.following}">Link</a></p>
+                <p>Published: ${new Date(actorData.published).toLocaleString()}</p>
+            `;
+
+            resultsDiv.innerHTML = actorView;
+        } catch (error) {
+            console.error('Error:', error);
+            resultsDiv.textContent = 'An error occurred while fetching the user data.';
+        }
+    });
+    </script>
+</body>
+</html>

@@ -43521,3 +43521,3141 @@ info: {
     }
   }
 }
+info: {
+  "method": "GET",
+  "url": "/lookupUser",
+  "status": "200",
+  "contentLength": 1234,
+  "responseTime": "7.498 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/favicon.ico",
+  "status": "404",
+  "contentLength": 150,
+  "responseTime": "3.599 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "image",
+    "referer": "https://sneaas.no/lookupUser",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/@trondss@mastodon.social",
+  "status": "404",
+  "contentLength": 163,
+  "responseTime": "1.237 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "accept": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://sneaas.no/lookupUser",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "12.469 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "775",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 07:51:39 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=2beHBNNWvbScgedwNUAdt6sIuz8vitdnot2eeSLoikQ=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/sc0pitone#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"FxH+0hxzTLsMwlwjw+EZuTkW7IXDGzU6Cx78yBEXwueT7us3B5gdU39L8kbBhr4x1Q7yBa1mf/c/JWN+IJLpTuPKGgbQgN9VbTzPvw43BxVJ9Cehn+f3c4j++WS+DTF6llrPqMpQvN34sQMaF3pX3gUR+GZuLyd6cR6BypXuWTllvIdeWgw4v76SFUCyQdQM+IcwsQultql1L/JBFHqw+kgxbZfAIOcJJH/UYJE4Ld6Qr/JCWCaisv+1o3eenMZdi97uTZnHmg0f/xlcuKpzH4Q+HZgb+sRqL3GLtwM9/3S4c9SNHuh2+xHonoc4tDkf5ruPH1Tx+sQNfkooMp9SHA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/sc0pitone#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/sc0pitone",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/sc0pitone",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/sc0pitone#main-key",
+      "created": "2024-04-29T07:50:54Z",
+      "signatureValue": "j0BAy4lOLC6cxVyFSjPWw3dA7EwW9wDB1Qiv8Weyo7ftA4ntvBXEqmBFWjbIRMcy5bFPdilu58WAPFwEjGSk5KwDgvUu5g7TcyE4+l0bHtDAgQ8HJYJ0HGqwBvNd/J84NE4YoXsr1Af8EVnt2P/H4XdjQKNgMSUy07A62IDVtEyad5t99MbKMbJujh5UqgSzFUxc9INpyXxbCnz5UhLtksa2fiZzteYkemXApQnKypRrVNxtCfXPYC771KEJI9DBFcLb0AHXjcahDsYDTcQtnGqh72L6pdKQCuTBUqqgGPZlZYdW7fxFn99XD8Bu3dI9hqm7eGXvE40ebNC1pf7P5g=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/lookupUser",
+  "status": "200",
+  "contentLength": 1618,
+  "responseTime": "3.054 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"4d2-18f28d441aa\"",
+    "if-modified-since": "Mon, 29 Apr 2024 07:49:10 GMT"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/lookupUser",
+  "status": "200",
+  "contentLength": 1657,
+  "responseTime": "1.472 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"652-18f28d8a6c4\"",
+    "if-modified-since": "Mon, 29 Apr 2024 07:53:58 GMT"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/lookupUser",
+  "status": "200",
+  "contentLength": 1804,
+  "responseTime": "1.302 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"679-18f28d9a2a8\"",
+    "if-modified-since": "Mon, 29 Apr 2024 07:55:02 GMT"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/lookupUser",
+  "status": "200",
+  "contentLength": 2286,
+  "responseTime": "1.194 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"70c-18f28dac8eb\"",
+    "if-modified-since": "Mon, 29 Apr 2024 07:56:18 GMT"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "1.054 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "accept": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://sneaas.no/lookupUser",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "304",
+  "responseTime": "0.946 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "accept": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "origin": "https://sneaas.no",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://sneaas.no/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"500-K+kPyt47L5fTAyc++V5eVwBQhd4\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/lookupUser",
+  "status": "200",
+  "contentLength": 2161,
+  "responseTime": "0.610 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"8ee-18f28dcc4a6\"",
+    "if-modified-since": "Mon, 29 Apr 2024 07:58:28 GMT"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "304",
+  "responseTime": "0.540 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "accept": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://sneaas.no/lookupUser",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"89-73JWSEWroA/oQgtLAk1CbzylPto\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "304",
+  "responseTime": "0.577 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "accept": "application/json",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "origin": "https://sneaas.no",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://sneaas.no/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"500-K+kPyt47L5fTAyc++V5eVwBQhd4\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/undefined",
+  "status": "404",
+  "contentLength": 148,
+  "responseTime": "0.627 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "referer": "https://sneaas.no/lookupUser",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "304",
+  "responseTime": "10.435 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "referer": "https://sneaas.no/",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"16ce-i3B+tXIAhcRNgeq7oVA5hyKV3Vg\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/favicon.ico",
+  "status": "404",
+  "contentLength": 150,
+  "responseTime": "0.808 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "no-cors",
+    "sec-fetch-dest": "image",
+    "referer": "https://www.sneaas.no/u/trondss/followers",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "0.610 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "connect.rocks",
+    "accept": "*/*",
+    "accept-encoding": "deflate, gzip, br, zstd",
+    "referer": "https://connect.rocks",
+    "content-type": "application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "0.726 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "connect.rocks",
+    "accept": "*/*",
+    "accept-encoding": "deflate, gzip, br, zstd",
+    "referer": "https://connect.rocks",
+    "content-type": "application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/instance/peers",
+  "status": "404",
+  "contentLength": 160,
+  "responseTime": "0.579 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.566 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.790 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.642 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/instance/peers",
+  "status": "404",
+  "contentLength": 160,
+  "responseTime": "0.612 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.558 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.598 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.798 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.653 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.501 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser?user=trondss@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@mastodon.social",
+  "status": "200",
+  "contentLength": "2569",
+  "responseTime": "160.681 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@pixelfed.org",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "9.036 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "791",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 09:12:51 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=IpofnBlwgbw0xVIrd7weRxhNZB5d2QSn0rkoZ4vy3gQ=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/acharalampous#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"caKkvYr+Q12KZS+ux+edD8PwaFW/KqJkXuQf6K+8BQAb7caKHiy9k01ahNAQDFBKrTyaEpVmmXcPbwEo8aFwagrLnvoEOgNs5NpgxzqYns9HT81FOobRyPDlwAlVHzFvHaYUksyINwSEAHEGhIISldsEEQM0O4US9jBk8VTbrEjvbVPegX+q3GeCPcWZQA+GLZg+qh4JI6qS3xYsXeRF1LPdlgiMHbFheAxL4+fA0DROfBQQjpbxEyobiifa9GLlLg1qquCVc6NfyzX2G3AkdBdzEnV5zPHaJXlcT+3bBbTSkgWii3YokmfK9QgoJrF4M7EY8XaczuSNC2275dl9Eg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/acharalampous#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/acharalampous",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/acharalampous",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/acharalampous#main-key",
+      "created": "2024-04-29T09:12:06Z",
+      "signatureValue": "nG1anlXXUJiMazGY1xR5t79DfilBx2X2hIIS5EeIH6SDmf3ZJoVm7VeWJD4lf6uH9+16nGznJgARJu0wVjKGoYz0uxNxGn61ZvkKtkmJn7DtKZsJXRPZDUPYcGSi4kQX2CU8/9fPRiG/aqvram81H311T0bbQjV8Y3WMJwuvwh/R+1zZwSOFLy+VpTjzgVLB/B/2J/LLWKM1W9RX8dMfhy2A87Es34p1Fv3BAg3Mrvb8Ua2afVcwdZzn8iTjX2BvreChYFC5XvGW9UZwPRaY15CN8j85ZSmhcx0Zqi0tiIuZFytPioaZOuXiddIrsoUECtY3fqGl0AR/e+lNXys3Dg=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@pixelfed.org",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@mastond.social",
+  "status": "500",
+  "contentLength": "21",
+  "responseTime": "49.032 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@mastodon.social",
+  "status": "200",
+  "contentLength": "464",
+  "responseTime": "195.503 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@pixelfed.org",
+  "status": "500",
+  "contentLength": "21",
+  "responseTime": "220.596 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@pixelfed.dk",
+  "status": "200",
+  "contentLength": "576",
+  "responseTime": "226.316 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@pixelfed.dk",
+  "status": "200",
+  "contentLength": "1560",
+  "responseTime": "390.025 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"240-kh6+4XfbohLfeMJzw/XDnEt6V4w\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "7.935 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "763",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 09:24:38 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=fFPUlUvobpIA/PSh5zGlzrtfJxUEGPBeOF4pZnYRgdE=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/Nenaaa#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"DB/qieO7sdhTtMuXdOTRB0E6jDwT0jjMPmH9oAQDDE3sZF6QKACDLqor9LfDX/aeEu02P7yCYuUaCbkq03Nl+UxH/E7rLbbvEi50N04QNSuTt4qOMrt3mBhz4jc9xqm2ls9mo0wCXWL+uIS74EN5VzWZl5n33+aVA7wD+Y5DYMAvxWOpyIUvPp1bjYxXLFW5zB3UXvl0owqdJTS5nSUXDyEueYtvkbx7PqOOpbPB7WrHyFqRkUY17/8lv4L+JYnvMopw9mJL+zNmPS8XHKQTfDnpAA4Cky4wQcDiUGhqVKG6xg47Jxo0BCEFPoEQhpJMhkIztZNTHMONAelTMb16Mw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/Nenaaa#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/Nenaaa",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/Nenaaa",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/Nenaaa#main-key",
+      "created": "2024-04-29T09:23:52Z",
+      "signatureValue": "JXDVFXZZFKTiLm6WBwjp+hZtvA6QOGrKVVxhCEZ1EwVIAX0tChiOAOI9Bc9kVOKMnSY5PMtBfob2DyZ50l9s+kVXSBfsascd8kWkh3tAW7nEMDqEjcMVzvxE9AXzgRWuh/d7R1Av71HPa2FPSD7FtRSovhYt1hM6usgCMHxI2yBodisiWYrH9bebb8ByPVWb5Id7aSUQXImqTLOBh+HT2yeVu87pNEn51OnZjtT4c4sbcz4Pmfmtoe+L9Ml/gvUp3IQDB4mB2c3e2gBfkByia78bb/l/a/k/NyEyldOEMkN9DOcPcTSJy2D8Q8KK2UYd+KghjdHNT79X5L4+nNrPMQ=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/instance/peers",
+  "status": "404",
+  "contentLength": 160,
+  "responseTime": "4.340 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.936 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@pixelfed.dk",
+  "status": "500",
+  "contentLength": "21",
+  "responseTime": "403.333 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/https://pixelfed.dk/u/trondss",
+  "status": "404",
+  "contentLength": 175,
+  "responseTime": "4.426 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/https://pixelfed.dk/u/trondss",
+  "status": "404",
+  "contentLength": 175,
+  "responseTime": "1.315 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/findUser/trondss@mastodon.social",
+  "status": "200",
+  "contentLength": "2569",
+  "responseTime": "165.416 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"1d0-pA8OwsQ06998FdddIpqkRCMN18c\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/https://mastodon.social/users/trondss/inbox",
+  "status": "404",
+  "contentLength": 189,
+  "responseTime": "0.855 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/https://mastodon.social/users/trondss/inbox",
+  "status": "404",
+  "contentLength": 189,
+  "responseTime": "4.043 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "8.387 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "775",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:00:08 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=MGbWwcrbxWS4if2Vfs8FBD6FmLGTwhPRumrCRtJWhXQ=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/spectral_#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"L4SzbIBBglsCWZP8L20OEd0EKvmoOEakIUKU/29gQizylRtRiBG58S2ovqbZwG/hFGLGfN6DVsVwoW4a+anOXBS92+d3SIycjxrjGteBwgk3o61lFLRiOPiQOM4RnErStVbq1nzNykaSICfo3qT+hQnB0n0AibsVNDxsCzXF7Dleqx0IHeEHvo+4nBGBBHNbUt9qbS0rTRSi9Lu56eyQqTZTvhOIm4JGydoMcPTZjrcf/f1OPTL3dBijokvFCyKaInhuo+D1WwoeomGGKtaJlC9ZD1ftYELL13WPpFs+J6YmyLGYMFdA8hRd3KApdAwfndGpx/k0RYTXuEpr2TpCIQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/spectral_#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/spectral_",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/spectral_",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/spectral_#main-key",
+      "created": "2024-04-29T09:59:26Z",
+      "signatureValue": "UKUXJ2qSU3rhSGrisFQQlQ0QaCCA9CiqBz+1q6YTmJIxswknTFyHRqp+WPxpus878N2aM5MXn6MD7HwpjbkD//Da+jAvBI+bXlmoh1ePyuQ07ozkY57Zf1lAIpkRpX4Dx1lZIDSa9kLGymilh6WS+d7aIsWZkYmgAV6oBrBs15gBmnr3SptcbFrPpCJfUy62/IaAQrd+pubX5QRncfasL4v/CAxJhWkVyoFi2AvzG+lXivlJweH5AcjQaCCqy0KNnb/1aer0t7ok35MVmOjT6V2i95tbQp762Mawqxm1NBE2Tfk0Ako2QowcdkhHkpTQ94hmyLcYxxc/kQI5nwuJeg=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "5.988 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "787",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:01:42 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=WbEQeW7pr8cNqNaoPWeAhz1H8qcGIfBnGXzXEBF/YmU=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/sosachenhalt#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"f6dI4mvc6WAo/6mAXJ32mdqiRCgNxoTN28tRCnR5Hqjg2jBJAUbZCyED1EwiyE/1dS/GN+j57auiDvnaTEX5RaFyFulkW2wzGPqQNpDpIbQhPA6qw2otKVAMCPgvmZTr4qX2aMpDPrhZWPAG0vw1bw8sQCOGx4j7USWhb/Fe0/5xRPSHyd7f+lBuTnpl1ybg8Vv0Jnne60oXSQGRl9Eg1lVzgqzH6UHlAwSMr3u7JtprX5UIevUWWFWYhpHOsg+ZVVIpFVVSQVnqwBpZs60VaXUN+dnfzWrWQq3rT/JR2ECoTHWL9Mx9oqndzHi/micTch4wJCBXwLMqvsluafpyHQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/sosachenhalt#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/sosachenhalt",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/sosachenhalt",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/sosachenhalt#main-key",
+      "created": "2024-04-29T10:00:43Z",
+      "signatureValue": "CvhU+AB9oCKC7kL1WQAGKWrkmJy95R+JBO7O9riEgs/jbHhc76oG+sykOb0m/3Aqh3/+eW/tZdq/pow+0GOuf/sJMXZkJeXRmDADZ6FwlMs7DI1tqq9zYdvYb3JxrdpzombHFKS+gKakguySqu4FElOrg55lkd050gV/T9xwUFAiMM5jJT6/9tTLDEdyRwkPuDWTP9uBP6fYXTj/1icuvQgRHQUbdasodvz3JztEG3z8TsTj+E71lM9+mXjjFsUjmDCo31D4r0qEItIgEvIdagtC1U7malcJaosf0TXn+S2y8U41AK8MVYO9oxoY3wrW6rqfT+eGq5SXyK5+P0PsZA=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "5.436 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "791",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:04:51 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=6l8oVPtpndLYv1CgHJxo6EWmgdUYT4QIllgwaTOiqz4=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/harveyhargest#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"EY1kn8WAmHrQ+D0vXuUd11diIBVSezBzZf06WYrweEOmQhnT8fHsZTaKfehLlBlXOEuCCt7Yvbdxxm6UYxB7RkLlQX9jELcPMRDN/92S08SSeiqpZrL3dsnAN0qjrAg3zVdqBWQJXFXIZRwYM9w21uqsi3Pt9onahF7IQQ+2aFmbqyg1d4+jvRq2yacQLSBCqiThGimgSQEdQxxgVFDwfLbhrB174Y0btlGrraDH12LvQfwVKuchusxyzPz66vUa/iohS+6j9Bge1lsxteyGZVJo+i1DNFulyLiMg8u4qH1cYH6tAmULqhrhH46pZgDSHQDAYcGOwakeErM1wCSQQg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/harveyhargest#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/harveyhargest",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/harveyhargest",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/harveyhargest#main-key",
+      "created": "2024-04-29T10:04:11Z",
+      "signatureValue": "T8XLm33d4vu2St5dp0lus4FQmo4y9+RyOJDmqaacDFPgco/2mStU07dB7Z2IHrDYnwy6BYBGn+u2wN01iiSMeSugK1e+cEaS5M2OCCtp1SCdECjCwh7lMnPwYIZ9SibqUJSVvX8GrJRQN2F2RX1h3XvmyL2UYhLDLTvQxBUPfb0k3jLntt5p2DDO93xhpScYUl6kDWJgwhcU3lxX0nH8zlFLFq3Qrykn5yOeOh9C4dpMq0xfnQETLhk9Al0nSKA7mdtMoEROs3P21YZcrKqngIudoitujPJsRbbT06vqFIEjZxZN6cHETDrw+Iqm8mKn9rMwczey+vgc2DlK3TKDzA=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "5.758 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "795",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:09:17 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=ucYPYC5NbY/AWRdoXPqs1vS4AQzDfumvdanraAYT3Ro=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/hikikomoriblog#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"HbAAuaexOd7nD28J1IyIatGHcXseThgknYTZD4ewh/UP3fGiZt7kfqV9Bni+USZKLsA9x7W9WiiOAc5r1fF1+5FBmcvGYt05qPwW7U2obawKErbMQRdldbvG/tElX/vjL4kQNKxLawLGDXFqu3Hm8QXJ0cmfzH1q5m/NXkggJZu0c9Z0A+MVLqYLb2ZLQou8IrWN3BZMYS4WArNWx3WyCGpbfeaiN1rrj0WeewVfjfq0v4/xVRkkhqrzt4zYuRpyUb7hmFWNzkTA84Jjo8pijzaw7IM2R4Iv7JvXt9mAdsMmZXbiW9P774nhB0pJ2kCnu+6xZ7g9GNSflzVRNGh6Ug==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/hikikomoriblog#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/hikikomoriblog",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/hikikomoriblog",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/hikikomoriblog#main-key",
+      "created": "2024-04-29T10:07:44Z",
+      "signatureValue": "OhzlyE/DeEgMXyanl6WShu5tohkjUrCLFeclDQtZyv7s2+aegqJmSeTfnJPs0K40mmPYbawBXepyBEur1kXKHtmEwcJj5TuzvFistt1fhqm+qNBStDrLpvMC1Zv38M1LD/6iHYhM36qL/zyvj9dr5MJOyBdNoBcGJy8w5fZZYN84nalcSsq7dxTi4hTplH8uv14OVk/kIgoHmYIfmbCrJubmBgFrD1r9oBsd1alcYxmoXMOQqY/vgzkH4pg3xeBveXrnJOc2yu9ZhkgsqP5h/lD+6b+7aX8uYQq4C75OH3AZGRtrMAu3OLvtFd8kwNI2GoJ3wLu0U4cqs8szPLEGMA=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "6.045 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "775",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:14:15 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=hSfGIoIa5GlqrEtUEaBH3V4d5eFQ82BFWwugVRJ4qXY=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/talmid613#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"fAbYRcyTxP0KWhR/TW+lP6VpoWgF/DrzRlUAYSUhaYZmS1pRWSs/c1viHOxQq42cB2ipn+D8oqRckG2RHirzvEwyQvASkpC2mYNatqMKLO+UuD1lOA8tQrqksBiaU7qm2Hang43DNCoj/oMJo8/Pwt8NVCyDXOFI5Rt6GAe4QcY8W9XC2y6EhDjr0Em9ZrOjc3b1DuokGYEyJr46FOp1u5VyYIzTS6a8vyIKbHTvqOHHoEqoIyfhcpWgEd73btTaZijndd3izPf1qACJZ/cvjDlkDMaoBUNmCFesG2paco918yh8REypgRv7kYBmCaWrahgNBJ09ZsIC2n6CiwCIRg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/talmid613#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/talmid613",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/talmid613",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/talmid613#main-key",
+      "created": "2024-04-29T10:13:37Z",
+      "signatureValue": "EfqnKvswD1MsJsOiFYXMocaSjh61pbdt/D9pynICExdg+wtw+Zm815P4H+vyklQy2/yUkYdP1OKdOjQzMxPtU3bvXpJvV4uz09rhGpbp1mMswby7WB1knSOyODOHlXDgmJaUxKDiOaK9rzGVPzybsEF3DwupBJJbUxLNSG7fO5+g3R9b3oN9enlI3qqCLshp9eEnqZKQKehjR5gLYZgnuVK0b/TARrTbECHMp06c6L7ix2wZz8FpIUzWnr79AR8W1U4GqgKtv/o4AZkQ0WNnsteE8TYIEm/w2eY6XSl5RvJEICxQMTcaFgk2Ig2fNYJ80A6HjhMZo7YKDB9iqTC3Ew=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "6.721 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "787",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:24:01 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=ssetVHRxT9WAhE9/oBt0hoPBLXVzrZX9/ZaJwM4au0c=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/streetfoodbd#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"dL5YMhvgpaqUxVtJiULfN3O5aF08h9vh9bglAut8yLaN0pdOG8WFEvfiZRMaBYSPnYg4nsFRr1ST2a3+bickx+Exas6HGfsDCXAhwHmfFd7SBV0Swu2t8Emmo5hzkC2Oa26Vkt+qkMTPNUKxVXisplW/2nzL2RPyNfxN172w1YfVD0WXIoXe1nhLtz2oS2YABs75Bg/OCKykPWsMXE6lpZinBpil+Q+qTFCjOMhU6NKSJZU2xsz+aK5Y5mv2IzWJEKFgJPZSiSFtsUe/pL50+pM8hWmdTgNG7emOMjG+2JFle4XL89h+wa/kaAbfN+H5aODS0eDzn0Eg2TYomU5z5g==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/streetfoodbd#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/streetfoodbd",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/streetfoodbd",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/streetfoodbd#main-key",
+      "created": "2024-04-29T10:22:42Z",
+      "signatureValue": "StYiXx8tUCHQvi/wSqh1QHTHXFL51poqUPHwvuNhEitylmaX85K+QapT/aaXYXhrfhUCGM9kDSSDYoJLFaYsSETHeXQ8S23Nfgrmg+z04xlq8mJ1qJHIR5+FllGawUnltr9A9GFaOcLCVrWwuVahxoDfjM0y/lDlaYejWrZXDaDrAfaV4YNSwjh+WQpuBKRogFjE+wZgimBEQMal13Xf8T4GlusnUqZ+rmR6ZhoraJEF8XJBHvqJVVee/rqyJV73RU7CR7Rgchvd2nIX1U8SSugChLgOLsS4rAVxLZvhpfLYliF8a7RffCerOFB1GqYKEBlkO4qDMLfoh3oxIunj5g=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "6.986 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "771",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:30:02 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=1GsT4P9XyS+ivkeVcc9imz71Klv67d+SzKtCKYzEAqQ=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/azurenyx#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"Xm51QAYcuLSLb2bj/P6PSCtyiVadQ0TngcRL4tP2RiGbDYM7WFc0a0RjAZXK0jUyNbMLHVSxEAUb+fkrsld9BecVPpcvpa5TaTtYjOZjRqZ/3cukF0udYMYSOtXUUDEXXB/SiSXBIVk0sVE8B/x6MJvXcfUwNgLHDqpLrTbDerxc8qI4E/TUchaK0QMA6n8P3GbMfGJUJBV2EwqpFkOROPJwc9EaWiVRTbWZwCRo/02+SUIPoNH0c0IL+6eqZ1GzlhJgYwfQgQDjc/rU/22NC9MSlViI68nanDeeK8TyW6cokrgt+4jFehToCom6UQWyrJiwOx//susoExsibR/5Dw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/azurenyx#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/azurenyx",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/azurenyx",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/azurenyx#main-key",
+      "created": "2024-04-29T10:29:21Z",
+      "signatureValue": "jEod0HCvDpaODn86tZoAXQHYU/y5GfK4jvu/VNU/cRzRo9XLcK2+3AEA+yXXmmlgJHqAoN9BcaFzcBMcLYDC3LTz3NnXhZqhonBLzZA57nb5HeBG8k44RZhYMECNs5dA/AESggtC30wmBdGKUJky8MIzLSgY/ZQNallCKiBLuaxH6PJfKXSYDfq+SrtNqooW2elA5CNlUad6xF2la07zBCgjMjAjI2VFon34//WOL6nj6t6goCzlVzCdgB/ItSdamVNKjgofEoiu5O/96lJ21el3icr4sRVjIv+k6ffOC5KkoHWD6c5kbNYGAHvp8fyzR/YF58lNTNNBDfG1QIMAuA=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@pixelfed.dk",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@pixelfed.dk",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@pixelfed.dk",
+  "status": "500",
+  "contentLength": "20",
+  "responseTime": "383.832 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/nodeinfo",
+  "status": "200",
+  "contentLength": "118",
+  "responseTime": "1.503 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0.json",
+  "status": "200",
+  "contentLength": "202",
+  "responseTime": "0.780 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "4.031 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "date": "Mon, 29 Apr 2024 10:43:33 GMT",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://pixelfed.dk/i/actor#main-key\",headers=\"(request-target) host date accept\",algorithm=\"rsa-sha256\",signature=\"LKGmjYzPUlC4NmuK6Z89J6iTcRJjV/fRGUL1dNLKDj4spI/rsq2d/w54EiU8JLErDavXwJ/8prssfOs7dHf2j+m2UQw4JLByn1frOPKtMiIFC3ivdfGkiBH1brjrbJu1L6motRYNrjalpkrGuK9388ayGOa6YwNvX6ZeDAn+LtBFPTNcl2bBAIC/qikGULEdKI6m1gqEnfiYF2MML+TsAuT9Zjonovy6Kj42qnnlaiKLmIfkeFl4hFNIAwFa3Riy7LHZjbSPQBN6hZXj7CaC3FdcxLSERDAaz34u2zVmRnDCpVWaNADiDQNXfnOtBCeDHXupXlbdxO3NLi+WKXb6kQ==\"",
+    "user-agent": "PixelFedBot/1.0.0 (Pixelfed/0.11.13; +https://pixelfed.dk)"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "339.529 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "397",
+    "accept": "*/*",
+    "date": "Mon, 29 Apr 2024 10:43:33 GMT",
+    "digest": "SHA-256=lQvWytwD3bBZ1fDbaZYoTAGFFbTVTd/S5MbnRvhMFZU=",
+    "content-type": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"",
+    "user-agent": "(Pixelfed/0.11.13; +https://pixelfed.dk)",
+    "signature": "keyId=\"https://pixelfed.dk/users/trondss#main-key\",headers=\"(request-target) host date digest content-type user-agent\",algorithm=\"rsa-sha256\",signature=\"btLOX/ik4I7mgao48f6mUPaPJoZ1gpct1beDM6mvcQsMbyLGO6nl9Wpoe1Vp0B7vdnE5Ep4tNWyvrwEPp7b0gCL3PHRdjlqxf3FVDAY/zpHkDPTEsb4boSOxiXgIh9FX0mFMtno0esqfEhCeUhYzrKOP3yF8sdeMUBiQJbjKmgqRQx9Bod7tjLrZ5baLZ5hCN1S+uis6Kv8mcr5eHQXQ21cljhsYgcLIv4fMetfVtv5Hw3WuDyKJ7tKQP8+16ITijdQqQ1u2f1ZPbZPULtci7FGrwRBjvUr6tdXFBPdFD+3R5z1CvhCMnIOxLfFrT8wctRk/3J4Bbi3dqW3QKFcxXQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://pixelfed.dk/users/trondss#accepts/follows/201",
+    "type": "Accept",
+    "actor": "https://pixelfed.dk/users/trondss",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows0809ea0c-fb54-4a9a-bc72-b32a3813dec1",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "type": "Follow",
+      "object": "https://pixelfed.dk/users/trondss"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/nodeinfo",
+  "status": "200",
+  "contentLength": "118",
+  "responseTime": "1.549 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "FediList Agent/2 (https://fedilist.com/)",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0.json",
+  "status": "200",
+  "contentLength": "202",
+  "responseTime": "0.839 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "FediList Agent/2 (https://fedilist.com/)",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/instance",
+  "status": "404",
+  "contentLength": 154,
+  "responseTime": "3.154 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "FediList Agent/2 (https://fedilist.com/)",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@pixelfed.dk",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "9.156 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "791",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:48:44 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=G99txI35jcxLTMB37q9Fmgf78JBkm1w5weKYS2v3Tcs=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/thewonkeykong#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"TQwHEke+0O9CocQASKhKz3+ft2BSI56dTgeNI/JYqYtXiA7kb4mOGk/XsZTkZmMyQq39ISN1BJqIm3hU/chmqUxAPxl5sISW7/TejKlAp/2gVV2TNtKEYq5ZRatu+TWiQnYzFBPBzWgn4Vn3ABmew17p0VEIhOB9xlOgcgjDk9uJiX19ExuS//o32nfSnUqJ/D3qYS21Nwi12CLrmQL4m5Jd8IGL/7/FxbgiCZbrCytoGB7fl0NOYY4NCcDlDMAcwCRS83ZZEezXqJcsvm0ndASUnB9KxJYUl5uzcvP3lz+zL/E4S8EUfxJ2JNd+5z7WjOSw3Ys56D39XeX+WeJAhA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/thewonkeykong#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/thewonkeykong",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/thewonkeykong",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/thewonkeykong#main-key",
+      "created": "2024-04-29T10:47:53Z",
+      "signatureValue": "WZLaw7UXhaUOIQLHB/0WALHtIblFe8n4Qulsh1OwTnTpav5wmDYWtexHQDzGjoqjDpMfLhA2/maKobP/CkZ4Okih77C6Zg6aKvbG1qLxKkpjNdhyc3M4Fq5d/+j/+aftp4bKcD+BtkZNj3aDZHcEe17k4LkKGVIUW4w8RzC3qccFuq32cI4W6/yweoWuSTvm9OH86wzuf34k52fIJmPDX39WQZomul3Sj4wA+KH73oh7k9goEzBwcZhRLnkGDrr258kRG4WV4eURyjoY3g0PCbMrg2LX0e4lshTG7YOCiPfxoDgXS6AUIrso9Zlkv63y1kZsIvGmPFGADoMX3KILtQ=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@pixelfed.dk",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "122.084 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "387",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:50:51 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=tylKMJA1DXt3hz6pGPoic8SvkERGVYjb4PyRQrtjzig=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"X/TbCBZ0aCocejb4G1kvA05yvaLmMfnakWscaleyHNwITs3uTJ/uPCI+1lwXEXCpCztmzImD8yVtFsJ7E4MkzUzT+AjjspWhCBfcb+39H+UJeu7emu2DcVcMbeB8NyCf+g/3YmrFprEYq1P2F4fnAu4XAlTbRSl2xcYEKyyNMu8/xLWv31/Zo6CAABTfSTvWZmodmSGx3U3DESDvOx1jm12aC5UlgHAO/QN098Axf8LZLZoR+27kw+z6uLoWM5QdapUt4gdJWMT7hq7/o8kIxdC2LYxXye7ZZnxVYu+/IZqSXQMZ8gCh3wv8Ej6vXyWsLffvzDUkBkr28ilxkbVIIA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/trondss#accepts/follows/42417919",
+    "type": "Accept",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows5ca45454-364b-4add-9397-d14d3924a681",
+      "type": "Follow",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "object": "https://mastodon.social/users/trondss"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/robots.txt",
+  "status": "404",
+  "contentLength": 149,
+  "responseTime": "5.533 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "*/*",
+    "user-agent": "caveman-hunter/0.0.0 (+https://fedi.buzz/)",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=40",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "2.097 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "*/*",
+    "user-agent": "caveman-hunter/0.0.0 (+https://fedi.buzz/)",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/streaming/public",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "0.567 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "*/*",
+    "user-agent": "caveman-hunter/0.0.0 (+https://fedi.buzz/)",
+    "accept-encoding": "gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "1.642 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "3466.588 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "380",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:58:14 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=hVv/w2BFAad4AuGF4VSeB9zUeBpGeS7FtJp8NXdo4YA=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"FTOch1L+TrubNmppmgmFhHhe675BjhEvitdmud8SEj7Y0TMmd58+GGsyI1Z4lHzt7yJnZtMyYFuxdEYCUw+Z14bc1eSnryJVvQ1BOIJw4mZL8bI/VF7BdoOb7lR2Oq6zEOgWW2SIxNUWFPZuXxl3jD+unT5u/n4M/9rb29a8OxiCC5qbwiD5wODgYsXIY3Un4aVroCVResll+SlLkH9mm1WtIlp72EZrMR0Xwp0xI8UNAFm5m0lSfnueAwqjryMAPG6RxWYYeDhyfOG3VIDduh8IkHX9EyGhwCIIux3E0P1hMUDYWpOxAEmcyQDT6L24tZYkd++DmjQiWx9FTIFdsQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/trondss#accepts/follows/",
+    "type": "Accept",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows/c866c3af-a4bb-452f-ba09-2087a9dc6299",
+      "type": "Follow",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "object": "https://mastodon.social/users/trondss"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "2.231 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "371.333 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "380",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 10:59:11 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=+9rE3DLXtMwhhY7GIEgZFqsofYSQCUrwyuWRx5gwuGs=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"ZlpHkhvKeE8eJitBQCsFwHPU6xo9a6R2xbZP2brqgX3SAJRu5rPoE72Quhk3rrPm5npwI6C1u2axowoNKgZ1GEKnoYCAVs7+RVDS87ddgqaP3qGNCXITA1uA1pW6h6S+5x6iwBU7agRbChZDUKoPnhuBXDmKrpysUY9JN3NrpogtU9etHL8n5FoHDJw2P3zrKQS/uFcuxxSfycOIfw2DW2dC4itJ27UO9i+M/Mg4lo6Snhb3m/0URDBuK9FOGrL7xV3CwM2d1wj8uPYEM8rxwIffOC4uQMGvtPOdQ40RX2FBgvjBB/dTWSKc9tWtxPLttiXIRuYtxdEba7Ojuh7vTA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/trondss#accepts/follows/",
+    "type": "Accept",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows/ea83e7e4-1f7f-4ff3-8e40-a5af65636d2a",
+      "type": "Follow",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "object": "https://mastodon.social/users/trondss"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "290.246 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "380",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 11:01:26 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=ATnVmTGTW3NIpXXQhq11gdz0MmV58ZF4VPhIImQjw9I=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"Khbb5uLBpSPxh3W7ePQ3WID8u4GA7wfHIrTEdLeXyqY/bqzlltw3aqpa/j7mk3vcXZBTnILyKbbjgW/eJJZ3wiYDg6mPNbcBv3AE1ZNx5rFilPmRYq8KZK8Yn0j29T39yMNq51GknT7KOWP7hh4pEq/sCo7dfZwYj4LNRp6V6W06j2labv7u/PwYPgfIoJPT5QpbKvhjA8mNmw4olL5JjNPL9Y6pEK0mBo1TzDg+0MFIGtQz7knIXcuqjKgjrR4nmVFeR03Stb2rP+Zqfh1MqXoopFQ3FjTRYtCFsWVmLlxo1o+g6PW7ju9zuDw/ZwMBQEc1Til/t8NTi+JudIcWXw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/trondss#accepts/follows/",
+    "type": "Accept",
+    "actor": "https://mastodon.social/users/trondss",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows/d02004d8-d0f5-4a5a-b7b3-ca8f827ba92f",
+      "type": "Follow",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "object": "https://mastodon.social/users/trondss"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/trondss@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "8.721 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "365",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 11:02:00 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=5Bp4HB9QgVix0jHeAwcZzSvgxlmzxxeticEzRCwPw0k=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://snabelen.no/users/Rudi#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"baK95uFd6pO9rY9e40KU3Wp4s+sHw/nPsmdRRb3hnVS/9AqnrEPlj6KIPamx9e+5I03zEI4dCu6FrVo5GwYHymGzGHa6ujD5pxKbwJc/VOEYlgo+3EzJnvQZpfHGT3J0dELpShIsbATCaLLW3zj6ltenwQBM4XXcOzh2npTqclq3c/2PySI4XNmZaRd3h8FqIWQFIeSgX9hy0MTPqIE8IBDYe/yD293Fb9NpZ++dmNdLOFdAi3z5mZZuuuT7okJbTESnuOwbKRt+BbNXoD5yWeNszjuz95ayZEywOQZyhqq94wiLr+UHjouMtyeN4cRf+QVYDawuN8jopiwTRf4Txg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://snabelen.no/users/Rudi#accepts/follows/149852",
+    "type": "Accept",
+    "actor": "https://snabelen.no/users/Rudi",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows/34024e7b-5324-408d-bd1d-cfe62efb7e31",
+      "type": "Follow",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "object": "https://snabelen.no/users/Rudi"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/timelines/public?limit=100",
+  "status": "404",
+  "contentLength": 162,
+  "responseTime": "2.534 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "authorization": "Bearer",
+    "content-type": "application/x-www-form-urlencoded",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/follow/Rudi@snabelen.no",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "185.795 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "359",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 11:05:13 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=MwaN8DKzJjPkiJM4ZTpcBJ5N9AWMNeVKh32Fk0/xISU=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://snabelen.no/users/Rudi#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"lrNXSPym7xkfRSS+aWfNG6vHtjNnVT70zYlEgC0E99wgR3obqjRpss0U4+8A/F4HhLcevIUICi5SweYS9Wk09he72F5UVaL3bwUQFhodYom4TPLoM30b16oipVGdcl1fQ+KcoT6bllqxtl5qo9pR/IM280HSs3Zpm4z2nGxt9AiINDjp7PxRy/kHt5hMNyDTXt1U6t7D7aj2YPjXG4Moy+YyTr5OrgIMCV8aA0ZkrCPtkpvSt57YNq2fai6T+XhEAcN48ioYiFzIefi3Ps/VceyOazzOq/Swc4CKbC/QOZTf3tHIY4YSlLkYKVSqiBhtwfAYlTW1OSlRb1DJY6yQWA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://snabelen.no/users/Rudi#accepts/follows/",
+    "type": "Accept",
+    "actor": "https://snabelen.no/users/Rudi",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows/92b52121-2027-48a8-9f41-ac321b5253f5",
+      "type": "Follow",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "object": "https://snabelen.no/users/Rudi"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/Rudi@snabelen.no",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "200",
+  "contentLength": "156",
+  "responseTime": "8.012 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "200",
+  "contentLength": "7813",
+  "responseTime": "10.617 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"9c-6GVNVHpCuOwoIWo7JIZXhylor9I\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "6.047 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "783",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 11:18:48 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=QRvWCvHLbqlgwzbPgAA7JwEFoFZMEcOw4Ae042JhNhk=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/miguelancio#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"DCypv4SCbjetRrfdLu7bmeuHqBV/ErrlMGTt+FAVWR/YMFXBxqzA5TMx/l7lQGoKM24nEs1b9tE8M7pzWTjeUI4LmnkcpvC/rSnPVbEVJSXRM9YktBPoYqaMFgq2cQezq/5FiKtcNCksP+9WvmX5moPbDLBUxypTHWUQboYbj96Lq4jOvbrM1HcSjzPVeuAFLlkcCtXJsYkv8Y7FXfykNl8TENdM8RDZ4pt30MK8930Q01FBWq0NmvQ7OaOtJcyxfTOoMAzj9Oys/N7qPS11QRWPCKA/+3TwBEebTTyAg/7A90b+oESZ3yCe1gbSRTR6N1zKqXZDjD0L3XdM+0BYdQ==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/miguelancio#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/miguelancio",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/miguelancio",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/miguelancio#main-key",
+      "created": "2024-04-29T11:18:03Z",
+      "signatureValue": "VNirtfThaeZ5Ww8lNTERrcbXLcw9YhfqJCTiVecmYB71Z/aJneZAC7seBr6/7T1P1sBD9lvJkZ4ox6p8fAVlPftgTlTKrLbyZWxskww0oY1KFoJdbjnWDAew83EaEZTZr6deWo5MKiO/FJuk9E8eR/rBMNlOZg854iOBKXIfl+N2ClWpFFtmWsdRLmqdaVJJd658jVtOeBsVnA3N8E1qPQUlWYdieBno0x7wS7HrjkxGMr89SYlF6wjESvqyaGZuzwzavA4u3STbQvd2ohBuxntTtR1c+brpe76ZWmEG+BW9wziEirHPxbHVI+gHXFxC7igA++7H6I+fwb9x1bZqpw=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.1",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "3.349 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "0.731 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/instance",
+  "status": "404",
+  "contentLength": 154,
+  "responseTime": "0.727 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/config",
+  "status": "404",
+  "contentLength": 152,
+  "responseTime": "0.615 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/nodeinfo",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "0.567 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v3/federated_instances",
+  "status": "404",
+  "contentLength": 165,
+  "responseTime": "0.564 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/wp-json/nodeinfo/2.1",
+  "status": "404",
+  "contentLength": 159,
+  "responseTime": "0.991 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/content",
+  "status": "404",
+  "contentLength": 155,
+  "responseTime": "0.821 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "5.738 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "791",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 11:22:48 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=EBznUpU6gyshLhi4llYwYMhGCu1i28apJcsXoHeIEpE=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/therealistpix#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"rbLT6sSchRQ0RSUHxxUy8nBJYKa/zERtMzMDMbRctGyIxT4LAEAhHdJLiGMXZ+jCsaBeOE/nRWPqYyHanHlj91Z8hrTuHfkZdL8dmv0U6ozKmJlDJc2aQd4M6D92IEixUVtSkExLs+OQ0pnpz7iSMif/JtLWtAvYaqTUG0YuO0dmvO8i9WHccmDN/AXuw0Qk4o7Yq0fYp03+KLjyDTHYklHi6tXfA3qHDKLbQlTpvEMULxq1XLV8G7q/hPAcEINZzeMrWTrpxzY+KpvDJhrDs4mKO7imeLqwJHLhgcJhiJyKOokEnihZO7tqqBs7sdkt6UXWpgoC3tpMebwbu9uJAw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/therealistpix#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/therealistpix",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/therealistpix",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/therealistpix#main-key",
+      "created": "2024-04-29T11:22:02Z",
+      "signatureValue": "YGlNhvUCnAB9J+e+vqNaARS/wVt3dy4Q03/XhVNtoZsw8RTcwLHFDvQkjERebXB0oc2G1eG5mkCIwby6gtCCpidFUY4taV/37UMg9ofX1UX1tNesxIAVzbrGFexdKvbbzf7Dchy5xownbmhl5C434ruYFQuX9mFWxd/hDbf0rYkOHcg0Y9CTbZBg0BX0fCr5H+DtGDgVbOHuQT+KdeZZV2rIbFCCgeuJECrMMVx9fPZO3mL8RXKR/MwJGmXBKlyGda8Z9iNRXAUAenCXAnz4rceSpE6G1co4TtSa8QvnpfFhfs+iB6P1aPGyAlBi4ZdUTv0iWZOWXPCbIt59FDLtNg=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "5.939 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "767",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 11:43:15 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=rBx+yrKvKReSuJqEvTuTAb7mnuZKH6ancWdIbJP17c8=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/Aquario#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"hKm+8h8hCOpoZL7hZ75dWLDiVP9XmOQwZOkAnh20dFHR96lpvfFY5mrgWEufkRcLs/vEk5qbRgq4og8k86K0oUtoTC7SDA1Cf4gltpQ4R6OY6kAapEE9nsSbMy6++CwUUcDJ4PhFUSaCcg3E3W6QPK8YOVZTnEINS5jmajWem2sUH566OG0iKq2gRRmao2pa51oWDiLQoze3z8j/tmfnyT/BdOHRcFki+YCVnbIetvZRZkwQAwNDtGWC0HPMAqk8EsD6YbFyCcAUiIfABnxVWPlsAOb1/UUJ3qNDOSTjY1g3AhHcy6EmuWSif0BJDu8P7rzKQtkydTuTTQM4gC4bmA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/Aquario#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/Aquario",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/Aquario",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/Aquario#main-key",
+      "created": "2024-04-29T11:42:31Z",
+      "signatureValue": "yZMgqWysBux154vSIIrmmD0mcE4RoDkLR1IojVH6NmGEFCLyEEBZqLVXV//Z/HZdLzxt/aVC6+qVrwXzUtAQ5zjBbqpvrzmilsNG+9NeYzqCv0H9wxBbIFAi9uJkJY3CRqaOHXiyuFjLPpq1tTFzHOnFAU9J9g9GIzPPtfn444b2EBJrxYDdOf3Pmn5vAMcDWoBpHrCpJmt8REMu9bYl/PMJdvlgALzkjy6WxYea0aBM+v8goBf5zVxFLdeXvOM1Hk7jp7crm3UNAqMEADLAAcWb7iD/0L7T6QWctdEhzg92tYdYkD4P02CxotuEZZcsOX9tM+HzGmZi7xVhMvxjoA=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "304",
+  "responseTime": "13.658 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5",
+    "if-none-match": "W/\"1e85-vR0INaHeRp3bF0/eZ/SrfUwoqlg\""
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "5.481 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "759",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 11:51:49 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=iCKe+HWqA9JvgW12fXeBGisoNVAUng8moHW3xTZxfV8=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/HMARA#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"ovDb18siCb1tx8F0xPvQFkXAtrCvjEKvfIVFvZWqFqSoNvUsOW0LrohopX3L1BisJFqlmGTOxiQ8jJSEV6RdlALd4jyH5oh8hk4CvMZ3GDTHfjjrCjTR3JY70bB+2o7nZX7hHjIPolW9qWP8RTrCVpxJUFX9eDvn18yz7DsjCuz9/wXKISK/GmUr4BFy0Pv8CJ7OwF/0cEyBq/0wNyWpvxxO81JUjaMYVK5qS0/scNWd6ddXuLx2mrjlkSaDn9wBTYE5ZIg6jFxNpe827x6WVJD+kB3R6QzDnuUiFaRFHma+zKe+DyQb4qCO+G/4q8xc+5Iiuhnz71HF8lrHbCjHxw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/HMARA#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/HMARA",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/HMARA",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/HMARA#main-key",
+      "created": "2024-04-29T11:51:11Z",
+      "signatureValue": "cDHW2TmglgF3WESTSthDsAtLtZHzqoCu2ICdtY9gn064n/BdbIw89jgu2yS1sI5Tyr7OZjLJpUcAiF5xBbgR9ag27GZ1eZEPrlJsZO/RRzS/m4+H7lqEmCF4H9yBirF+ddNXUHMR9pQsePKk0kjjNn1fW6x+UYb7jt6bjRoKafzDOcd0A/Cn3wboV1TXe3m0KF1PJXuHhJ0boTl88/0Tvx4wLVncrzVdUIoUUj+1/Q5f79OOPF50Vh5tpiu6k2ByI1AYFJXiTVHGGW+K6ooXP8gMSm+8LAltliPFE1TtSQYY6xPhuK+KQPnK2+Fpz0Kht4aRw/ytcCllKJwHk9M9BQ=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.1",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "3.246 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "0.755 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/instance",
+  "status": "404",
+  "contentLength": 154,
+  "responseTime": "0.787 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v1/config",
+  "status": "404",
+  "contentLength": 152,
+  "responseTime": "0.796 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/nodeinfo",
+  "status": "404",
+  "contentLength": 151,
+  "responseTime": "0.557 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/api/v3/federated_instances",
+  "status": "404",
+  "contentLength": 165,
+  "responseTime": "0.549 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/wp-json/nodeinfo/2.1",
+  "status": "404",
+  "contentLength": 159,
+  "responseTime": "1.008 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/content",
+  "status": "404",
+  "contentLength": 155,
+  "responseTime": "0.775 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "curl/7.81.0",
+    "accept": "*/*"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "5.548 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "783",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 11:57:52 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=hwoFMfxsrJ2Nwq1BmDDX/5jtwRtQA5anZRD1NrY73WQ=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/wittyman419#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"bqXepgjQ6lJNV4BpdU1U/tAs3GWovMwifm8G1ztnIouorfRxthg50vicIxIIdTIUfpOZFfjAAuecIHHqnRYPFjTC2gq4DK3sutVuKXoHbvhKfs33MfcIvwvpzRfLtTcmJ/iwSXjrxloA/jhVysmDI7/+1Jta/ZXMbHytfQdsQaBKAZId34kurDShUlVE0UNUwOjQ/3ZHe+VsavtAPpfnoEEAQBLJl0Al7KJoOLGAGfaSyFfH+7OFlNc0h7UdVi5bVisyAQJeCznula7RjMPRmIqzz9873amDnTOqxe5lRsMfKmt2nEC9RcYSX54lISp6rRPUAqOM/DDCg8Yuh6M0ww==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/wittyman419#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/wittyman419",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/wittyman419",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/wittyman419#main-key",
+      "created": "2024-04-29T11:57:12Z",
+      "signatureValue": "JafaCaq6Win7qG2a2zAQJ2XimuzPn3hqDm43Q1ihKqiEClO6F0kM0992RWy6u8p1afz2ew9GgFsZBy1Kvxv3hlvflYEnI47DdG0GBnsQ7fPH5JuLi8xvmkQKtqlTditL+7ImbU5vLJfZ/pjrHbN1RJ9Y9TECuGh4zmBtqPit3CzG/cQifD7vksNeICBsrMW3tkwOz2fAcQqjMMP09P5WwFdV0f/819IV8VH9ECOleCQA80hG1zQOMYs42KDKY5zlnoO0kQ88jLtrYI36HDs289NRC2z8naDbvQv//d0YHDY+clIcJUqM54/I27Vrt5qZP8DjvWu7MGvtT5WZcVhRlQ=="
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "6.028 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "771",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 12:03:50 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=dzeHo/BD/yh9Q6kqycNnO5LqbgQNoLfrg8RCalyP/Bo=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/arberary#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"cjKcd4X0NFv7DoWlDWcIL0kwZy7zdNaKiOTDU5NZlaWvfWFRQLSwIHsI51kEKw6sn+rc0RNWgiHE3jBfdoW88bVzC1VE2uflKiNnx0lSJqdIc6vCZhK7HF/jcf5DqavdMsd9k6WaahQ9iaj564LuZ1y13OxI41z8RqV2l636pDKANI139wLCUgVO9hDtNF++vM62CKsLO+coh47y4UwKvLpPMorhXB2jOb41dHRMaO7uzuqNiB0d2fUViT0z89ssdDQpUBb/otV8IF2ZvnV/AXbaUwX8Tsija+SCK+Tswmzf3O9GZGatcOOgj95aZEeVvkt2T33JqiQj6ox/CCqEjw==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/arberary#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/arberary",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/arberary",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/arberary#main-key",
+      "created": "2024-04-29T12:03:04Z",
+      "signatureValue": "Zz5V0BFY20ScVcCjS9xk2hkby+5G+9duWnpIjpDsTJuOr0tNA9mZ6r2eouqwvUygABUEOoqLYuLq5SuExezMfT6vdckI8AVilrPZuiPOHnNsz+YmIorwOtDvjTH2cjSOgdRpqakvyjrppgjYrNW7G5waMr7UE4s++q/+rZNt01uhZJEE5IIF9Vgx6aJQrXWH1vdeZJUjLL1EWbXRCwl20cwY0xOBJcedN4Y5Zjj6byltitnA2O3mf/L75SssMvvujNGqXQqsA2QVEm0OCSuTCPNy1DTLKtt6P5ZfhrSI8UKApiRszEJxaNoyhlHhBADv5yeRfxPlSMnvkNNSlAPf8g=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/nodeinfo",
+  "status": "200",
+  "contentLength": "118",
+  "responseTime": "1.122 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "FediList Agent/2 (https://fedilist.com/)",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0.json",
+  "status": "200",
+  "contentLength": "202",
+  "responseTime": "0.720 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "FediList Agent/2 (https://fedilist.com/)",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "366.471 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "216",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:34:59 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=/d2p1z1lF9dWNw9rvkqmZ+aOQmDRwLjhhQNYqFDPHzY=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://snabelen.no/users/Rudi#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"gsazwPJ2Vu+73buIIXNFwBjEv9qViy+muAfUaoUK2HAd4lAbdOYXuopNM1nFBvHGuhbchgKpU5VviSeOLfIZqqUt++AU5OwqDIYY0edSKKkLJJP+GvLNg7QRJeE/1zFRXpIregCwfwkRlsCWnqKMJ0aV3KOelrX4VvAKIaVnYA6XnVrPFEP4b1NHK72Dbma8KCVndQLr0b9WBJtBYBNg2yh8eNQG2JScOzXCcWfa70StcaWiWcLL+ne+U+kZBz0EVNwDgZVKvAGPiRyH1NvUNLyUcIIJExiTQHhwaXhh6T38VWuq30Cn9FzLUkrOch3CX2dJEkCR+4Kn0vRTUHUmTA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://snabelen.no/d4229b39-6ff8-44d4-81c8-bb71ab5b4559",
+    "type": "Follow",
+    "actor": "https://snabelen.no/users/Rudi",
+    "object": "https://www.sneaas.no/u/trondss",
+    "_id": "662f93f3b2b04cef3b0a0daa"
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "0.755 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:34:59 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://snabelen.no/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"SQZpdMkXgTGomuvNPytzF7v0KY5eX5jKRcy/esw8RS2EagWl72B3ki6/XcjoqaSp/TSSzhhsWDKzmVSUbFEdaeHBWOt/3+6cc4Seh8yQJ462bYv1sfXSUKtdub49o7i8uCz9xC83sZPKfYGGnYLa800UFyc/b/K+YaMtVZgdFZtwTO+BYDuyca7tr3HpZIGkskgMWkJRGj9USB1bDIULbuGAf9SP1UzCOAx8smaIahZ0fb5evm0tWDPPhBuKbh7oJ4D3ulanb7YEWD8AcG12YvJlk9/ZsXldqrs/ylPqTq8EsfWPViWkDDga32YHMRTfxJQNmZ0P3MocYtLBF4Cbtw==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@www.sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.601 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:34:59 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/webfinger?resource=acct:trondss@sneaas.no",
+  "status": "200",
+  "contentLength": "137",
+  "responseTime": "0.453 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:34:59 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/jrd+json, application/json"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/icon",
+  "status": "200",
+  "contentLength": 73079,
+  "responseTime": "32.961 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:35:00 GMT",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/outbox",
+  "status": "200",
+  "contentLength": "476",
+  "responseTime": "8.476 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:35:00 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://snabelen.no/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"SovxIhJtuojWYXRyowJLWyOsRrOXWiIwdvqApiT/wTHZroQbcp3HeM043jq36XKA8pFWid1+VNtWMimOf1I+xnVrH6QqfGVzMN4XGA3agUpTK1mzXxi5WeQhanTUOj31n7IDitypfr5563wP0mHDSvWMpuI7jrUaAETmCS8SD/AjfLuL96Iuu79dC1scY/ksME0GAJGiY7x6vIUQBDNLq9hTYxE6ykiXyBCU1x1GGXdUUaaYd6hrqJtWi6RVCtFjPWUnwbpF9lMeW1OCoNGv9pRNHMtyIapct/wwQHpH4vsC71iYR0c4H1Qy9xEiUR/2y1ANvybhO9YAbPadc7FHGw==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/following",
+  "status": "200",
+  "contentLength": "7813",
+  "responseTime": "6.089 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:35:00 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://snabelen.no/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"YVLfNLsjJ0va0X+7bLzXS3MS4NRnuCRS9x4qJtCOnMHbXVSaXFrICfQzKk2tNj1LLQwY0qbpDWR7jM74zDb3+rPKZEaK2RXNDi3HyPxWentx+U1Io2rgLTKHgJaHuG4UFCP3Ykn12baZzY7RDxtW5a2Ek9mb4PwASOW9izJP0IiISKL+A4cD3+URMC753WOlrw574ZFd17pyETmF18zJqGj+cro2/usSAcdefqsM90R5YW1fI0IQFURM9kAUWvg8D+YcfHiPlPwwLGMsEouXJQhLKDIG26vdvg7UDyLrw5OkaNWJVhMfh5DmGoPQZzw+DMhz5R2OED2N12IsWtGc2Q==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss/followers",
+  "status": "200",
+  "contentLength": "10857",
+  "responseTime": "6.734 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.2.8; +https://snabelen.no/)",
+    "date": "Mon, 29 Apr 2024 12:35:00 GMT",
+    "accept-encoding": "gzip",
+    "accept": "application/activity+json, application/ld+json",
+    "signature": "keyId=\"https://snabelen.no/actor#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date accept\",signature=\"MNasnYPBkxY2/HqmLLlNP1FxmtS4GE+msZ0DM6e5aIgaNFyPc2N/g3RmeuEYP9OvqOESyGMfVWVDhDEJ4HEbXRN1csaXNN2zKucXnteKH6gQiEdJ/Ewor8ev27Jk02ymy1P/kLXajGgR0d9/Y7aeNSdmsZNkqmdKEwRmmVvNSH5UEQ3oYcFWzaRJyKti3j3sPIR9at2qL7QuE7ROxyu8KBfeq4gLigErmTz74L0SKjicyCjCu9YLD+ttYieW9FTu2IB9U/PUDGOUitOMV4ajvcg4Li5tqWZ9V7zFed0d6fxfIiikxFzll3MNSBvyFD8IZ0YPRvIPhWP/enL5tIrO7g==\""
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/nodeinfo",
+  "status": "200",
+  "contentLength": "118",
+  "responseTime": "0.546 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "application/json, text/plain, */*",
+    "user-agent": "FediIndex/1.0 (+https://fedi.wrm.sr/about)",
+    "accept-encoding": "gzip, compress, deflate, br",
+    "sentry-trace": "ea5f57a7a2ac4144af2ef9e91732ece7-96b1144441d440c5",
+    "baggage": "sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=ea5f57a7a2ac4144af2ef9e91732ece7"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/robots.txt",
+  "status": "404",
+  "contentLength": 149,
+  "responseTime": "0.532 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "text/plain",
+    "user-agent": "FediIndex/1.0 (+https://fedi.wrm.sr/about)",
+    "accept-encoding": "gzip, compress, deflate, br",
+    "sentry-trace": "ea5f57a7a2ac4144af2ef9e91732ece7-96b1144441d440c5",
+    "baggage": "sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=ea5f57a7a2ac4144af2ef9e91732ece7"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "404",
+  "contentLength": "26",
+  "responseTime": "4.637 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "791",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 12:45:26 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=JE3070l7ydUQexeoPPkz7tjuRHXxuB6dXCd+ZUWy2TE=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/freeforumzone#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"AtziKSAQAjqt5OWPb3SZTSeelPYwiF1n54J5Wlq/ksjJZrorh5Y17LT4POCDAAFjP/cguShZM10gIXrZUpoosb6VziO707IbtEK8jzh3fxiq1mdTxEhwAvqnIYKCHIjAOfU7Li8Is7E4gDVf0bz/U28S6BO+n4jPNQUcXJXKGl/d7wq+na1Gv2tILiHa9WYaT/z00m3mZ7/4TYvifhXBduubLctwK7QxFHpz55WHk4vugXklrr/sOUKXIOFO1Jk1HfnX5q/iBdq6ZqhUqgCFxTlvW5fLS+iz3eT7W8Pk8hdOx5/Y4zZcjcQbNdr1MswF9dIizi90jOy3RVxKXbSPwg==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/freeforumzone#delete",
+    "type": "Delete",
+    "actor": "https://mastodon.social/users/freeforumzone",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://mastodon.social/users/freeforumzone",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://mastodon.social/users/freeforumzone#main-key",
+      "created": "2024-04-29T12:44:41Z",
+      "signatureValue": "tJvQbs2XscIYTSIKbauoS67Bb3wMYVE4r+0TspKRNjXbL4s88n6jBbi2TqQnRZ0c85dSYZX94W1i9S8MRnYAOdeJ2bhEpXj2xwOgYtx5lH6H8VcSQxoC02rw7MZN/IWIQcJlSOcKmXEwmJlaH4D7KwjLUiSvqF01EO8d8ZLajRO5K8QteCAzrdyY8WJxBgHTx8patLNqqhZjIhUBJRiVkQwavZPTOBLe3GYLEgDDul/kCiHJRvZ9QaYHqr7gJI5n0UnoIKGJ8qgrR/2RT68+CkJxqgQ9tRRFXc/I0RVqnBBge6MFl0VJ8DNL6oHNdQwAWiaDR2pvcTEiLUr0akix8w=="
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/nodeinfo",
+  "status": "200",
+  "contentLength": "118",
+  "responseTime": "0.503 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "accept": "application/json, text/plain, */*",
+    "user-agent": "FediIndex/1.0 (+https://fedi.wrm.sr/about)",
+    "accept-encoding": "gzip, compress, deflate, br",
+    "sentry-trace": "e24d7525efa54749b0ceb4b289d85168-bcb3f3d23e5ff464",
+    "baggage": "sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=e24d7525efa54749b0ceb4b289d85168"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/robots.txt",
+  "status": "404",
+  "contentLength": 149,
+  "responseTime": "0.590 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "text/plain",
+    "user-agent": "FediIndex/1.0 (+https://fedi.wrm.sr/about)",
+    "accept-encoding": "gzip, compress, deflate, br",
+    "sentry-trace": "e24d7525efa54749b0ceb4b289d85168-bcb3f3d23e5ff464",
+    "baggage": "sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=e24d7525efa54749b0ceb4b289d85168"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0.json",
+  "status": "200",
+  "contentLength": "202",
+  "responseTime": "0.428 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "application/json, text/plain, */*",
+    "user-agent": "FediIndex/1.0 (+https://fedi.wrm.sr/about)",
+    "accept-encoding": "gzip, compress, deflate, br",
+    "sentry-trace": "e24d7525efa54749b0ceb4b289d85168-bcb3f3d23e5ff464",
+    "baggage": "sentry-environment=production,sentry-public_key=3a619c4c9fc2109bb7a9fe4ea351eddf,sentry-trace_id=e24d7525efa54749b0ceb4b289d85168"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "214.469 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "388",
+    "user-agent": "http.rb/5.1.1 (Mastodon/4.3.0-nightly.2024-04-18; +https://mastodon.social/)",
+    "date": "Mon, 29 Apr 2024 12:49:43 GMT",
+    "accept-encoding": "gzip",
+    "digest": "SHA-256=8/UEnLc3Vt54lb1yRNrTCrjVHxC304BaDOBS1oJMvH0=",
+    "content-type": "application/activity+json",
+    "signature": "keyId=\"https://mastodon.social/users/hausnes#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"gwHYI8rOa9B2CDKJH2gYrEHTb2OxuVFexBUZxphlflkDmBliGIyq94PnaSOjN0CmrsLpzwBZ4vL7QNxYXSjgxk2RdOIWaT4IbM3rsYi1gtu/+1NGs/BTFAojU2PD9w73MXU3Kvb+IrbTZrLbNMed5PAN3X/zIetxRuwlNO2aNxxX0qFZ/kGJx9zRSz1TfYw6oCfAFTqNKMdVNscmP/JZqkHl1//G62/I7o/l1+3qPVzZhkV4OJk2/lfOH39F/BSQ/PvWmSisMalq2ECTXv7HzG5Oi4bsaZY2qjWodxFz7TymHp+S+188fqbm884AqvfVy8E2aQM1GZEPPVV5HstMmA==\""
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.social/users/hausnes#accepts/follows/42419921",
+    "type": "Accept",
+    "actor": "https://mastodon.social/users/hausnes",
+    "object": {
+      "id": "https://www.sneaas.no/u/trondss/follows/bcebd677-3489-45c1-bb85-c7710a190c21",
+      "type": "Follow",
+      "actor": "https://www.sneaas.no/u/trondss",
+      "object": "https://mastodon.social/users/hausnes"
+    }
+  }
+}
+info: {
+  "method": "GET",
+  "url": "/follow/hausnes@mastodon.social",
+  "responseTime": "undefined ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/createNote",
+  "status": "200",
+  "contentLength": 487,
+  "responseTime": "18.613 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "none",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/outbox",
+  "status": "500",
+  "contentLength": "21",
+  "responseTime": "18.202 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "content-length": "29",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "origin": "https://sneaas.no",
+    "content-type": "application/x-www-form-urlencoded",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "referer": "https://sneaas.no/createNote",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/.well-known/nodeinfo",
+  "status": "200",
+  "contentLength": "118",
+  "responseTime": "1.593 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/nodeinfo/2.0.json",
+  "status": "200",
+  "contentLength": "202",
+  "responseTime": "0.916 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "user-agent": "Go-http-client/1.1",
+    "accept-encoding": "gzip"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "4.963 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "0.853 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-type": "application/activity+json",
+    "accept": "application/activity+json",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "169.429 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "433",
+    "date": "Mon, 29 Apr 2024 13:03:16 GMT",
+    "digest": "SHA-256=0NKM8CFmGdxTAtOKHEcgX8fl0g6tT5ijgtctoKaJwio=",
+    "signature": "keyId=\"https://www.sneaas.no/u/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"tmo9UleuqpYFs4mQQXR/k1+YnV53H5fUeWipOyfdOjkv8OghKXAXOVQ3VXvBARFrjXO7WELlUKTw1cwRjJo2ImNv7sEqPBNvBIi/bC1J3iCIuygp0bDpZNgz67TmT0oLQYaa8uq12I4ChPBwsIkSbr1fqHZcurD/xZsVG+DpfX0BhGkvgBxWTqM/CjqktviwzUBfz6RCKDFHmVwsBgrIkUkIs9yVAHujFxeQ7YccmdUDw+r35QZUAxJptKQ7uUGNyQYwqGedyn54BIshKkuW9QB2jKC2vnVKG/dATfyho4Yc+EQk+PLV6lbe1zHzdnHSbi6mfB0wSz93/nZZiumeLg==\"",
+    "content-type": "application/activity+json",
+    "accept": "application/activity+json",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://www.sneaas.no/u/trondss/outbox/f9784514-1f4e-40e4-b658-ad44ef7915d7",
+    "type": "Create",
+    "actor": "https://www.sneaas.no/u/trondss",
+    "to": "https://www.w3.org/ns/activitystreams#Public",
+    "object": {
+      "@context": "https://www.w3.org/ns/activitystreams",
+      "id": "https://www.sneaas.no/u/trondss/outbox/f9784514-1f4e-40e4-b658-ad44ef7915d7",
+      "type": "Note",
+      "content": "<p>undefined</p>",
+      "_id": "662f9a945d9a73183e6f9d9f"
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/outbox",
+  "status": "201",
+  "contentLength": "28",
+  "responseTime": "1057.040 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "content-length": "29",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "origin": "https://sneaas.no",
+    "content-type": "application/x-www-form-urlencoded",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "referer": "https://sneaas.no/createNote",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "3.363 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "accept": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "GET",
+  "url": "/u/trondss",
+  "status": "200",
+  "contentLength": "1280",
+  "responseTime": "0.306 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-type": "application/activity+json",
+    "accept": "application/activity+json",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {}
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/inbox",
+  "status": "200",
+  "responseTime": "166.274 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "www.sneaas.no",
+    "content-length": "456",
+    "date": "Mon, 29 Apr 2024 13:04:42 GMT",
+    "digest": "SHA-256=9UkLKi1vpUkAG761S4T8DnCKmDDK4RczZwZkJLTQsng=",
+    "signature": "keyId=\"https://www.sneaas.no/u/trondss#main-key\",algorithm=\"rsa-sha256\",headers=\"(request-target) host date digest content-type\",signature=\"qRurBIMMShf73QhSsvulhwukITc8xQSmXpqvmpRHoUBLh58Z9xhzLo0pH0y41b0e7LMvT2jmrITTv1/LaWRrnTg/KGr7T9EQPxYBSScOgz34Xbaf47Y5Yue4SG8dUR11uGJ1dv4IU/8VjDgrlt6EP0cK49mT3VdyawM1Ii8XbtkeZDfSrwiqjFnS29ykfeoqdHLmoRUAeLuASV5jByXFTWaiWpehZbKP+DGkyMElJWSQJjHOiuBoq+zfbEWaFNiN96svbjVxfyn+9wkmHTUEXIxddj+AaakHFQQsY18ae0UnS65u/UcGhLliAJa0iFSCeqy+Oukr9wH6L2YQ8L30AA==\"",
+    "content-type": "application/activity+json",
+    "accept": "application/activity+json",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "user-agent": "undici",
+    "accept-encoding": "br, gzip, deflate"
+  },
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://www.sneaas.no/u/trondss/outbox/e07f55fe-2644-4977-bea4-d66684012fba",
+    "type": "Create",
+    "actor": "https://www.sneaas.no/u/trondss",
+    "to": "https://www.w3.org/ns/activitystreams#Public",
+    "object": {
+      "@context": "https://www.w3.org/ns/activitystreams",
+      "id": "https://www.sneaas.no/u/trondss/outbox/e07f55fe-2644-4977-bea4-d66684012fba",
+      "type": "Note",
+      "content": "<p>Woho. Eg kan poste til Mastodon!</p>",
+      "_id": "662f9aeb3bd73e77e9249f9c"
+    }
+  }
+}
+info: {
+  "method": "POST",
+  "url": "/u/trondss/outbox",
+  "status": "201",
+  "contentLength": "28",
+  "responseTime": "837.414 ms",
+  "headers": {
+    "connection": "upgrade",
+    "host": "sneaas.no",
+    "content-length": "42",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": "\"Opera\";v=\"109\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "upgrade-insecure-requests": "1",
+    "origin": "https://sneaas.no",
+    "content-type": "application/x-www-form-urlencoded",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "referer": "https://sneaas.no/createNote",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en-US;q=0.6,en;q=0.5"
+  },
+  "body": {
+    "content": "Woho. Eg kan poste til Mastodon!"
+  }
+}

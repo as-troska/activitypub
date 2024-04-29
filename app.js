@@ -27,6 +27,7 @@ const checkSignature = middleware.checkSignature;
 dotenv.config();
 const app = express();
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json({
     type: ['application/json', 'application/activity+json', 'application/ld+json']
 }));
@@ -70,9 +71,17 @@ app.get("/u/trondss/following", following.get);
 app.get("/u/trondss/followers", followers.get);
 app.get("/u/trondss/inbox", inbox.get);
 
-app.get("/createNote", (req, res) => {
-    res.sendFile(__dirname + "/www/createNote.html")
-});
+// Needs auth before enabling again!
+// app.get("/findUser/:user", following.user);
+// app.get("/follow/:actor", following.follow);
+
+
+// app.get("/createNote", (req, res) => {
+//     res.sendFile(__dirname + "/www/createNote.html")
+// });
+// app.get("/lookupUser", (req, res) => {
+//     res.sendFile(__dirname + "/www/userLookup.html")
+// })
 
 app.post("/u/trondss/inbox", checkContentType, checkActivityType, checkActor, checkSignature, inbox.post);
 app.post("/u/trondss/outbox", outbox.post);

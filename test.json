@@ -1,0 +1,18 @@
+[
+    {
+        "id":"https://www.sneaas.no/u/trondss/followsc2246c38-8b51-496a-9147-d84944ee8c77",
+        "type":"Follow",
+        "actor":"https://www.sneaas.no/u/trondss",
+        "object":"trondss@pixelfed.dk",
+        "@context":"https://www.w3.org/ns/activitystreams",
+        "_id":"662f779c858414c92eefcf35"
+    },
+    {
+        "@context": "https://www.w3.org/ns/activitystreams",
+        "id": "https://mastodon.social/1048ba43-3256-4186-ba42-43be6227451e",
+        "type": "Follow",
+        "actor": "https://mastodon.social/users/trondss",
+        "object": "https://www.sneaas.no/u/trondss",
+        "_id": "661cf25acc57a4bbc99c1f3a"
+    }
+]
