@@ -21,3 +21,7 @@ In other words: You probably shouldn't clone this project if you are not up for 
 
 
 
+[My ActivityPub Profile](https://www.sneaas.no/u/trondss){:rel="me"}
+
+
+
