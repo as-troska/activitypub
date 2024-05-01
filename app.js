@@ -67,6 +67,7 @@ app.get('/.well-known/nodeinfo', wellKnown.nodeinfo);
 app.get('/nodeinfo/2.0.json', wellKnown.nodeinfo2);
 app.get("/u/trondss", user.trondss);
 app.get("/u/trondss/icon", user.icon);
+app.get("/u/trondss/header", user.header);
 app.get("/u/trondss/outbox", outbox.get);
 app.get("/u/trondss/following", following.get);
 app.get("/u/trondss/followers", followers.get);
