@@ -18,10 +18,3 @@ I don't know if I will be able to finish this project, but at least I have learn
 - Database structure and queries
 
 In other words: You probably shouldn't clone this project if you are not up for some serious work! There are much much much much better implementations out there!
-
-
-
-[My ActivityPub Profile](https://www.sneaas.no/u/trondss){:rel="me"}
-
-
-
