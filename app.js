@@ -15,6 +15,7 @@ const outbox = require("./lib/outbox")
 const inbox = require("./lib/inbox")
 const followers = require("./lib/followers")
 const following = require("./lib/following")
+const activities = require("./lib/activities")
 const winston = require('winston');
 
 // Middleware
@@ -70,6 +71,7 @@ app.get("/u/trondss/outbox", outbox.get);
 app.get("/u/trondss/following", following.get);
 app.get("/u/trondss/followers", followers.get);
 app.get("/u/trondss/inbox", inbox.get);
+app.get("/u/trondss/:activityType/:uuid", activities.serve);
 
 // Needs auth before enabling again!
 // app.get("/findUser/:user", following.user);
