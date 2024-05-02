@@ -7,6 +7,7 @@
     "http-signature": "git+https://git@github.com/wmurphyrd/node-http-signature.git#9c02eeb",
     "mongodb": "^6.5.0",
     "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
     "nodemon": "^3.1.0",
     "uuid": "^9.0.1",
     "winston": "^3.13.0"

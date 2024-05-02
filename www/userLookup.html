@@ -48,6 +48,10 @@
                 <p>Followers: <a href="${actorData.followers}">Link</a></p>
                 <p>Following: <a href="${actorData.following}">Link</a></p>
                 <p>Published: ${new Date(actorData.published).toLocaleString()}</p>
+                <form action="https://sneaas.no/follow/${userInput}" method="POST">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Follow">
+                </form>
             `;
 
             resultsDiv.innerHTML = actorView;

@@ -6,23 +6,19 @@ const fs = require('fs');
 const httpSignature = require('http-signature');
 const crypto = require('crypto');
 const morgan = require('morgan');
-const path = require('path');
+const winston = require('winston');
+const cron = require('node-cron');
+const path = require('path')
+
 const wellKnown = require('./lib/wellKnown');
 const user = require('./lib/user');
-const middleware = require("./lib/middleware")
 const client = require("./lib/db")
 const outbox = require("./lib/outbox")
 const inbox = require("./lib/inbox")
 const followers = require("./lib/followers")
 const following = require("./lib/following")
 const activities = require("./lib/activities")
-const winston = require('winston');
-
-// Middleware
-const checkContentType = middleware.checkContentType;
-const checkActivityType = middleware.checkActivityType;
-const checkActor = middleware.checkActor;
-const checkSignature = middleware.checkSignature;
+const { checkContentType, checkActivityType, checkActor, checkSignature, checkAuth } = require("./lib/middleware")
 
 // Setup
 dotenv.config();
@@ -46,6 +42,8 @@ const logger = winston.createLogger({
         new winston.transports.File({ filename: 'access.log' })
     ]
 });
+
+
 
 const morganMiddleware = morgan(function (tokens, req, res) {
     return JSON.stringify({
@@ -74,20 +72,21 @@ app.get("/u/trondss/followers", followers.get);
 app.get("/u/trondss/inbox", inbox.get);
 app.get("/u/trondss/:activityType/:uuid", activities.serve);
 
-// Needs auth before enabling again!
-// app.get("/findUser/:user", following.user);
-// app.get("/follow/:actor", following.follow);
+app.get("/findUser/:user", checkAuth, following.user);
+app.post("/follow/:actor", checkAuth, following.follow);
 
 
-// app.get("/createNote", (req, res) => {
-//     res.sendFile(__dirname + "/www/createNote.html")
-// });
-// app.get("/lookupUser", (req, res) => {
-//     res.sendFile(__dirname + "/www/userLookup.html")
-// })
+app.get("/createNote", (req, res) => {
+    res.sendFile(__dirname + "/www/createNote.html")
+});
+app.get("/lookupUser", (req, res) => {
+    res.sendFile(__dirname + "/www/userLookup.html")
+})
 
 app.post("/u/trondss/inbox", checkContentType, checkActivityType, checkActor, checkSignature, inbox.post);
-app.post("/u/trondss/outbox", outbox.post);
+app.post("/u/trondss/outbox", checkAuth, outbox.post);
+
+cron.schedule('0 * * * *', followers.refresh);
 
 app.listen(1814, () => {
     console.log('Server started on port 1814 http://localhost:1814/');
