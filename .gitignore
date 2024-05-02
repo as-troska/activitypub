@@ -4,3 +4,4 @@ node_modules/
 private.pem
 public.pem
 access.log
+*.log
