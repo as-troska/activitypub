@@ -9,6 +9,8 @@
 - [ ] Check what happens when webfinger is hit with @www.sneaas.no instead of @sneaas.no
 - [ ] Consider supporting public inbox
 - [ ] Make the server multi-user
+- [ ] Add collection of likes, comments and announces to each activity.
+- [ ] Figure out what to do with mentions.
 
 ### Finished
 - [X] Write logic for fetching objects from database.
@@ -17,3 +19,7 @@
 - [X] Check if the unique urls to activites are correct. Perhaps skip the collection part and go for activites?
 - [X] Implement shared inbox delivery
 - [X] Add timestamps to all activities
+- [X] Fixed counters for likes and announces, as well as undos for these. 
+- [X] Fixed working url for notes.
+- [X] Handled incoming notes from followed users.
+ 

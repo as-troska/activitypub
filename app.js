@@ -11,6 +11,7 @@ const cron = require('node-cron');
 const path = require('path')
 
 const wellKnown = require('./lib/wellKnown');
+const auth = require('./lib/login/auth');
 const user = require('./lib/user');
 const client = require("./lib/db")
 const outbox = require("./lib/outbox")
@@ -71,6 +72,7 @@ app.get("/u/trondss/following", following.get);
 app.get("/u/trondss/followers", followers.get);
 app.get("/u/trondss/inbox", inbox.get);
 app.get("/u/trondss/:activityType/:uuid", activities.serve);
+app.get("/registrer", auth.registrer)
 
 app.get("/findUser/:user", checkAuth, following.user);
 app.post("/follow/:actor", checkAuth, following.follow);
