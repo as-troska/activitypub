@@ -72,12 +72,10 @@ app.get("/u/trondss/following", following.get);
 app.get("/u/trondss/followers", followers.get);
 app.get("/u/trondss/inbox", inbox.get);
 app.get("/u/trondss/:activityType/:uuid", activities.serve);
-app.get("/registrer", auth.registrer)
 
+app.get("/registrer", auth.registrer)
 app.get("/findUser/:user", checkAuth, following.user);
 app.post("/follow/:actor", checkAuth, following.follow);
-
-
 app.get("/createNote", (req, res) => {
     res.sendFile(__dirname + "/www/createNote.html")
 });

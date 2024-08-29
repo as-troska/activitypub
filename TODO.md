@@ -7,9 +7,7 @@
 - [ ] Consider adding "/api/v1/timelines/public?limit=100", "/api/v1/streaming/public" and "/api/v1/instance/peers"
 - [ ] Add route to /robots.txt
 - [ ] Check what happens when webfinger is hit with @www.sneaas.no instead of @sneaas.no
-- [ ] Consider supporting public inbox
 - [ ] Make the server multi-user
-- [ ] Add collection of likes, comments and announces to each activity.
 - [ ] Figure out what to do with mentions.
 
 ### Finished
@@ -22,4 +20,6 @@
 - [X] Fixed counters for likes and announces, as well as undos for these. 
 - [X] Fixed working url for notes.
 - [X] Handled incoming notes from followed users.
- 
+- [X] Add collection of likes, comments and announces to each activity.
+- [X] Handle comments
+- [X] Consider supporting public inbox
