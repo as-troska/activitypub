@@ -1,3 +1,8 @@
+// Set environment variables first
+process.env.MONGOURI = 'mongodb://localhost:27017/test';
+process.env.PASSWORD = 'test-password';
+process.env.NODE_ENV = 'test';
+
 const { get: getFollowers, refresh: refreshFollowers } = require('../lib/followers');
 const client = require('../lib/db');
 

@@ -88,6 +88,11 @@ app.post("/u/trondss/outbox", checkAuth, outbox.post);
 
 cron.schedule('0 * * * *', followers.refresh);
 
-app.listen(1814, () => {
-    console.log('Server started on port 1814 http://localhost:1814/');
-});
+// Only start server if not in test environment
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(1814, () => {
+        console.log('Server started on port 1814 http://localhost:1814/');
+    });
+}
+
+module.exports = app;

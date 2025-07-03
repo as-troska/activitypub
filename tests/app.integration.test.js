@@ -1,3 +1,8 @@
+// Set environment variables first
+process.env.MONGOURI = 'mongodb://localhost:27017/test';
+process.env.PASSWORD = 'test-password';
+process.env.NODE_ENV = 'test';
+
 const request = require('supertest');
 const express = require('express');
 const cors = require('cors');
@@ -43,20 +48,30 @@ jest.mock('morgan', () => {
   return jest.fn(() => (req, res, next) => next());
 });
 
-// Mock fs
-jest.mock('fs', () => ({
-  createWriteStream: jest.fn(() => ({}))
-}));
+// Mock only specific fs operations that might interfere with tests
+jest.mock('fs', () => {
+  const originalFs = jest.requireActual('fs');
+  return {
+    ...originalFs,
+    createWriteStream: jest.fn((path, ...args) => {
+      // Mock only log files to avoid creating actual log files during tests
+      if (path.includes('access.log') || path.includes('.log')) {
+        return {
+          write: jest.fn(),
+          end: jest.fn()
+        };
+      }
+      // Use real fs for everything else
+      return originalFs.createWriteStream(path, ...args);
+    })
+  };
+});
 
 describe('Application Integration Tests', () => {
   let app;
 
   beforeAll(() => {
-    // Set environment variables
-    process.env.MONGOURI = 'mongodb://localhost:27017/test';
-    process.env.PASSWORD = 'test-password';
-    
-    // Require app after mocking
+    // Require app after mocking and setting env vars
     app = require('../app');
   });
 

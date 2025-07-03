@@ -52,6 +52,25 @@ global.console = {
 // Mock fetch globally
 global.fetch = jest.fn();
 
+// Mock only specific fs operations that might interfere with tests
+jest.mock('fs', () => {
+  const originalFs = jest.requireActual('fs');
+  return {
+    ...originalFs,
+    createWriteStream: jest.fn((path, ...args) => {
+      // Mock only log files to avoid creating actual log files during tests
+      if (path.includes('access.log') || path.includes('.log')) {
+        return {
+          write: jest.fn(),
+          end: jest.fn()
+        };
+      }
+      // Use real fs for everything else
+      return originalFs.createWriteStream(path, ...args);
+    })
+  };
+});
+
 module.exports = {
   getMongoClient: () => mongoClient,
   getMongod: () => mongod
