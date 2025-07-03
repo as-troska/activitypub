@@ -5,3 +5,13 @@ private.pem
 public.pem
 access.log
 *.log
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Jest
+.jest/
+
+# Test files
+*.test.js.snap
